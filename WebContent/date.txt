@@ -1,0 +1,43 @@
+else if(monthvalue==3){
+		
+		monthday=31;
+		
+	}else if(monthvalue==5){
+		
+		monthday=31;
+		
+	}else if(monthvalue==7){
+		
+		monthday=31;
+		
+	}else if(monthvalue==8){
+		
+		monthday=31;
+		
+	}else if(monthvalue==10){
+		
+		monthday=31;
+		
+	}else if(monthvalue==12){
+		
+		monthday=31;
+		
+	}
+	if(str=="true"){
+						$("#sp").append("<font color='green'>可以注册！</font>");
+						$("#sub").removeAttr("disabled");
+					}else{
+						$("#sp").append("<font color='red'>用户名已存在，请重新输入！</font>");
+						$("#sub").attr("disabled","disabled");
+					}
+	<o:forEach  items="${sessionScope.AllPersonInfo }" var="PersonInfo">
+	<o:if test="${PersonInfo.id==param.PersonID}" var="new">
+
+#basepayid 
+#eatsubsidyid
+#housesubsidyid
+#perfectid
+#taxes
+#eypayid
+#rewardid
+	

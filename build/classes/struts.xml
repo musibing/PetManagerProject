@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.ui.theme" value="simple" />
+
+
+	<package name="Pet" namespace="/" extends="struts-default">
+		<action name="ViewData" class="petAction">
+			<result name="list">/view/list.jsp</result>
+		</action>
+		<action name="UserManage_*" class="userRegister" method="{1}">
+
+			<result name="Error">/register/register.jsp</result>
+			<result name="Message">/register/Rusult.jsp</result>
+
+		</action>
+		<action name="IndexCatData" class="selectIndexCatData">
+
+			<result name="list">/index/indexCatDataTest.jsp</result>
+
+		</action>
+		
+
+		<action name="LoginCheckAction" class="com.musibing.action.AccountCheck" method="AccountLoginCheck">
+
+			<result name="Error" type="redirect">/login/login.jsp</result>
+			<result name="AdminIndex" type="redirect">/AdministratorManagerSystem/WebManagerSystem.jsp
+			</result>
+			<result name="UserIndex" type="redirect">/AccountManager/PersonCenter.jsp</result>
+
+		</action>
+		<action name="WebDataInItDispose" class="webDataDispose" method="WebDataInit">
+
+		</action>
+		<action name="GetWebDataDispose" class="webDataDispose" method="webDataDispose">
+
+		</action>
+		<action name="GetPetVOClassInfo" class="webDataDispose" method="getPetVOClassInfo">
+
+		</action>
+		<action name="GetAllPetData" class="webDataDispose" method="GetAllPetData">
+
+		</action>
+		<action name="selectPetForID" class="com.musibing.action.PetManager" method="selectPetForID">
+		<result name="OK" type="redirect">
+				/baike/PetBaiKeDataView.jsp
+			</result>
+		</action>
+		<action name="GetAllPetInfoForUrl" class="webDataDispose" method="GetAllPetInfoForUrl">
+			<result name="GetFull" type="redirect">
+				/temp/PetAllDataHandle.jsp
+			</result>
+			<result name="Error">
+				/error/error.jsp
+			</result>
+		</action>
+		<action name="saveAllPetTypeInfoToDB" class="webDataDispose" method="saveAllPetTypeInfoToDB">
+		</action>
+		<action name="GetResult" class="webDataDispose" method="GetResult">
+
+		</action>
+		<action name="JSONTest" class="com.musibing.action.JSONTest" 	method="getJSON">
+
+		</action>
+		<action name="ViewAllPetInfo" class="com.musibing.action.PetManager" method="ViewAllPet">
+			<result name="OK" type="redirect">
+				/baike/Search.jsp
+			</result>
+		</action>
+		<action name="GetAllLinkAddress" class="com.musibing.action.GetAllLinkAddress" method="GetHerf">
+			<result name="OK" type="redirect"></result>
+		</action>
+		<action name="GetHtmlData" class="com.musibing.action.GetHtmlData" method="getHtmlData">
+		</action>
+		<action name="BuyProductForNow" class="com.musibing.action.BuyManager" method="BuyProductForNowMeth">
+			<result name="TestOK" type="redirect">
+				/OrderSettlement/OrderSettlement.jsp
+			</result>
+			<result name="TestNG" type="redirect">
+				/ShopMall/info.jsp
+			</result>
+		</action>
+		<action name="ViewProductForID" class="com.musibing.action.ProudctManager" method="ViewProductForID">
+			<result name="OK" type="redirect">
+				/ShopMall/info.jsp
+			</result>
+		</action>
+		<action name="ViewAllProduct" class="com.musibing.action.ProudctManager" method="ViewAllProduct">
+			<result name="OK" type="redirect">
+				/ShopMall/ProductSearch.jsp
+			</result>
+		</action>
+			<action name="ViewProductForBranName" class="com.musibing.action.ProudctManager" method="ViewProductForBranName">
+			<result name="OK" type="redirect">
+				/ShopMall/ProductSearch.jsp
+			</result>
+		</action>
+		
+			<action name="sevePorductInfoForAdministratorInput" class="com.musibing.action.ProudctManager" method="sevePorductInfoForAdministratorInput">
+			</action>
+			<action name="saveProductInfoOrNet" class="com.musibing.action.ProudctManager" method="saveProductInfoOrNet">
+			</action>
+
+			<action name="downSmallIMG" class="com.musibing.action.ProudctManager" method="downSmallIMG">
+			</action>
+
+			<action name="JspToArrayOfSet" class="com.musibing.action.ProudctManager" method="JspToArrayOfSet">
+			</action>
+			<action name="TraningEntityAttribute" class="com.musibing.action.Util.TraningEntityAttribute" method="TraningEntityAttribute">
+			</action>
+			<action name="accountPasswordModify" class="com.musibing.action.AccountManager" method="accountPasswordModify">
+			</action>
+			<action name="sendSMSValidateCode" class="com.musibing.action.AccountManage" method="sendSMSValidateCode">
+			</action>
+
+			<action name="saveArticleToDB" class="com.musibing.action.ArticleManager" method="saveArticleToDB">
+			</action>
+			<action name="viewArticleForID" class="com.musibing.action.ArticleManager" method="viewArticleForID">
+			<result name="OK" type="redirect">
+			/baike/Article.jsp
+			</result>
+			</action>
+			<action name="SaveOderInfo" class="com.musibing.action.OderManager" method="SaveOderInfo">
+
+			<result name="Error">/register/register.jsp</result>
+			<result name="Message">/register/Rusult.jsp</result>
+
+		</action>
+		<action name="saveEmployeeData" class="com.musibing.action.EmployinfoManager" method="saveEmployeeData">
+		</action>
+		<action name="FileUploadTest" class="com.musibing.action.FielUploadTest" method="FileUploadTest">
+		<result name="data">/index/index.jsp</result>
+		
+		</action>
+		<action name="savePetVoInfo" class="com.musibing.action.PetManager" method="savePetVoInfo">
+		</action>
+		<action name="SaveAllFreshData" class="com.musibing.action.FreshManager" method="SaveAllFreshData">
+		</action>
+		<action name="GetUrlSourece" class="com.musibing.action.WebDataDispose" method="GetUrlSourece"></action>
+		<action name="SelectAllFreshProducts" class="com.musibing.action.FreshManager" method="SelectAllFreshProducts">
+		<result name="OK" type="redirect">
+				/ShopMall/ProductSearch.jsp
+			</result>
+		
+		</action>
+		<action name="FileForAajx" class="com.musibing.action.FileForAajx" method="getDataSourece">
+		<result name="OK" type="redirect">
+			/AccountManager/ShopOderManager.jsp
+				
+			</result>
+			</action>
+		<action name="SelectALlProductOderInfo" class="com.musibing.action.OderManager" method="SelectAllProductOder">
+		<result name="OK" type="redirect">
+			/AdministratorManagerSystem/OderDataOperativeMonitorCenter.jsp
+				
+			</result>
+			</action>
+		<action name="SelectALlPurchaseInfo" class="com.musibing.action.OderManager" method="SelectALlPurchaseInfo">
+		<result name="OK" type="redirect">
+			/AdministratorManagerSystem/PurchaseInfo.jsp
+				
+			</result>
+			
+			
+		</action>
+		<action name="SelectALlTestAction" class="com.musibing.action.TestAction" method="SelectALlTestAction">
+		<result name="OK" type="redirect">
+			/AdministratorManagerSystem/PurchaseInfo.jsp
+				
+			</result>
+			
+			
+		</action>
+		<action name="SelectClassificationProductForArrayList" class="com.musibing.action.ProudctManager" method="SelectClassificationProductForArrayList">
+		<result name="OK" type="redirect">/ShopMall/ShopMall.jsp</result>
+		
+		</action>
+		<action name="SelectClassificationProductForTagVel" class="com.musibing.action.ProudctManager" method="SelectClassificationProductForTagVel">
+		<result name="OK" type="redirect">/ShopMall/ProductSearch.jsp</result>
+		
+		</action>
+		<action name="SelectClassificationProductForTagVel1" class="com.musibing.action.ProudctManager" method="SelectClassificationProductForTagVel1">
+		<result name="OK" type="redirect">/ShopMall/ProductSearch.jsp</result>
+		
+		
+		
+		</action>
+		<action name="SelectClassificationProductForTags" class="com.musibing.action.ProudctManager" method="SelectClassificationProductForTags">
+		
+		<result name="OK" type="redirect">/ShopMall/ProductSearch.jsp</result>
+		
+		</action>
+		<action name="AnotherBatchHotProduct" class="com.musibing.action.ProudctManager" method="AnotherBatchHotProduct">
+		<result name="OK" type="redirect">/ShopMall/ShopMall.jsp</result>
+		
+		</action>
+		<action name="SelectAccountIMGForAccountID" class="com.musibing.action.AccountManager" method="SelectAccountIMGForAccountID">
+	
+		
+		</action>
+		<action name="UpdateAccountIMGInfo" class="com.musibing.action.AccountManager" method="UpdateAccountIMGInfo">
+		</action>
+		<action name="UserLoginStatusCheck" class="com.musibing.action.AccountManager" method="UserLoginStatusCheck">
+		</action>
+		<action name="ViewBuyCarList" class="com.musibing.action.BuyManager" method="ViewBuyCarList">
+		<result name="OK" type="redirect">/Member/BuyCar.jsp</result>
+		</action>
+		<action name="SelectArticleByBaiKeiIndex" class="com.musibing.action.ArticleManager" method="SelectArticleByBaiKeiIndex">
+		<result name="OK" type="redirect">/baike/BaiKeIndex.jsp</result>
+		
+		</action>
+			<action name="SettlementOrder" class="com.musibing.action.OderManager" method="SaveOderInfo">
+		<result name="OK" type="redirect">/OrderSettlement/OderSuccess.jsp</result>
+		
+		</action>
+			<action name="AddProductToBuyCar" class="com.musibing.action.BuyManager" method="AddProductToBuyCar">
+		
+		
+		</action>
+			<action name="SettlementOrderForPool" class="com.musibing.action.BuyManager" method="SettlementOrderForPool">
+			<result name="OK" type="redirect">/OrderSettlement/OrderSettlement.jsp</result>
+		
+		</action>
+		
+		<action name="viewAccountByAccountID" class="com.musibing.action.AccountManager" method="viewAccountByAccountID">
+		<result name="OK" type="redirect">/AccountManager/PersonCenter.jsp</result>
+		</action>
+		<!-- 商品订单开始  -->
+		<action name="viewProductOderByAccounID" class="com.musibing.action.AccountManager" method="viewProductOderByAccounID">
+		<result name="OK" type="redirect">/AccountManager/ShopOderManager.jsp</result>
+		</action>
+		<!-- 商品订单结束  -->
+		<!-- 搜索请求开始 -->
+		<action name="searchProductBuyList" class="com.musibing.action.ProudctManager" method="searchProductBuyList">
+		<result name="OK" type="redirect">/ShopMall/ProductSearch.jsp</result>
+		
+		</action>
+		
+		
+		<!-- 搜索请求结束-->
+	</package>
+</struts>

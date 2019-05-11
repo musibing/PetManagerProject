@@ -1,0 +1,98 @@
+* {
+	margin: 0px;
+}
+/*BaiKeNavigation Start*/
+#BaiKeNavigation{
+	font-size:13px;
+	font-family:"微软雅黑";
+	color:#333;
+	height:35px;
+	width:1190px;
+	line-height:35px;
+	border-bottom:1px solid #ccc;
+	
+	
+	}
+/*BaiKeNavigation Start*/
+#AccountCollect{
+	height: 90px;
+    width: 90px;
+	background-image:url(../img/System/inco/btn.png);
+	background-position: -147px 1px;
+    margin-left: 525px;
+    margin-top: -20px;
+  	z-index: 99999;
+	position:absolute; }
+.article{
+	text-align:center;
+	line-height:30px;
+	font-size:14px;
+	
+	height:40px;
+	width:1190px;}
+	.article img{
+		float:left;
+		border-radius:100%;
+		display:block;
+	
+	
+	height:40px;
+	width:40px;}
+	.accountName{
+		float:left;}
+	.article_formaccount_control{
+		height:40px;
+		width:240px;
+		margin:auto;}	
+.article_title{
+	height:40px;
+	width:1190px;
+	font-family:"微软雅黑";
+	font-size:18px;
+	text-align:center;
+	line-height:40px;
+	margin-top:20px;}
+.BaiKeControl {
+	padding:10px 80px;
+	
+
+	height:auto;
+	width: 1190px;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.article_img{
+	height:390px;
+	width:1150px;
+	padding:20px 20px;}
+.article_img .ac_img{
+	display:block;
+	height:350px;
+	width:685px;
+	margin:auto;
+	}	
+#article_content{
+	padding:20px 20px;
+	
+	height:auto;
+	width:1150px;
+	font-family:"微软雅黑";
+	font-size:14px;}
+#article_content span{
+	margin-top:10px;
+	width:860px;
+	height:30px;}
+#article_content p{
+	line-height: 25px;
+    text-indent: 29px;
+}		
+.BaiKeControl .Left{
+	border-bottom:1px solid #ccc;
+	width:1190px;
+	height:auto;}
+#center{
+	float:left;
+	height:auto;
+	width:1350px;}

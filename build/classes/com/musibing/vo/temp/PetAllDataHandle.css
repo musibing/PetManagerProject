@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0px;
+}
+#conent_control{
+	height: 1200px;
+	width: 1366px;
+}
+#conent_URLSrc{
+	height: 1000px;
+	width:1366px;
+	margin-top:100px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+}
+#conent_URLSrc_text{
+	height:400px;
+	width:800px;
+}
+#conent_URL_text{
+	height:25px;
+	width:300px;
+	
+}
+#getData{
+	
+	height:300px;
+	width:1366px;
+	background-color:#E2E2E2;
+}
+#getDataButton{
+	height:120px;
+	width:1366px;
+	}
+#Detailed_data{
+	height:180px;
+	width:1366px;
+	}	
+

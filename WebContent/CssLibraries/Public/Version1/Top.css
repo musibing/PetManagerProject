@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+#topManager{
+	height:175px;
+	width:1366px;}
+.AccountHref{
+	display:block;
+	height:30px;
+	width:30px;
+	background-size:30px  30px;
+	background-image:url(../../../img/Account/default.jpg);
+
+	border-radius:100%;}
+.floatspan_top{
+	border-top:1px solid #343434;
+	
+	margin-top: 285px;}
+.BuyCarFloatTextLine{
+	padding:0px 10px;}	
+#floatspan{
+	text-align:center;
+	font-family:"微软雅黑";
+	color:#bbb;
+	font-size:11px;
+	z-index:999999;
+	height:680px;
+	width:40px;
+	float:right;
+	background-color:#181818;
+	padding:135px 0px;
+	position:fixed;
+	margin-left:1350px
+
+	}
+.floatspan{
+	border-bottom:1px solid #343434;
+	
+	writing-mode:lr-tb;
+	
+	float:left;
+	
+	height:80px;
+	width:40px;
+	}
+.floatspanimg{
+	height:36px;
+	height:36px;
+	background-image:url(../../../img/System/sbar_ico.png);}
+.BuyCarData{
+	background-position:0px -38px;}
+
+.PayAccount{
+	background-position:0px -76px;
+	}
+.Collect{
+	background-position:0px -113px;
+	}
+.App{
+	background-position:0px -180px;
+	}	
+	
+.Top{
+	background-position:0px -288px;
+	}	
+
+			
+#BuyCarFloat{
+	height:120px;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	}	
+#AccountInfo{
+	border-top:1px solid #343434;
+	width:30px;
+	height:30px;
+	padding:10px 5px;
+}
+	
+#ViewControl{
+	height:auto;
+	width:1350px;
+	float:left;
+	
+	
+	}
+
+
+
+/*top Start*/
+#top {
+	width: 1350px;
+	height: 30px;
+	border-bottom-color: #DDD;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#topContorl {
+	height: 30px;
+	width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topleft {
+	float: left;
+	height: 30px;
+	width: 80px;
+}
+
+.topleftclass {
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
+#topcenter {
+	height: 30px;
+	width: 485px;
+	float: left;
+}
+
+.toprightclass {
+	margin-top: 8px;
+	height: 14px;
+	width: 58px;
+	float: left;
+	line-height: 14px;
+	text-align: center;
+	border-right-color: #999;
+	border-right-style: double;
+	border-right-width: 1px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+/*top End*/

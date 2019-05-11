@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+margin:0px;}	
+#topkong{
+	height:80px;
+	width:1366px;
+	}
+#top{
+background:-moz-linear-gradient(top,#98F5FF,#FFFFFF);
+width:1366px;
+height:160px;}
+#toptips{
+	height:50px;
+	width:1366px;
+	color:#069D99;
+font-family:"方正舒体";
+font-size:40px;
+line-height:50px;
+text-align:center;
+vertical-align:bottom;
+}
+#center{
+	width:1366px;
+	height:500px;}
+#left{
+	float:left;
+	width:598px;
+	height:500px;}
+#leftkong{
+	float:left;
+	height:500px;
+	width:300px;}	
+
+#leftrightkong{
+	float:left;
+	height:500px;
+	width:40px;}	
+#leftimg{
+	float:left;
+	
+	height:256px;
+	width:256px;}
+#lefttop{
+	height:100px;
+	width:256px;}
+#leftcenter{
+	height:500px;
+	width:2px;}
+#leftcenter{
+	float:left;
+	width:256px;
+	height:500px;}
+#leftandleft{
+	background:-moz-linear-gradient(bottom,#98F5FF,#FFFFFF);
+	height:250px;
+	width:2px;
+}								
+#leftandright{
+background:-moz-linear-gradient(top,#98F5FF,#FFFFFF);
+	height:250px;
+	width:2px;
+}
+#leftangl{
+	float:left;
+	height:500px;
+	width:2px;}
+#right{
+	float:left;
+	width:768px;
+	height:500px;}	
+#rightleftkong{
+	float:left;
+	height:500px;
+	width:80px;}
+#righttopkong{
+	
+	height:150px;
+	width:688px;}
+#rightform{
+	
+	height:350px;
+	width:688px;}
+.rightform{
+	color:#B4BCC2;
+	line-height:50px;
+	text-align:left;
+	vertical-align:middle;
+	height:50px;
+	width:688px;
+	}
+.button{
+	margin-top:10px;
+	margin-left:10px;
+	border-width:0px;
+	background-color:#0CF;
+	width:70px;
+	height:23px;}
+#login{
+	margin-left:45px;}		
+.input{
+	
+	height:20px;
+	width:200px;}
+#rightgl{
+	float:left;
+	height:500px;
+	width:688px;}							

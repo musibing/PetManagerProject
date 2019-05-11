@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+#zongbiao{
+	width:1366px;
+	height:800px;
+	}
+#zhubiao{
+	float:left;
+	height:800px;
+	width:400px;}
+.zhubiaokong{
+	float:left;
+	height:800px;
+	width:483px;}
+#topkong{
+	height:50px;
+	width:400px;}
+	
+#top{
+	line-height:80px;
+	text-align:center;
+	vertical-align:middle;
+	font-family:"楷体";
+	font-size:30px;
+	font-weight:600;
+	height:80px;
+	width:400px;}
+#centermanager{
+	height:520px;
+	width:400px;}
+#tips{
+	line-height:40px;
+	vertical-align:middle;
+	text-align:left;
+	height:40px;
+	width:400px;
+	color:#8F8F8F;
+	font-weight:600;
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+#centerkong{
+	width:400px;
+	height:230px;}
+#imgDiv{
+	height:200px;
+	width:400px;}
+#PetIncoIMGFile{
+	height:30px;
+	width:400px;}			
+.center{
+	
+	font-family:"微软雅黑";
+	font-size:17px;
+	height:50px;
+	width:400px;
+	}
+.input{
+	height:21px;
+	width:240px;}
+.but{
+	margin-left:50px;
+	height:30px;
+	width:80px;
+	border-width:0px;
+	background-color:#2FB3FF;}								

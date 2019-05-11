@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+#AccountCollect{
+	float:left;
+	width:180px;
+	height:50px;
+	
+	}
+#AccountCollect{
+	float:left;
+	height:25px;
+	width:25px;
+	background-image:url(../img/System/inco/cart_process.png);
+	    background-position: -199px -1px;}
+#CollectControl{
+	height:25px;
+	width:180px;
+	float:left;
+	}	
+		
+*{
+	margin:0px;}
+#TotalControl{
+	height:1598px;
+	width:1198px;
+	border:1px solid #ccc;}
+#PetInfoControl{
+	float:left;
+	height:auto;
+	width:1140px;
+	padding:20px 30px;
+	border-bottom:1px solid #ccc;
+	}
+#AppearanceText p{
+	height:auto;
+	
+	}	
+#PetExhibitionIMG img{
+	height:;
+	width:; }	
+#PetNameControl{
+	float:left;
+	height:50px;
+	width:120px;
+	line-height:50px;
+	vertical-align:middle;
+	font-size:24px;
+	font-family:"微软雅黑";}
+#PetNameRightControl{
+	float:left;
+	height:50px;
+	width:880px;
+	float:left;
+	height:50px;
+	
+	line-height:50px;
+	vertical-align:middle;
+	font-size:16px;
+	font-family:"微软雅黑";}	
+#PetNameTitle{
+	float:left;
+	height:50px;
+	width:1200px;}
+#PetDescribeInfo{
+	float:left;
+	line-height:16px;
+	height:auto;
+	width:1140px;
+	margin-top:10px;
+	text-indent:2em;
+	font-size:16px;
+	font-family:"微软雅黑";}
+	#PetDescribeInfoList{
+		margin-top:20px;
+		height:240px;
+		width:1140px;
+		float:left;}
+	.PetDescribeInfoList{
+		height:20px;
+		width:570px;
+		float:left;
+		border-bottom-color:#C7C7C7;
+		border-bottom-style:dashed;
+		border-bottom-width:1px;}
+	.PetDescribeInfoListSP{
+		height:20px;
+		width:80px;
+		float:left;
+		font-size:15px;
+	font-family:"微软雅黑";
+	font-weight:700;
+	color:#7D7D7D;
+	
+		}
+	.PetDescribeInfoListSPText{
+	float:left;
+	height:20px;
+	width:420px;
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#242424;}
+	#PetInfoNavigation{
+		float:left;
+		height:180px;
+		width:1140px;
+		border-bottom-color:#E7E7E7;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		border-top-color:#E7E7E7;
+		border-top-style:solid;
+		border-top-width:1px;
+		margin-top:20px;}
+	#PetInfoNavigationContents{
+		background-color:#F7F7F7;
+		float:left;
+		height:180px;
+		width:100px;
+		border-right-color:#E7E7E7;
+		border-right-style:solid;
+		border-right-width:1px;
+	
+		}
+		#PetInfoNavigationContentsSpan{
+			margin-top:50px;
+			margin-left:60px;
+			font-size:22px;
+			font-family:"微软雅黑";
+			color:#444444;
+			}
+	.PetInfoNavigationClass{
+		float:left;
+		height:150px;
+		width:200px;}
+	.PetInfoNavigationSonClass{
+		height:30px;
+		width:198px;}	
+	#PetInfoNavigationClassControl{
+		float:left;
+		margin-top:15px;
+		height:150px;
+		width:600px}
+	#PetInfoNavigationClassBorder{
+		height:150px;
+		width:198px;
+		border-right-color:#E7E7E7;
+		border-right-style:solid;
+		border-right-width:1px;
+		border-left-color:#E7E7E7;
+		border-left-style:solid;
+		border-left-width:1px;
+		float:left;}
+		li{
+			margin-left:30px;
+			font-size:15px;}
+		ul{
+			margin-left:-60px;}
+		.PetBaiKeTitle{
+			height:50px;
+			width:1140px;
+			margin-top:10px;
+			}
+		.PetBaiKeKong{
+			margin-top:15px;
+			height:25px;
+			width:20px;
+			background-color:#00F;
+			float:left;}
+			.PetBaiKeName{
+				height:50px;
+				width:120px;
+				float:left;
+				font-size:25px;
+				font-family:"微软雅黑";
+				line-height:50px;
+				vertical-align:middle;
+				text-align:center;
+				
+				}
+			.PetBaiKeHRDIV{
+				height:50px;
+				width:1000px;
+				float:left;}
+			#PetAppearance{
+				height:auto;
+				width:1140px;
+				margin-top:20px;
+				float:left;
+				
+			
+			}
+.PetBaiKeHR{
+	width:1000px;
+				margin-top:25px;
+				color:#CCC;}
+				
+#AppearanceText{
+				height:auto;
+				width:1140px;
+				text-indent:2em;}
+#BaiKeNavigation {
+	float:left;
+	height: 30px;
+	width: 1200px;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: left;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999;
+	border-bottom:1px solid #ccc;
+}
+#EssentialInformation{
+	float:left;
+	height:260px;
+	width:1138px;
+	padding:20px 30px;
+	background-color:#efefef;
+	border-bottom:1px solid #ccc;
+	}
+#EssentialInformation .Title{
+	
+	height:30px;
+	width:858px;
+	}
+#InformationControl{
+	height:210px;
+	width:858px;
+	float:left;}
+#PetExhibitionIMG{
+	height:188px;
+	width:258px;
+	float:left;
+	background-color:#FFFFFF;
+	border:1px solid #666;
+	padding:10px;
+	}
+	.PetExhibitionIMGSon{
+		height:188px;
+		width:258px;}
+	
+#PetExhibitionTitle{
+	height:30px;
+	width:280px;
+	float:left;
+	margin-left:860px;
+	font-family:"微软雅黑";
+	font-size:15px;
+	line-height:30px;
+	text-align:center;}										
+#EssentialInformation dl{
+	float:left;
+	display:block;
+	height:30px;
+	width:429px;
+	
+	}
+#EssentialInformation dl dt{
+	float:left;
+	display:block;
+	height:30px;
+	width:80px;
+	
+	}																		

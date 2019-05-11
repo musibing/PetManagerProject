@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	}
+#MML{
+	float:left;
+	width:130px;
+	height:1200px;
+	background-color:#EAEDF1;}
+#MMR{
+	margin-left:8px;
+	float:left;
+	width:1228px;
+	height:1200px;
+	}		
+#MMTitle{
+	width:130px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	vertical-align:bottom;
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:bold;
+	color:#333333;
+	}
+#MemberManager{
+	height:1200px;
+	width:1366px;
+	}
+.MML{
+	width:130px;
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	text-align:center;
+	vertical-align:bottom;
+	color:#333333;
+	}
+#MMRTitle{
+	height:25px;
+	border-left-color:#88B7E0;
+	border-left-style:solid;
+	border-left-width:2px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#333333;
+	}
+#MMRTitleKong{
+	height:30px;
+	width:1228px;
+	border-bottom-color:#DDD;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	}
+#MemberListView{
+	margin-top:20px;
+	width:1228px;
+	height:200px;
+	border-width:1px;
+	border-color:#EBECEC;
+	border-style:solid;
+	}
+#MemberListTitle{
+	height:40px;
+	width:1228px;
+	background:#CCC;
+		font-family:"微软雅黑";
+	font-size:16px;
+	color:#333333;}	
+	

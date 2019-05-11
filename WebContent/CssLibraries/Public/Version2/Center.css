@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+#centerIMGSrc {
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+#inputsmscode {
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 2px;
+	height: 15px;
+	width: 60px;
+}
+
+#zongbiao {
+	width: 1366px;
+	height: 800px;
+}
+
+#UserCenterTitle {
+	margin-top: 30px;
+	margin-left: 15px;
+	border-left-color: #CCC;
+	border-left-style: solid;
+	border-left-width: 1px;
+	height: 40px;
+	width: 160px;
+	font-family: "微软雅黑";
+	font-size: 28px;
+	font-weight: 700px;
+	color: #666666;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+#zhubiaocontrol {
+	float: left;
+	width: 1350px;
+	height: 460px;
+}
+
+#CenterControl{
+	float: left;
+	height: 750px;
+	width: 1350px;
+	background-color: #f3f3f3;
+}
+
+#centerIMG {
+	float: left;
+	height: 460px;
+	width: 550px;
+}
+
+#zhubiao {
+	float: left;
+	height: 460px;
+	width: 986px;
+	background-color: #FFFFFF;
+	margin-left: 182px;
+    margin-right: auto;
+}
+
+.zhubiaokong {
+	float: left;
+	height: 460px;
+	width: 175px;
+}
+
+#centerkong {
+	width: 400px;
+	height: 50px;
+}
+
+.center {
+	font-family: "微软雅黑";
+	font-size: 17px;
+	height: 50px;
+	width: 400px;
+}
+
+.input {
+	height: 16px;
+	width: 308px;
+}
+
+.but {
+	margin-left: 78px;
+	height: 30px;
+	width: 80px;
+	border-width: 0px;
+	background-color: #2FB3FF;
+}
+
+#login_title {
+	height: 50px;
+	width: 400px;
+}

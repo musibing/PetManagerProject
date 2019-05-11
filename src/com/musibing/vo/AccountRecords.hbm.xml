@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-3-5 17:21:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.AccountRecords" table="accountrecords">
+        <id name="accountRecordsID" type="int">
+            <column name="ACCOUNTRECORDSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="iPAddress" type="java.lang.String" access="field">
+            <column name="IPADDRESS" />
+        </property>
+        <property name="eventName" type="java.lang.String">
+            <column name="EVENTNAME" />
+        </property>
+        <property name="happenTime" type="java.util.Date">
+            <column name="HAPPENTIME" />
+        </property>
+        <many-to-one name="accountVOID" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+         <!--    <column name="ACCOUNTVOID" /> -->
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-3-8 22:13:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.AccountVO" table="accountvo">
+        <id name="accountId" type="int">
+            <column name="ACCOUNTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountName" type="java.lang.String">
+            <column name="ACCOUNTNAME" />
+        </property>
+        <property name="passWord" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="telphoneNumber" type="java.lang.String">
+            <column name="TELPHONENUMBER" />
+        </property>
+        <property name="role" type="java.lang.String">
+            <column name="ROLE" />
+        </property>
+        <property name="accountIMGPath" type="java.lang.String">
+            <column name="ACCOUNTIMGPATH" />
+        </property>
+        <property name="accountGrade" type="java.lang.String">
+            <column name="ACCOUNTGRADE" />
+        </property>
+        <set name="pID" table="PETDATAVOCLASS" inverse="false" lazy="false" access="field">
+            <key>
+                <column name="ACCOUNTID" />
+            </key>
+            <one-to-many class="com.musibing.vo.PetDataVOClass" />
+        </set>
+        <set name="productOderID" table="PRODUCTODER" inverse="false" lazy="false">
+            <key>
+                <column name="ACCOUNTID" />
+            </key>
+            <one-to-many class="com.musibing.vo.ProductOder" />
+        </set>
+        <set name="accountRecords" table="ACCOUNTRECORDS" inverse="false" lazy="false">
+            <key>
+                <column name="ACCOUNTID" />
+            </key>
+            <one-to-many class="com.musibing.vo.AccountRecords" />
+        </set>
+        <one-to-one name="bcID" class="com.musibing.vo.BuyCar" property-ref="aVO"></one-to-one>
+        
+    </class>
+</hibernate-mapping>

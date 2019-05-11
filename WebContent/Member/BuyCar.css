@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+#topContorl{
+	margin:0px auto;
+	height:30px;
+	width:1154px;}
+#BuyCarControl .Content{
+	
+	width:1152px;
+	height:auto;
+	font-family:"微软雅黑";
+	font-size:13px;
+	
+	}
+#BuyCarControl div.BTitle{
+	background-color:#EFEFEF;
+	height: 35px;
+    width: 1132px;
+	padding:0px 10px;
+	border-bottom:1px solid #ddd;
+	
+	}
+	
+#BuyCarControl div.ContentData{
+	
+	height: 120px;
+    width: 1132px;
+	padding:0px 10px;
+	border-bottom:1px solid #ddd;
+}
+	
+.Content .Tag1{
+	height:100px;
+	padding:10px 10px;
+	width:105px;
+	
+	}		
+	
+.Content .Tag2{
+	height:120px;
+	
+	}
+.ContentData .ProductIMG{
+	display:block;
+	height:100px;
+	width:105px;}		

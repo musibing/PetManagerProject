@@ -1,0 +1,420 @@
+*{
+	margin: 0px;
+}
+
+#Cat .ClassificationLogoImg{
+	background-position:-79px 0px;}
+
+#Aquarium .ClassificationLogoImg{
+	background-position:-153px 0px;}
+#Crawler .ClassificationLogoImg{
+	background-position:-215px 0px;}
+.manlist p{
+	height:36px;
+	float:left;
+	display:block;
+	line-height:36px;
+	}
+.manlist div{
+	
+	float:left;
+	display:block;
+	height:36px;
+	width:36px;
+	background:url(../img/SitNew/1.png)}
+	
+.manlist .ShopMallICO{
+	
+	background-position:0px -33px;}
+.manlist .PetService{
+	background-position:-60px -33px;
+	
+	}
+.manlist .luntan{
+		background-position:-124px -33px
+	}
+.manlist .baike{
+		background-position:-180px -33px
+	}				
+
+#center{
+	height: 3270px;
+	width:1350px;
+}
+
+#Man{
+	float:left;
+	padding:0px 80px;
+	height:350px;
+	width:1190px;
+	
+	background-color:#FEf5E4;
+	}
+#Mankongleft{
+	height:350px;
+	width:300px;
+	float:left;
+	}
+#MIMG{
+	
+	height:348px;
+	width:1190px;
+	float:left;
+	background:url(../img/adviertisement/adviertisementMain1.jpg)}
+#MIMG img{
+	display:block;}	
+#ManListControl{
+	
+	height:350px;
+	width:250px;
+	float:right;
+	font-family:"微软雅黑";
+	font-size:22px;
+	font-weight:lighter;
+
+
+	}
+.manlist{
+	padding-left:10px;
+	padding:20px 0px;
+	float:left;
+	height:42px;
+	width:250px;
+	margin-top:4px;
+	line-height:42px;
+	vertical-align:middle;
+	background-color:#FFFFFF;
+	}
+#Mankongright{
+	
+	height:350px;
+	width:165px;
+	float:left;}
+#adviertisementControl{
+	float:left;
+	height:120px;
+	width:1350px;
+	background-color:#F3F3F3;
+	border-bottom:1px solid #ccc;
+	}
+.ClassificationTitle .ClassificationLogoImg{
+	background:url(../img/SitNew/common.png)} 	
+#adviertisementDiv{
+	height:120px;
+	width:1190px;
+	margin-left:80px;}
+.adviertisementClass{
+	float:left;
+	height:120px;
+	width:296px;
+	border-left-color:#DDDDDD;
+	border-left-width:1px;
+	border-left-style:solid;
+	color:#666666;
+	font-size:13px;
+	}
+.adviertisementText{
+	height:120px;
+	width:150px;
+	float:left;
+	color:#999999;
+	font-size:14px;
+	
+	vertical-align:middle;
+	text-align:center;}
+.adviertisementIMG{
+	float:left;
+	height:120px;
+	width:100px;}
+.adviertisementName{
+	color:#4490f7;
+	font-size:18px;
+	font-family:"微软雅黑";
+	font-weight:400;
+	}
+#adviertisementListTeleter{
+	font-size:17px;
+	}
+.ClassificationControl{
+	width:1190px;
+	height:647px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	border:1px solid #ccc;
+	
+	}
+.ClassificationBottomControl{
+	border-top:1px solid #ccc;
+	height:215px;
+	width:1190px;
+	background-color:#F3F3F3;}	
+.ClassificationTitle{
+	height:50px;
+	width:1190px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:30px;
+	line-height:40px;
+	vertical-align:middle;
+	font-weight:400;
+	border-bottom:1px solid #ccc;}
+.ClassificationLogoImg{
+	height:50px;
+	width:50px;
+	float:left;}
+.ClassificationCenterIMG{
+	margin-top:10px;
+	margin-left:10px;
+	height:360px;
+	width:360px;
+}
+.ClassificationCenterControl{
+	height:380px;
+	width:1190px;
+	}
+
+.ClassificationCenterIMGControl{
+	height:380px;
+	width:380px;
+	float:left;
+	}
+.ClassificationLeftControl{
+	height:379px;
+	width:809px;
+	float:left;
+	border-left-color:#E6E6E6;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-bottom-color:#E6E6E6;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	}
+.ClassificationUseringTitle{
+	width:809px;
+	height:30px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:20px;
+	}
+.ClassificationUsering img{
+	display:block;
+	width:160px;}	
+.borderleftandright{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;}	
+.ClassificationUsering{
+	float:left;
+	height:160px;
+	width:161px;
+	margin-left:35px;
+	
+	border-right-color:#E6E6E6;
+	border-right-style:solid;
+	border-right-width:1px;}
+.ClassificationUseringControl{
+	height:190px;
+	width:809px;
+	}	
+.ProductName{
+	height:20px;
+	width:162px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:17px;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;
+	}
+.ProductDescribe{
+	height:20px;
+	width:162px;
+	color:#999999;
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;}				
+			
+#BorderClean{
+	border-right-width:0px;
+	}
+.ClassificationServiceControl{
+	margin-top:15px;
+	height:173px;
+	width:809px;
+	}
+.ClassificationServiceTitle{
+	height:30px;
+	width:809px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:20px;
+	}
+	.bordertopanbuttom{
+		
+		border-top:1px solid #ccc;}
+.ClassificationServiceContent{
+	width:809px;
+	height:110px;}	
+.ClassificationServiceClass{
+	margin-left:32px;
+	float:left;
+	height:110px;
+	width:218px;}
+.ClassificationServiceImg{
+	float:left;
+	height:110px;
+	width:110px;}
+.CSISRC{
+	margin-top:10px;
+	margin-left:10px;
+	height:90px;
+	width:90px;}
+.ClassificationServiceClassTitle{
+	float:left;
+	height:40px;
+	width:106px;
+	color:#131313;
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:40px;
+	vertical-align:middle;
+	
+	}
+.ClassificationServiceText{
+	float:left;
+	height:70px;
+	width:106px;
+	color:#999999;
+	font-family:"微软雅黑";
+	font-size:12px;
+	vertical-align:middle;
+	}
+.ClassificationForumControl{
+	float:left;
+	height:180px;
+	width:380px;}						
+.ClassificationEncyclopediaControl{
+	float:left;
+	height:180px;
+	width:488px;}
+#ClassificationEncyclopediaControl{
+	border-left:1px solid #ccc;
+	width:647px;
+	height:215px;
+	float:left;}	
+.ClassificationForumTitle{
+	height:35px;
+	width:380px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:35px;
+	vertical-align:bottom;}
+.ClassificationForumContent{
+	height:145px;
+	width:380px;}
+.ClassificationForumImg{
+	float:left;
+	height:60px;
+	width:60px;
+	border-radius:100%;
+	overflow:hidden;
+	}
+.ClassificationForumTextControl{
+	float:left;
+	height:60px;
+	width:320px;}
+.ClassificationForumTextTitle{
+	width:320px;
+	height:35px;
+	color:#131313;
+	
+	font-family:"微软雅黑";
+	font-size:18px;
+	line-height:35px;
+	vertical-align:bottom;
+	}
+.ClassificationForumTextContent{
+	height:25px;
+	width:320px;
+	color:#999999;
+	font-size:12px;
+	line-height:25px;
+	vertical-align:bottom;
+	font-family:"微软雅黑";
+	}
+.ClassificationForumContentControl{
+	height:60px;
+	width:380px;}
+.EncyclopediaTitle{
+	height:35px;
+	width:646px;
+	color:#4490F7;
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:35px;
+	vertical-align:bottom;}
+.EncyclopediaContentTitle{
+	
+	color:#131313;
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:35px;
+	vertical-align:bottom;
+	height:35px;
+	width:438px;
+	}									
+.EncyclopediaContentText{
+	
+	height:110px;
+	width:438px;
+	color:#999999;
+	font-size:12px;
+	line-height:25px;
+	vertical-align:bottom;
+	font-family:"微软雅黑";}
+.EncyclopediaContentControl{
+	float:left;
+	width:438px;
+	height:145px;
+	}	
+.EncyclopediaContentImgControl{
+	float:left;
+	height:145px;
+	width:208px;
+	border-right:1px solid #ccc;}
+.EncyclopediaContentImg{
+	margin-top:2px;
+	margin-left:10px;
+	width:189px;
+	height:140px;
+	}
+.VarietiesControl{
+	float:left;
+	height:180px;
+	width:161px;
+}
+.VarietiesTitle{
+	height:30px;
+	width:161px;
+	color:#131313;
+	font-family:"微软雅黑";
+	font-size:18px;
+	line-height:30px;
+	vertical-align:bottom;
+	}
+.VarietiesContent{
+	height:20px;
+	width:161px;
+	color:#999999;
+	font-size:12px;
+	line-height:20px;
+	vertical-align:bottom;
+	font-family:"微软雅黑";}
+.AnimalDataView{
+	padding:30px 80px;
+	float:left;
+	height:700px;
+	width:1190px;}								

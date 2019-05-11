@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-6 21:59:47 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.PetDataVOClass" table="petdatavoclass">
+        <id name="petID" type="int">
+            <column name="PETID" />
+            <generator class="increment" />
+        </id>
+        <property name="petcnName" type="java.lang.String">
+            <column name="PETCNNAME" />
+        </property>
+        <property name="petenName" type="java.lang.String">
+            <column name="PETENNAME" />
+        </property>
+        <property name="briefIntroduction" type="java.lang.String">
+            <column name="BRIEFINTRODUCTION" />
+        </property>
+        <property name="chinesename" type="java.lang.String">
+            <column name="CHINESENAME" />
+        </property>
+        <property name="dontsaid" type="java.lang.String">
+            <column name="DONTSAID" />
+        </property>
+        <property name="circles" type="java.lang.String">
+            <column name="CIRCLES" />
+        </property>
+        <property name="door" type="java.lang.String">
+            <column name="DOOR" />
+        </property>
+        <property name="subdoor" type="java.lang.String">
+            <column name="SUBDOOR" />
+        </property>
+        <property name="gang" type="java.lang.String">
+            <column name="GANG" />
+        </property>
+        <property name="subang" type="java.lang.String">
+            <column name="SUBANG" />
+        </property>
+        <property name="item" type="java.lang.String">
+            <column name="ITEM" />
+        </property>
+        <property name="subOrder" type="java.lang.String">
+            <column name="SUBORDER" />
+        </property>
+        <property name="section" type="java.lang.String">
+            <column name="SECTION" />
+        </property>
+        <property name="subfamily" type="java.lang.String">
+            <column name="SUBFAMILY" />
+        </property>
+        <property name="genus" type="java.lang.String">
+            <column name="GENUS" />
+        </property>
+        <property name="species" type="java.lang.String">
+            <column name="SPECIES" />
+        </property>
+        <property name="subSpecies" type="java.lang.String">
+            <column name="SUBSPECIES" />
+        </property>
+        <property name="ancestralHome" type="java.lang.String">
+            <column name="ANCESTRALHOME" />
+        </property>
+        <property name="easeOfDisease" type="java.lang.String">
+            <column name="EASEOFDISEASE" />
+        </property>
+        <property name="lifeAge" type="java.lang.String">
+            <column name="LIFEAGE" />
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="PRICE" />
+        </property>
+        <property name="disposition" type="java.lang.String">
+            <column name="DISPOSITION" />
+        </property>
+        <property name="morphologicalCharacter" type="java.lang.String">
+            <column name="MORPHOLOGICALCHARACTER" />
+        </property>
+        <property name="conservationKnowledge" type="java.lang.String">
+            <column name="CONSERVATIONKNOWLEDGE" />
+        </property>
+        <property name="characterCharacteristics" type="java.lang.String">
+            <column name="CHARACTERCHARACTERISTICS" />
+        </property>
+        <property name="feedingPoints" type="java.lang.String">
+            <column name="FEEDINGPOINTS" />
+        </property>
+        <property name="environment" type="java.lang.String">
+            <column name="ENVIRONMENT" />
+        </property>
+        <property name="exhibitionIMG" type="java.lang.String">
+            <column name="EXHIBITIONIMG" />
+        </property>
+        <property name="shape" type="java.lang.String">
+            <column name="SHAPE" />
+        </property>
+        <property name="function" type="java.lang.String">
+            <column name="FUNCTION" />
+        </property>
+        <property name="friendliness" type="java.lang.String">
+            <column name="FRIENDLINESS" />
+        </property>
+        <property name="difficultyInFeeding" type="java.lang.String">
+            <column name="DIFFICULTYINFEEDING" />
+        </property>
+        <set name="pdvocimg" table="PetIMG" cascade="all" inverse="true" lazy="false">
+            <key>
+                <column name="PETID" />
+            </key>
+            <one-to-many class="com.musibing.vo.PetIMG" />
+        </set>
+    </class>
+</hibernate-mapping>

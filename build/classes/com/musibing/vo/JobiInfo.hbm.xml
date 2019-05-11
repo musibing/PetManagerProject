@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-25 17:30:51 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.JobiInfo" table="jobiinfo">
+        <id name="jobID" type="int">
+            <column name="JOBID" />
+            <generator class="assigned" />
+        </id>
+        <property name="jobName" type="java.lang.String">
+            <column name="JOBNAME" />
+        </property>
+        <one-to-one name="employ" class="com.musibing.vo.Employinfo"></one-to-one>
+    </class>
+</hibernate-mapping>

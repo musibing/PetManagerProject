@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+}
+#TopManager{
+	width:1366px;
+	height:120px;}
+.username{
+	width:120px;
+	height:15px;}
+#topControl{
+	height:30px;
+	width:990px;
+	margin:auto;}
+#shoulder{
+	float:left;
+	height:92px;
+	width:1366px;
+	background-color:#F05030;
+	}
+#shoulder #Control{
+	height:90px;
+	width:990px;
+	margin:auto;
+	background-image:url(../img/Account/AccountCenter/shoulder/shoulder_bg.png)}	
+#shoulder #Control #logoimg{
+	height:90px;
+	width:164px;
+	float:left;}
+#shoulder #nva ui{
+	width:400px;
+	height:30px;
+	float:left;
+	
+	display:block;
+	margin-top:30px;
+	margin-left:80px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	}	
+#shoulder #nva li{
+	display:block;
+	float:left;
+	color:#fff;
+	width:100px;
+	height:30px;
+	}	
+#shoulder #Control #SerchInfo{
+	float:right;
+	height:30px;
+	width:230px;
+	padding:30px 0px;
+	margin-right:0px;}		
+#shoulder #Control #SearchKeyword{
+	border-width:0px;
+	float:left;
+	width:205px;
+	height:25px;
+	
+	
+	
+	
+	} 
+#shoulder #Control .SearchSubmit{
+	height:25px;
+	width:25px;
+	float:left;
+	
+	background-image:url(../img/Account/AccountCenter/man/sprites.png) ;
+	background-position:-177px 0px;}
+#shoulder #Control #SerchControl{
+	height:27px;
+	width:230px;
+	background-color:#FFF;
+	
+	}
+#content{
+	float:left;
+	height:1850px;
+	width:1366px;
+	background-color:#F3F3F3;
+	
+	
+	}
+#contentControl{
+	margin:auto;
+	height:1800px;
+	width:990px;
+	margin-top:20px;
+	}
+	#ListtitleControl{
+		font-family:"微软雅黑";
+	height:30px;
+	font-size:13px;
+	width:164px;
+	height:860px;
+	float:left;
+	line-height:30px;
+	background-color:#fff;
+	margin-left:188px;
+		
+		
+		}
+	
+#title{
+	font-family:"微软雅黑";
+	height:30px;
+	font-size:15px;
+	width:816px;
+	float:left;
+	line-height:30px;
+	background-color:#fff;}	
+.listTitle{
+	width:164px;
+	margin-bottom:10px;
+	font-size:15px;
+	font-weight:bolder;
+	}
+.listTitleContent{
+	margin-top:5px;
+	width:164px;
+	}
+.listTitleManager{
+	width:164px;}
+.oderManager{
+	height:240px;}
+.meonyManager{
+	height:240px;}
+.messingManager{
+height:180px;}
+.persionSeeting{
+	height:180px}
+.datacontent{
+		font-size: 12px;
+	float: left;
+	margin-bottom: 10px;
+	
+	width: 776px;
+	height: 850px;
+	background-color: #FFF;
+	font-family: "微软雅黑";
+	padding: 20px 20px;}
+.datacontentTitle{
+	font-size:15px;
+	width:776px;
+	height:30px;
+	}
+.datacontentTitleText{
+	width:388px;
+	float:left;
+	height:30px;
+	}	
+.datacontentTitleMore{
+	height:30px;
+	width:388px;
+	float:left;
+	text-align:right;
+	font-size:11px;
+	color:#666;}
+.dataSource{
+	border:1px solid #ddd;
+	height:50px;
+	width:776px;
+	vertical-align:middle;
+	text-align:center;
+	line-height:50px;
+	}			
+.userinfo{
+	float:left;
+	width:776px;
+	height:120px;
+	padding:20px 20px;
+	margin-bottom:0px;}				
+#data{
+	margin-left:10px;
+	float:left;
+	width:816px;
+	height:1800px;
+	font-size:13px;
+	font-family:"微软雅黑";
+	background-color:#fff;}
+	#userImg{
+		float:left;
+		height:120px;
+		width:120px;
+		border-radius:100%;
+		overflow:hidden;
+		}
+.leve{
+	width:80px;
+	height:20px;
+	background-color:#E8E8e8;
+	float:left;
+	margin-right:3px;
+	text-align:center;}
+#userinfoData{
+	height:120px;
+	width:370px;
+	float:left;}	
+.userinfoDataContent{
+	
+
+	width:370px;
+	height:40px;}
+#leveTitle{
+	display:block;
+	float:left;}
+.leveColor{
+	background-color:red;}
+#accountLeve{
+	color:red;
+	font-weight:bolder;
+	font-style:italic;
+	}
+#accountName{
+	font:15px;
+	color:red;}
+.usermoney{
+		
+		float:left;
+		width:160px;
+		height:100px;
+		padding:10px 20px;
+		margin-left:5px;
+		margin-bottom:0px;
+		font-family:"微软雅黑";
+		}
+.useroder{
+	width:816px;
+	height:160px;}		
+.usermoney	 dt{
+	font-size:15px;
+	display:block;
+	height:30px;
+	}			
+.usermoney	 dl{
+	font-size:12px;
+	display:block;
+	height:23px;
+	padding:0px 10px;
+	}
+#userinfoManager{
+	width:816px;
+height:160px;
+margin-bottom:10px;}
+.oderContent{
+	float:left;
+	background-color:#fff;
+	width:363px;
+	height:120px;
+	
+	padding:20px 20px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	text-align:center;
+	}
+
+.oderContentTitle{
+	text-align:left;}	
+.oderContentControl{
+	float:left;
+	height:160px;
+	width:816px;
+	margin-bottom:10px;}
+.serviceoder{
+	margin-left:10px;}
+.shopoder{
+	}
+.oderContentTitle{
+	font-size:16px;}
+.oderContentClass{
+	width:343px;
+	height:80px;
+	padding:10px 10px;
+
+}
+.oderContentClassData{
+	margin-left:5px;
+	float:left;
+	height:80px;
+	width:80px;}
+.oderContentClassDataImg{
+	margin-left:15px;
+	height:50px;
+	width:50px;
+	background-image:url(../img/Account/AccountCenter/man/sprites.png);
+	background-color:#FC9;
+	
+	}
+.oderContentClassDataText{
+	height:20px;
+	width:80px;}
+.allOder{
+	background-position:-5px -105px;}
+.watingPay{
+	background-position:-75px -105px;
+	}
+.doen{
+	background-position:-5px -173px;
+	}
+.judged{
+		background-position:-75px -173px;
+	}
+.watingUseing{
+	background-position:-115px -284px;
+	}
+#userLogoImg{
+	width:120px;
+	height:120px;}							
+   				
+				

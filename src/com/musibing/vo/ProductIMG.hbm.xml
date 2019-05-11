@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-28 17:20:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.ProductIMG" table="productimg">
+        <id name="pIMGID" type="int" access="field">
+            <column name="PIMGID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="product" class="com.musibing.vo.Product"  cascade="save-update" lazy="false">
+           
+        </many-to-one>
+        <property name="fileWidth" type="int">
+            <column name="FILEWIDTH" />
+        </property>
+        <property name="fileHeight" type="int">
+            <column name="FILEHEIGHT" />
+        </property>
+        <property name="fileName" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+        <property name="filePath" type="java.lang.String">
+            <column name="FILEPATH" />
+        </property>
+    </class>
+</hibernate-mapping>

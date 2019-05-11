@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-29 11:42:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.BuyCarList" table="buycarlist">
+        <id name="buyCarListID" type="int">
+            <column name="BUYCARLISTID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="product" class="com.musibing.vo.Product" cascade="save-update" lazy="false">
+            <column name="PRODUCT" />
+        </many-to-one>
+        <property name="buyNumber" type="int">
+            <column name="BUYNUMBER" />
+        </property>
+        <property name="dealPrice" type="double">
+            <column name="DEALPRICE" />
+        </property>
+        <property name="totalPrice" type="double">
+            <column name="TOTALPRICE" />
+        </property>
+        
+        <many-to-one name="buyCarID" class="com.musibing.vo.BuyCar"  lazy="false">
+            <column name="BUYCARID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

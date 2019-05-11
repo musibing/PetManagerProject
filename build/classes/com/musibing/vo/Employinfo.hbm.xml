@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-25 17:30:51 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.Employinfo" table="employinfo">
+        <id name="employid" type="int">
+            <column name="EMPLOYID" />
+            <generator class="assigned" />
+        </id>
+        <property name="passwords" type="java.lang.String">
+            <column name="PASSWORDS" />
+        </property>
+        <property name="employName" type="java.lang.String">
+            <column name="EMPLOYNAME" />
+        </property>
+        <property name="professional" type="java.lang.String">
+            <column name="PROFESSIONAL" />
+        </property>
+        <property name="school" type="java.lang.String">
+            <column name="SCHOOL" />
+        </property>
+        <property name="ecdtion" type="java.lang.String">
+            <column name="ECDTION" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="emailAddress" type="java.lang.String">
+            <column name="EMAILADDRESS" />
+        </property>
+        <property name="jobinfodata" type="java.lang.String">
+            <column name="JOBINFODATA" />
+        </property>
+        <property name="employinfo" type="java.lang.String">
+            <column name="EMPLOYINFO" />
+        </property>
+        <property name="employTelNumber" type="java.lang.String">
+            <column name="EMPLOYTELNUMBER" />
+        </property>
+        <property name="employAge" type="int">
+            <column name="EMPLOYAGE" />
+        </property>
+        <property name="employSex" type="int">
+            <column name="EMPLOYSEX" />
+        </property>
+        <property name="jobstatus" type="int">
+            <column name="JOBSTATUS" />
+        </property>
+        <property name="createtime" type="java.sql.Date">
+            <column name="CREATETIME" />
+        </property>
+        <property name="accountIncoPath" type="java.lang.String">
+            <column name="ACCOUNTINCOPATH" />
+        </property>
+        <one-to-one name="jobinfo" class="com.musibing.vo.JobiInfo">
+       
+        </one-to-one>
+        <property name="idCarNumber" type="java.lang.String">
+            <column name="IDCARNUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

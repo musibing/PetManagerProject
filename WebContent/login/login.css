@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;}
+.userIMG{
+	
+	margin-bottom:10px;
+	height:100px;
+	width:100px;
+	padding:0px 150px;
+	}
+#userIMGData{
+	border-radius:100%;
+	display:block;
+	height:100px;
+	width:100px;
+	overflow:hidden;
+	}	
+

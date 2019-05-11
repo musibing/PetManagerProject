@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-14 20:57:13 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.PetType" table="pettype">
+        <id name="petTypeID" type="int">
+            <column name="PETTYPEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="petyName" type="java.lang.String">
+            <column name="PETYNAME" />
+        </property>
+        <property name="petIMGSrc" type="java.lang.String">
+            <column name="PETIMGSRC" />
+        </property>
+        <set name="articleID" table="ARTICLE" cascade="all" inverse="true" lazy="true">
+            <key>
+                <column name="PETTYPEID" />
+            </key>
+            <one-to-many class="com.musibing.vo.Article" />
+        </set>
+    </class>
+</hibernate-mapping>

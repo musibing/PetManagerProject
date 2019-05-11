@@ -1,0 +1,16 @@
+Tips:调用地址:URL="www.boqii.com/pet-all/'查询参数'/?p='要查询的页面ID'";
+1.宠物类型:a.aquarium[水族];b.reptile[爬虫];c.smallpet[小宠];d.cat[猫];e.dog[狗]
+分页数据
+div[class="sear_tit"]>div[id="page"]
+品种数据
+dl[class="bornone"]>dd>a
+详细数据
+img:div[class="hot_pet_cont"]>dt>a
+text:div[class="hot_pet_cont"]>dd>a
+实施步骤：
+1.建立待访问的分类URL列表;
+2.先得出每一个分类的最大页面数;
+3.建立访问页面列表;
+3.得出每个URL的源文件;
+4.将源文件放入数据处理页面;
+5.调用ajax将详细数据存入数据库中;

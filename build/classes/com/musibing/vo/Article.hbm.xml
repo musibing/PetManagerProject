@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-14 11:07:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.Article" table="article">
+        <id name="articleID" type="int">
+            <column name="ARTICLEID" />
+            <generator class="increment" />
+        </id>
+        <property name="articleName" type="java.lang.String">
+            <column name="ARTICLENAME" />
+        </property>
+        <property name="articleIMG" type="java.lang.String">
+            <column name="ARTICLEIMG" />
+        </property>
+        <property name="articleContent" type="java.lang.String">
+            <column name="ARTICLECONTENT" />
+        </property>
+        <many-to-one name="petTypeID" class="com.musibing.vo.PetType" fetch="join">
+            <column name="PETTYPEID" />
+        </many-to-one>
+        <property name="submitTime" type="java.util.Date">
+            <column name="SUBMITTIME" />
+        </property>
+        <many-to-one name="avo" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+            <column name="AVO" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

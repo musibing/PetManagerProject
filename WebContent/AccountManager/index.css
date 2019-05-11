@@ -1,0 +1,132 @@
+#ManagerDiv{
+	height:2140px;
+	width:1370px;}
+
+#top {
+	float:left;
+	width: 1366px;
+	height: 30px;
+	border-bottom-color:#DDD;
+	border-bottom-style:solid;
+	border-bottom-width:1px;	
+}
+
+
+#topleft{
+	float:left;
+	height:30px;
+	width:50px;
+}
+
+.topleftclass{
+	vertical-align:middle;
+	font-family:"微软雅黑";
+	font-size:14px;
+	width:80px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	}
+	
+#topcenter{
+	height:30px;
+	width:225px;
+	float:left;
+	
+}
+
+.toprightclass{
+	margin-top:8px;
+	height:14px;
+	width:60px;
+	float:left;
+	line-height:14px;
+	text-align:center;
+	border-right-color:#999;
+	border-right-style:double;
+	border-right-width:1px;	
+	vertical-align:middle;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+#AnimalClassification{
+	height:200px;
+	width:1366px;}
+
+#bottomControl{
+	height:180px;
+	width:1366px}
+#bottomCenterControl{
+	
+	height:150px;
+	width:730px;
+	margin-left:318px;
+	margin-top:30px;}
+.bottomLink{
+	float:left;
+	height:20px;
+	width:80px;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#333333;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;
+	border-right-color:#DDDDDD;
+	border-right-style:solid;
+	border-right-width:1px;
+	}
+#bottomLinkID{
+	width:163px;
+	height:20px;
+	border-width:0px;}
+#bottomBeianControl{
+	height:20px;
+	width:730px;
+	float:left;}
+.bottomBaian{
+	float:left;
+	height:20px;
+	width:240px;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#333333;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;
+	border-right-color:#DDDDDD;
+	border-right-style:solid;
+	border-right-width:1px;}
+#BeianInfoControl{
+	float:left;
+	height:20px;
+	width:730px;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#666666;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;
+	}
+#BeianImgControl{
+	margin-left:120px;
+	float:left;
+	height:35px;
+	width:480px;}	
+.BeianImg{
+	float:left;
+	height:35px;
+	width:120px;
+	}
+#CheckFrom{
+	
+	height:200px;
+	width:1000px;
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#666666;
+	margin-left:120px;
+	line-height:60px;
+	margin-top:200px;
+	vertical-align:middle;
+	text-align:center;}																

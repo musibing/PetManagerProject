@@ -1,0 +1,124 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (virtualspace.cpp:125), pid=6596, tid=2364
+#  fatal error: os::release_memory failed
+#
+# JRE version:  (7.0_67-b01) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.65-b04 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0051e000):  JavaThread "Unknown thread" [_thread_in_vm, id=2364, stack(0x00a90000,0x00ae0000)]
+
+Stack: [0x00a90000,0x00ae0000],  sp=0x00adf694,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x190494]
+V  [jvm.dll+0x18a116]
+V  [jvm.dll+0x1661dc]
+V  [jvm.dll+0x1666cb]
+V  [jvm.dll+0x8a316]
+V  [jvm.dll+0x87da6]
+V  [jvm.dll+0x86a8e]
+V  [jvm.dll+0x90f03]
+V  [jvm.dll+0x13f9f4]
+V  [jvm.dll+0x1626fc]
+V  [jvm.dll+0xc9d6f]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa601]
+C  [javaw.exe+0xa68b]
+C  [kernel32.dll+0x1336a]
+C  [ntdll.dll+0x39902]
+C  [ntdll.dll+0x398d5]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0051e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2364, stack(0x00a90000,0x00ae0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00c30000 - 0x00c5f000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x77cb0000 - 0x77e30000 	C:\Windows\SysWOW64\ntdll.dll
+0x75f20000 - 0x76030000 	C:\Windows\syswow64\kernel32.dll
+0x75db0000 - 0x75df7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75e00000 - 0x75ea1000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76240000 - 0x762ec000 	C:\Windows\syswow64\msvcrt.dll
+0x75f00000 - 0x75f19000 	C:\Windows\SysWOW64\sechost.dll
+0x75a20000 - 0x75b10000 	C:\Windows\syswow64\RPCRT4.dll
+0x75630000 - 0x75690000 	C:\Windows\syswow64\SspiCli.dll
+0x75620000 - 0x7562c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75c10000 - 0x75d10000 	C:\Windows\syswow64\USER32.dll
+0x77190000 - 0x77220000 	C:\Windows\syswow64\GDI32.dll
+0x772a0000 - 0x772aa000 	C:\Windows\syswow64\LPK.dll
+0x75870000 - 0x7590d000 	C:\Windows\syswow64\USP10.dll
+0x72250000 - 0x723ee000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x77240000 - 0x77297000 	C:\Windows\syswow64\SHLWAPI.dll
+0x75d10000 - 0x75d70000 	C:\Windows\system32\IMM32.DLL
+0x76160000 - 0x7622c000 	C:\Windows\syswow64\MSCTF.dll
+0x67700000 - 0x677bf000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x60560000 - 0x608e8000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x6fd40000 - 0x6fd47000 	C:\Windows\system32\WSOCK32.dll
+0x77560000 - 0x77595000 	C:\Windows\syswow64\WS2_32.dll
+0x76230000 - 0x76236000 	C:\Windows\syswow64\NSI.dll
+0x718d0000 - 0x71902000 	C:\Windows\system32\WINMM.dll
+0x75d70000 - 0x75d75000 	C:\Windows\syswow64\PSAPI.DLL
+0x6f760000 - 0x6f76c000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x6f730000 - 0x6f750000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x6f710000 - 0x6f723000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+0x748c0000 - 0x749ab000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: com.musibing.util.lucene.PorductInterface
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.7.0_67
+CLASSPATH=.;C:\Program Files (x86)\Java\jdk1.7.0_67\lib;C:\Program Files (x86)\Java\jdk1.7.0_67\lib\tools.jar
+PATH=C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.7.0_67\bin;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\bin;C:\软件开发\软件开发\软件开发\开发基础工具\Java\eclipse-jee-kepler-SR1-win32\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 2 (1 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, tsc, tscinvbit
+
+Memory: 4k page, physical 4193784k(318424k free), swap 4191924k(6300k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.65-b04) for windows-x86 JRE (1.7.0_67-b01), built on Jul 25 2014 10:20:53 by "java_re" with unknown MS VC++:1600
+
+time: Wed May 08 03:04:02 2019
+elapsed time: 0 seconds
+

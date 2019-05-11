@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	}
+#DataSoure{
+	width:1350px;
+	height:2000px;}
+#CapacitiveNumberSeting{
+	height:30px;
+	width:1350px;
+	}
+#Control{
+	width:1350px;
+	height:400px;}
+#CapacitiveNumberView{
+	margin-left:10px;
+	margin-top:10px;
+	width:540px;
+	border:1px solid #ccc;
+	}
+.TitleData{
+	height:30px;
+	width:180px;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:16px;
+	line-height:30px;
+	text-align:center;}
+	#Title{
+		height:30px;
+		width:540px;}
+	.CapacitiveNumberLine{
+		border-top:1px dashed #ccc;
+		
+		height:30px;
+		width:540px
+		
+		}
+	.CapacitiveNumber{
+		line-height:30px;
+		text-align:center;
+		height:30px;
+		width:180px;
+		float:left;}
+	#Submit input{
+		height:20px;
+		width:80px;
+		background-color:#4490f7;
+		color:#fff;
+		margin-left:10px;
+		}								

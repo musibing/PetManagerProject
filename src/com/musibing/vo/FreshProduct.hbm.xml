@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-2-24 18:25:44 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.FreshProduct" table="FreshProduct">
+        <id name="productID" type="int">
+            <column name="PRODUCTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="productName" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="PRICE" />
+        </property>
+        <property name="util" type="java.lang.String">
+            <column name="UTIL" />
+        </property>
+        <property name="certificationmark" type="java.lang.String">
+            <column name="CERTIFICATIONMARK" />
+        </property>
+        <property name="producingarea" type="java.lang.String">
+            <column name="PRODUCINGAREA" />
+        </property>
+        <property name="supplier" type="java.lang.String">
+            <column name="SUPPLIER" />
+        </property>
+        <property name="imgPath" type="java.lang.String">
+            <column name="IMGPATH" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+#rightinfo{
+	border-style:solid;
+	border-width:1px;
+	border-color:#DED3DD;
+	float:left;
+	height:820px;
+	width:1125px;}
+#tipstiter{
+	line-height:40px;
+	vertical-align:bottom;
+	text-align:left;
+	font-weight:600;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:16px;
+	background:-moz-linear-gradient(top,#6398BA,#6697B5);
+	height:1125px;
+	height:40px;
+	}
+#formss{
+	float:left;}	
+#rightbody{
+	float:left;
+	height:780px;
+	width:1125px;
+	}
+.rightkong{
+	float:left;
+	height:780px;
+	width:140px;
+	}
+#rightgl{
+	float:left;
+	height:780px;
+	width:845px;}
+.bodytips{
+	float:left;
+	height:80px;
+	width:845px}
+#centertips{
+	float:left;
+	line-height:50px;
+	vertical-align:bottom;
+	text-align:left;
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:600;
+	color:#073622px;
+	height:50px;
+	width:805px;}
+.infoinput{
+	font-family:"微软雅黑";
+	font-size:15px;
+	float:left;
+	width:570px;
+	height:125px;}
+.centerbodykong{
+	float:left;
+	height:618px;
+	width:19px;
+}
+#imgDiv{
+	float:left;
+	border-color:#CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	
+	height:100px;
+	width:70px;}
+.usernamedata{
+	float:left;
+	height:40px;
+	width:285px;}
+#datagl{
+	float:left;
+	height:618px;
+	width:805px;}
+#sub{
+	margin-left:300px;}			
+.text{
+	height:20px;
+	width:570px;}
+.textarea{
+	
+	width:560px;
+	height:105px;}			
+#bodycenter{
+	float:left;
+	border-style:solid;
+	border-width:1px;
+	border-color:#E9F0F0;
+	float:left;
+	width:843px;
+	height:618px;
+	}
+#sp{
+	margin-left:25px;}	
+#baseinfo{
+	float:left;
+		height:500px;
+		width:570px;}
+#centerkong{
+	float:left;
+	height:122px;
+	width:235px;}
+#imgkong{
+	float:left;
+	height:100px;
+	width:163px;}			
+	
+.button{
+	border-color:#E86005;
+	border-style:solid;
+	border-width:1px;
+	font-family:"微软雅黑";
+	font-weight:600;
+	color:#E86005;
+	margin-top:10px;
+	margin-left:10px;
+	height:20px;
+	width:40px;}
+	#uploaduserinco{
+		margin-top:50px;}
+.centerinput{
+	font-family:"微软雅黑";
+	font-size:14px;
+	float:left;
+	
+	line-height:40px;
+	text-align:left;
+	vertical-align:bottom;
+	height:40px;
+	width:570px;}								

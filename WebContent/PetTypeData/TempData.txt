@@ -1,0 +1,19 @@
+https://baike.baidu.com/item/%E6%9A%B9%E7%BD%97%E7%8C%AB/556082?fr=aladdin
+https://baike.baidu.com/item/%E5%B8%83%E5%81%B6%E7%8C%AB/642121?fr=aladdin
+https://baike.baidu.com/item/%E8%8B%8F%E6%A0%BC%E5%85%B0%E6%8A%98%E8%80%B3%E7%8C%AB/303337?fr=aladdin
+
+PetBaiduBaike
+		地址：https://baike.baidu.com/item/西伯利亚雪橇犬
+	开始位置:<div class="main-content">
+	结束位置:<div class="side-content">
+PetList
+		地址：http://www.boqii.com/pet-all/aquarium/
+	开始位置:主题内容开始
+	结束位置:主题内容结束
+	
+PetBaikeForBoqii
+	css:<link href="http://a.boqiicdn.com/Js1/min/?f=/Css/baikenew/common.css,/Css/baikenew/style.css,/Css/baikenew/subList.css" rel="stylesheet">
+	地址：http://www.boqii.com/entry/detail/368.html
+	开始位置:<!--公共头部结束-->
+	结束位置:<!-- 底部开始 -->
+	

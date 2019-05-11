@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+/*logo Start*/
+	
+#logoControl {
+	height: 104px;
+	width: 1190px;
+	margin:auto;
+	
+}
+
+#logoimg {
+	float: left;
+	height: 104px;
+	width: 204px;
+}
+
+#logo {
+	float:left;
+	height: 104px;
+	width: 1350px;
+}
+
+#searchTextDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	height: 30px;
+	width: 600px;
+}
+
+#searchButtonDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 0px;
+	height: 30px;
+	width: 100px;
+}
+
+#searchTestGl {
+	width: 750px;
+	height: 104px;
+	float: left;
+}
+
+#searchText {
+	height: 24px;
+	width: 596px;
+	border-color: #4490F7;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#searchButton {
+	height: 30px;
+	width: 100px;
+	background-color: #4490F7;
+	border-width: 0px;
+	color: #FFF;
+	display:block;
+}
+
+#PetHomeAPP {
+	float: left;
+	width: 236px;
+	height: 104px;
+}
+
+#PetHomeAPPIMG {
+	margin-top: 8px;
+	margin-left: 6px;
+}
+/*logo End*/

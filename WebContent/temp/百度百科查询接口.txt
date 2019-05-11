@@ -1,0 +1,5 @@
+https://baike.baidu.com/item/查询关键字;
+查询接口调用示例：
+view-source:https://baike.baidu.com/item/%E6%B8%AF%E9%BE%99%E8%88%AA%E7%A9%BA
+http://fanyi.baidu.com/?aldtype=16047#关键字编码/返回值编码/查询关键字
+返回关键字存放P标签Name：ordinary-output target-output clearfix;－（里面有个ｓｐａｎ标签）

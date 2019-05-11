@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+/*Navigation Start*/
+#NavigationControl {
+	height: 40px;
+	width: 986px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#Navigation {
+	font-family:"微软雅黑";
+	float:left;
+	height: 40px;
+	width: 1350px;
+	margin-top: 10px;
+	background-color: #99CC33;
+}
+
+#NavigationKongLeft {
+	float: left;
+	height: 40px;
+	width: 120px;
+}
+
+.Navigation2 {
+	border-left:1px solid #ddd;
+	float: left;
+	height: 40px;
+	width: 66px;
+	color: #FFF;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: auto;
+}
+
+.Navigation2:hover {
+	background-color: #780;
+}
+
+.Navigation3:hover {
+	background-color: #780;
+}
+
+.Navigation4:hover {
+	background-color: #780;
+}
+
+.Navigation3 {
+	border-left:1px solid #ddd;
+	float: left;
+	height: 40px;
+	width: 82px;
+	color: #FFF;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: auto;
+}
+
+.Navigation4 {
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	float: left;
+	height: 40px;
+	width: 99px;
+	color: #FFF;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: auto;
+}
+
+#Shop_Car {
+	height: 40px;
+	width: 141px;
+	float: left;
+	background-color: #8B0;
+	margin-left: 181px;
+}
+
+#Sop_CarIMG {
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background: url(../img/ShopMall/ShopMallICO.png) no-repeat -30px -21px;
+}
+
+#Shop_CarText {
+	display: block;
+	height: 40px;
+	width: 80px;
+	float: left;
+	margin-left: 5px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+.Nvaindex {
+	background-color: #778800;
+}
+
+#NavigationKongCenter {
+	height: 40px;
+	width: 346px;
+	float: left;
+}
+
+.NavigationWidth {
+	text-align: left;
+	width: 190px;
+	background-color: #8B0;
+}
+
+#ALLCommodityText {
+	float: left;
+	height: 40px;
+	width: 140px;
+}
+
+#ALLCommodityControl {
+	height: 40px;
+	width: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ALLCommodityICO {
+	float: left;
+	height: 40px;
+	width: 30px;
+}
+
+#ALLCommodityICOIMG {
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background: url(../img/ShopMall/ShopMallICO.png) no-repeat 0px -15px;
+}
+
+#CarIMGControl {
+	height: 40px;
+	width: 30px;
+	float: left;
+	margin-left: 10px;
+}
+
+#SearchIMG {
+	margin-left: 10px;
+	margin-top: 20px;
+	    margin-left: 29px;
+}
+/*Navigation End*/

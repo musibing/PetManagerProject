@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+*{
+	margin: 0px;
+	
+}
+#ViewControl{
+	height: 50px;
+	width:1200px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #979393;
+	margin-left:20px;
+	
+}
+#ResultDataViewControl{
+	margin-left:20px;
+	height:800px;
+	width:1200px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #979393;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	
+	
+	}
+
+
+.ResultText{
+	
+
+	
+	vertical-align: middle;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #979393;
+	
+}
+.ResultClassControl{
+	
+	
+}
+.ResultIMG{
+	
+	}
+.ResultText{
+	}
+.ResultTextClass{
+	}
+#ResultTextClassT{
+	}			
+	
+		

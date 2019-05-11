@@ -1,0 +1,46 @@
+https://baike.baidu.com/item/%E6%9A%B9%E7%BD%97%E7%8C%AB/556082?fr=aladdin
+https://baike.baidu.com/item/%E5%B8%83%E5%81%B6%E7%8C%AB/642121?fr=aladdin
+https://baike.baidu.com/item/%E8%8B%8F%E6%A0%BC%E5%85%B0%E6%8A%98%E8%80%B3%E7%8C%AB/303337?fr=aladdin
+
+for (int i = 2; i < baseicinfoNameJOSNArray.size(); i++) {
+
+			
+
+			if (i == 2) {
+				PDVO.setChinese_name(baseicinfoNameJOSNArray.get(2));
+			} else if (i == 3) {
+
+				PDVO.setDont_said(baseicinfoNameJOSNArray.get(3));
+			} else if (i == 4) {
+
+				PDVO.setCircles(baseicinfoNameJOSNArray.get(4));
+			} else if (i == 5) {
+
+				PDVO.setDoor(baseicinfoNameJOSNArray.get(5));
+			} else if (i == 6) {
+
+				PDVO.setSub_door(baseicinfoNameJOSNArray.get(6));
+			} else if (i == 7) {
+
+				PDVO.setGang(baseicinfoNameJOSNArray.get(7));
+			} else if (i == 8) {
+
+				PDVO.setSub_gang(baseicinfoNameJOSNArray.get(8));
+			} else if (i == 9) {
+
+				PDVO.setList(baseicinfoNameJOSNArray.get(9));
+			} else if (i == 10) {
+
+				PDVO.setSub(baseicinfoNameJOSNArray.get(10));
+			} else if (i == 11) {
+
+				PDVO.setSection(baseicinfoNameJOSNArray.get(11));
+			} else if (i == 12) {
+
+				PDVO.setSub_branch(baseicinfoNameJOSNArray.get(12));
+			}
+
+		}*/
+		地址：http://shop.boqii.com/product-186.html
+	开始位置:<div class="body_auto">
+	结束位置:<!--到货通知弹出框-->

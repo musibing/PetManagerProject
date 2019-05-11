@@ -1,0 +1,152 @@
+@CHARSET "UTF-8";
+/*logo Start*/
+#logoControl {
+	height: 100px;
+	width: 986px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logoimg {
+	float: left;
+	height: 104px;
+	width: 204px;
+}
+
+#logo {
+	margin-top:10px;
+	float:left;
+	height: 104px;
+	width: 1350px;
+}
+#UserConterControl {
+	height: 104px;
+	width: 600px;
+	float: left;
+}
+#UserLogin_Tip {
+	height: 30px;
+	width: 182px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	margin-top: 74px;
+}
+#searchButtonDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 0px;
+	height: 30px;
+	width: 100px;
+}
+#UserLogin {
+	float: left;
+	height: 104px;
+	width: 182px;
+}
+
+
+#searchText {
+	height: 26px;
+	width: 596px;
+	border-color: #4490F7;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#searchButton {
+	height: 32px;
+	width: 96px;
+	background-color: #4490F7;
+	border-width: 0px;
+	color: #FFF;
+}
+
+#PetHomeAPP {
+	float: left;
+	width: 312px;
+	height: 104px;
+}
+
+#centermanager {
+	height: 460px;
+	width: 436px;
+	float: left;
+}
+
+#tips {
+	line-height: 60px;
+	vertical-align: middle;
+	text-align: left;
+	height: 60px;
+	width: 400px;
+	color: #8F8F8F;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+#UserCenterTitle {
+	margin-top: 30px;
+	margin-left: 15px;
+	border-left-color: #CCC;
+	border-left-style: solid;
+	border-left-width: 1px;
+	height: 40px;
+	width: 160px;
+	font-family: "微软雅黑";
+	font-size: 28px;
+	font-weight: 700px;
+	color: #666666;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+#searchTextDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	height: 30px;
+	width: 420px;
+}
+
+#searchButtonDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 0px;
+	height: 30px;
+	width: 100px;
+}
+
+#searchTestGl {
+	width: 540px;
+	height: 104px;
+	float: left;
+}
+
+#searchText {
+	height: 24px;
+	width: 416px;
+	border-color: #4490F7;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#searchButton {
+	height: 30px;
+	width: 100px;
+	background-color: #4490F7;
+	border-width: 0px;
+	color: #FFF;
+	display:block;
+}
+
+#PetHomeAPP {
+	float: left;
+	width: 236px;
+	height: 104px;
+}
+
+#PetHomeAPPIMG {
+	margin-top: 8px;
+	margin-left: 6px;
+}
+/*logo End*/

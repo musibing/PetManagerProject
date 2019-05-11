@@ -1,0 +1,192 @@
+@CHARSET "UTF-8";
+
+#topContorl{
+	margin:0px auto;
+	height:30px;
+	width:990px;}
+
+#dataSource {
+	margin-top: 10px;
+	height: 200px;
+	border: 1px solid #ccc;
+}
+
+.datacontent {
+	font-size: 12px;
+	float: left;
+	margin-bottom: 10px;
+	width: 776px;
+	height: 450px;
+	background-color: #FFF;
+	font-family: "微软雅黑";
+	padding: 20px 20px;
+}
+
+.datacontentTitle {
+	font-size: 16px;
+	width: 776px;
+	height: 30px;
+}
+
+.datacontentLine {
+	height: 30px;
+	width: 716px;
+	line-height: 30px;
+	vertical-align: middle;
+	padding: 0px 30px;
+}
+
+.datacontentTitleText {
+	width: 388px;
+	float: left;
+	height: 30px;
+}
+
+.datacontentTitleMore {
+	height: 30px;
+	width: 388px;
+	float: left;
+	text-align: right;
+	font-size: 11px;
+	color: #666;
+}
+
+.title {
+	height: 30px;
+	width: 776px;
+	border-bottom: 2px solid #bbb;
+	font-size: 14px;
+	text-align: center;
+}
+
+.titleClass {
+	float: left;
+	height: 30px;
+	width: 120px;
+	line-height: 30px;
+}
+
+
+
+#sonTitle {
+	height: 25px;
+	width: 774px;
+	border-bottom: 1px solid #ccc;
+	background-color:#eee;
+}
+
+.sonTitleContent {
+	float: left;
+	color: #555;
+	font-size: 12px;
+	height: 25px;
+	width: 90px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#contentBody {
+	width: 776px;
+	font-size: 12px;
+	height: 160px;
+	vertical-align: middle;
+	
+	text-align: center;
+}
+
+.searchTime {
+	margin-left: 416px;
+	text-align: right;
+}
+
+.searchTime select {
+	margin-top: 5px;
+}
+
+.PersionDataSubmit{
+	
+		border-width:0px;
+		margin-left:40px;
+		height:30px;
+		width:120px;
+		background-color:#C00;
+		color:#FFF;
+		font-size:14px;}
+.inputText{
+	float:left;
+	margin-top:5px;
+	height:20px;
+	width:140px;
+	border:1px solid #CCC;}
+.attrbuteName{
+	height:30px;
+	width:80px;
+	float:left;}
+.addselect{
+	margin-top:5px;
+	height:20px;
+	width:100px;
+	
+	}
+#View{
+	margin-top:10px;
+	border:2px solid #C00;
+	font-family:"微软雅黑";
+	font-size:12px;
+	width:776px;
+	height:260px;
+	
+	
+	
+	
+	}
+#Viewtitle{
+	height:30px;
+	color:#c00;
+	font-weight:bolder;
+	font-size:15px;
+	}
+#ViewContent{
+	height:30px;}
+.optically{
+	text-align:right;
+	}
+.datacontentSelect{
+	height:30px;}
+.datacontentSelect a{
+	float:right;
+	display:block;
+	height:30px;
+	width:39px;
+	text-align:left;
+	line-height:30px;
+	
+	}
+.selectInco{
+	background-image:url(../img/Account/AccountCenter/man/sprites.png);
+	background-position:-335px -189px;}
+.search{
+	width:296px;}
+#test{
+	float:right;
+	height:30px;
+	width:243px;
+	}
+.ProductID{
+	width:150px;}
+.ProductInfo{
+	width:264px;}
+.contentDataLine{
+	height:80px;
+	width:774px;
+	}
+.contentDataView{
+	float: left;
+	color: #555;
+	font-size: 12px;
+	height: 25px;
+	width:90px;
+	
+	height:80px;
+	line-height: 80px;
+	text-align: center;}														

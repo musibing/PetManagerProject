@@ -1,0 +1,1300 @@
+* {
+	margin: 0px;
+}
+a {  text-decoration:none ;out-line: none;color: #343434;}
+a:hover, a:visited, a:link, a:active{  text-decoration:none ;out-line: none;color: #343434;};
+/*Content Start*/
+#center{
+	float:left;
+	height:2800px;
+	width:3050px;}
+.productName{
+
+width:12px; 
+overflow:hidden; 
+white-space:nowrap; 
+	
+	}	
+.ResultClassControl{
+		height:320px;
+		width:210px;
+		float:left;
+		padding: 9px;
+   	 	border-width:1px;
+		border-style:solid;
+		border-color:#e8e8e8;
+		background:#fff;
+		box-shadow: 10px 10px 5px #f3f3f3;
+		margin: 0 17px 18px 0;
+		}
+	.ProductfilePath{
+		height:179px;
+		width:179px}	
+	.ProductIMGfilePath{
+		height:210px;
+		width:210px;
+		display:block;}	
+	.ResultText{
+		margin-top:20px;
+		height:90px;
+		width:210px;
+		background-color:#EFEFEF;
+		font-family:"微软雅黑";
+		font-size:11px;
+		line-height:30px;
+		text-align:center;
+		vertical-align:middle;
+		}
+		.ResultTextClass{
+			line-height:30px;
+			vertical-align:middle;
+			text-align:center;
+			float:left;
+			height:30px;
+			width:105px;
+			text-overflow:ellipsis;
+			
+			}
+			.ResultTextClassA{
+		
+			text-overflow:ellipsis;
+			
+			}
+		.productName{
+			float:left;
+			width:210px;
+			height:30px;}	
+#Content {
+
+	width: 1350px;
+	}
+	#ResultTotal{
+
+	margin-top:13px;
+	height:30px;
+	width:990px;
+	}
+	#ResultTitle{
+	height:50px;
+	width:990px;
+	border-bottom:1px solid #CCC;
+	}
+	#ResultPaginationControl{
+	float:left;
+	height:30px;
+	width:810px;
+	font-family:"微软雅黑";
+	font-size:15px;
+	vertical-align:middle;
+	text-align:center;
+	line-height:30px;}
+#ContentControl{
+	height:6350px;
+
+	width: 1190px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	}
+	#ViewControlForTatol{
+	height: 50px;
+	width:990px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #979393;
+	float:left;
+	
+	
+}
+#ContentManager{
+	width:1190px;
+	height:2650px;
+	margin-left:80px;
+	margin-right:auto;
+	float:left;
+	
+	}
+	.BaiKeControl {
+	float:right;
+	height: 1200px;
+	width: 990px;
+	margin-top: 10px;
+	margin-left:5px;
+}
+#OrderBy .select{
+	border:1px solid #999;
+	float:left;
+	height:15px;
+	width:15px;
+	margin-left:10px;
+	
+	
+	}
+#OrderBy #NumberTotal{
+	margin-left:250px;
+	} 	
+#OrderBy span{
+	margin-left:5px;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:12px;
+	display:block;}	
+#OrderBy{
+	height:30px;
+	width:970px;
+	padding:10px 10px;
+	background-color:#F3F3F3;
+	border:1px solid #DDD;}
+#OrderBy p{
+	display:block;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:12px;
+	}	
+#OrderBy a{
+	margin-left:5px;
+	text-align:center;
+	line-height:20px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	float:left;
+	height:20px;
+	width:55px;
+	display:block;
+	border:1px solid #ccc;
+	background-color:#FFF;
+	}	
+.BaikeControlBody {
+	height:1050px;
+	width: 990px;
+}
+#ResultDataViewControl{
+	margin-top:10px;
+	height:2148px;
+	width:990px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #979393;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	
+	
+	}
+	#ContentManagerControl{
+		height:2680px;
+		width:1350px;
+		background:#F8F8F8;}
+
+
+#BaiKeNavigation {
+	float:left;
+	height: 30px;
+	width: 990px;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: left;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999;
+}
+#ScreenControl {
+	
+	height: 250px;
+	width: 990px;
+	border-top: 1px solid #9c3;
+	border: 1px solid #ddd;
+}
+
+.ScreenClass {
+	font-family:"微软雅黑";
+	font-size:12px;
+	
+	float:left;
+	height: 30px;
+	width: 990px;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: left;
+	border-bottom: 1px dotted #ddd;
+}
+
+/*Content End*/	
+/*location Start*/
+#location{
+	height:38px;
+	width:1350px;
+	background-color:#f3F3F3;}
+#location #Control{
+	font-family:"微软雅黑";
+	font-size:13px;
+	line-height:38px;
+	height:38px;
+	width:1190px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/*location End*/
+
+/*CommodityData Start*/
+#CommodityData{
+	height:8595px;
+	width:1190px;}
+#CommodityIMG{
+	height:450px;
+	width:358px;
+	padding:20px 20px;
+	float:left;
+	border:1px solid #CCC;}
+#CommodityIMG img{
+	display:block;
+	height:360px;
+	width:360px;}
+#SmallImg{
+	height:47px;
+	width:330px;
+	padding:10px 15px;
+	
+	}
+#SmallImg .SmallImgData{
+	float:left;
+	height:48px;
+	width:48px;
+	margin-left:10px;
+	border:1px solid #e6e6e6;
+	
+	}
+#SmallImg .SmallImgData img{
+	
+	height:48px;
+	width:48px;
+	
+	
+	}	
+#SmallImg .SmallImgData:hover{
+
+	border:1px solid #4490f7;
+	
+	}	
+#SmallImg .ImgData img{
+	
+	height:48px;
+	width:48px;
+	}	
+#SmallImg span{
+	float:left;
+	height:16px;
+	width:9px;
+	display:block;}	
+#SmallImg .Prev{
+
+
+	margin-top:18px;
+	background:url(../img/ShopMall/ShopMallICOData.png) no-repeat -195px -266px;
+	}
+#SmallImg .Next{
+	margin-top:18px;
+	margin-left:10px;
+
+		background:url(../img/ShopMall/ShopMallICOData.png) no-repeat -227px -266px;
+	}
+	#Share{
+	
+	height:30px;
+	width:358px;}
+	#Share span{
+	float:left;
+	height:30px;
+	width:60px;
+	display:block;
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:30px;
+	margin-left:80px;
+	}		
+#Share a{
+	background:url(../img/ShopMall/icons.png) no-repeat;
+	display:block;
+	height:16px;
+	width:16px;
+	float:left;
+	    margin: 6px 6px 6px 0px;
+	}
+	
+#Share a.bds_qzone{
+	background-position:0 -52px;
+	
+	}
+	#Share a.bds_tqq{
+		background-position:0 -260px;	
+		}
+	#Share a.bds_renren{
+		background-position:0 -208px;	
+		}
+	#Share a.bds_tsina{
+		background-position:0 -104px;	
+		}
+	#Share a.bds_weixin{
+		background-position:0 -1612px;	
+		}			
+		
+#Data_Top_Center{
+	float:left;
+	margin-left:20px;
+	height:352px;
+	width:520px;
+	margin-bottom:138px;}
+
+	#Data_Top_Right{
+	float:left;
+	height:421px;
+	width:228px;
+	margin-left:20px;
+	border:1px solid #CCC;
+	
+	}
+#Data_Top{
+	height:510px;
+	width:1190px;}
+
+#CommodityMSRP{
+	height:30px;
+	width:520px;
+	}
+#MSRP{
+	text-decoration:line-through;
+	}	
+#DistributionLocality{
+	}
+#Price{
+	
+	display:block;
+	height:30px;
+	width:80px;
+	font-size:18px;
+	color:#4490F7;
+	}
+#CommodityPrice span{
+	display:block;
+	height:33px;
+	float:left;}		
+#CommodityName{
+	height:30px;
+	width:520px;
+font-family:"微软雅黑";
+	font-size:18px;
+	}
+#CommodityPrice{
+	background-color:#E5ECF4;
+	width:520px;
+	border-bottom:1px solid #CCC;
+	border-top:1px solid #CCC;}
+#CommodityPrice>div{
+		height:33px;
+	width:520px;
+	line-height:30px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	}	
+#RetailPrice{
+	}			
+	
+.DistributionLocality{
+	height:42px;
+	width:520px;
+	line-height:30px;
+	margin-top:10px;
+	}
+.DistributionLocality span{
+	height:42px;
+	display:block;
+	float:left; 
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:42px;
+	margin-right:10px;
+	}
+.DistributionLocality select{
+	float:left;
+	display:block;
+	width:80px;
+	height:20px;
+	margin-top:10px;
+	margin-right:10px
+	
+	}			
+.BuyNumber{
+	height:28px;
+	width:520px;
+	float:left;
+	margin-top:10px;}
+.BuyNumber span{
+	float:left;
+	display:block;
+	height:28px;
+	width:80px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:28px;}
+.Width20{
+	float:left;
+	height:28px;
+	width:20px;
+	line-height:28px;}
+#InputBuyNumber{
+	width:100px;
+	float:left;
+	height:28px;}
+#InputBuyNumber input{
+	width:98px;
+	
+	height:26px;
+	border:0px;
+	border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}			
+#BuyNumberControl{
+	float:left;
+	height:28px;
+	width:140px;
+	border:1px solid #ccc;
+	}		
+.Suit{
+	height:28px;
+	width:520px;
+	margin-top:10px;}	
+.Suit span{
+	float:left;
+	display:block;
+	height:28px;
+	width:60px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:28px;}
+.Suit span.BorderD1{
+	height:26px;
+	border:1px dashed #ccc;
+	margin-left:10px;}	
+#SupportCoupons{
+	color:#4490F7;
+	}
+.BuyOrder{
+	margin-left:80px;
+	height:40px;
+	width:150px;
+	float:left;}
+.AddShopCar{
+	margin-left:10px;
+	height:40px;
+	width:150px;
+	float:left;}		
+.BuyOrder input{
+	
+	height:40px;
+	width:150px;
+	color:#fff;
+	background-color:#4490F7;
+	border:0px;}
+.AddShopCar input{
+	
+	background:url(../img/ShopMall/btn.png) no-repeat 0px 0px;
+	display:block;
+	height:40px;
+	width:150px;
+	border:0px;}
+.Buy{
+	height:40px;
+	width:520px;
+	float:left;
+	margin-top:10px;}
+	.Collect:hover {
+    background-position: -163px -62px;
+}
+.Collect{
+	margin-left:190px;
+	float:left;
+	height:16px;
+	width:75px;
+	background:url(../img/ShopMall/btn.png) no-repeat -163px -12px;
+	margin: 13px 0 0 13px;
+	    cursor: pointer;}						
+.CommodityServiceText{
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#999;
+	height:32px;
+	width:75px;
+	text-align:center;}
+.CommodityServiceIMG{
+		
+	height:51px;
+	width:75px;
+}	
+.CommodityServiceIMG img{
+	margin-left:auto;
+	margin-right:auto;
+	
+	display:block;}
+.CommodityServiceControl{
+	float:left;
+	height:83px;
+	width:75px;
+	}
+#CommodityService{
+	padding:5px 0px;
+	height:83px;
+	width:230px;
+	border-bottom:1px solid #ccc;}
+#CommodityInfo{
+	height:225px;
+	width:220px;
+	padding:0px 5px;}
+#CommodityInfo .height40{
+	height:40px;
+	
+	}
+.BorderS1{
+	border-bottom:1px dashed #CCC;}	
+#CommodityInfo #ASK{
+	display:block;
+	height:30px;
+	padding-top:10px;
+	
+	}	
+#CommodityInfo dl a{
+	display:block;
+	height:28px;
+	width:90px;
+	background:url(../img/ShopMall/btn.png) no-repeat 0px -206px;
+	}	
+#CommodityInfo .width120{
+	margin-left:64px;
+	width:120px;
+	color:#4490f7
+	}	
+#CommodityInfo dl{
+	display:block;
+	height:20px;
+	margin-top:10px;}	
+#CommodityInfo dd{
+	float:left;
+	display:block;
+		font-family:"微软雅黑";
+	font-size:12px;
+	height:20px;
+	}
+
+#CommodityInfo div.Fraction_Content_Control{
+	height:20px;
+	float:left;}
+    
+#CommodityInfo dt{
+	display:block;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:12px;
+	height:20px;}										
+#PetHomeApp{
+	height:70px;
+	width:210px;
+	padding:10px 10px;
+	border-top:1px solid #ccc;}
+#AppIMG {
+	height: 70px;
+	width: 70px;
+	float: left;
+	
+}
+
+#AppName {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	height: 20px;
+	width: 110px;
+	float: left;
+	margin-left:10px;
+}
+.AppTitle {
+	float: left;
+	height: 20px;
+	width: 110px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #4490F7;
+	margin-left:10px;
+}
+#Content_List{
+	float:left;
+	height:2658px;
+	width:190px;
+	
+	}
+#ProductRecommend{
+	float:left;
+	height:1350px;
+	width:188px;
+	border:1px solid #ccc;
+	
+	} 
+#ProductRecommend .Data_Soure_Control{
+	width:170px;
+	height:1310px;
+	padding:0px 10px;}
+	
+#ProductRecommend .Data_Soure_Control dl{
+	
+	display:block;
+	width:170px;
+	height:250px;
+	margin-top:10px;
+		
+}
+#ProductRecommend .Data_Soure_Control dd{
+	margin-top:10px;
+	
+	display:block;
+	width:170px;
+	height:20px;
+		
+}
+#ProductRecommend .Data_Soure_Control dd span{
+	display:block;
+	float:left;
+	
+		
+}
+#ProductRecommend .Data_Soure_Control dd.ThumbImg{
+	display:block;
+	height:170px;
+	width:170px;
+	
+		
+}
+	
+#ProductRecommend .Data_Soure_Control dd span.MarginLeft60{
+	margin-left:50px;
+	
+		
+}
+#ProductRecommend .Data_Soure_Control dd.name{
+	font-size:13px;
+	color:#999999;
+	height:30px;
+	
+		
+}.FontSize12{
+	font-size:12px;}
+.FontSize15{
+	font-size:15px;
+	color:#4490F7;}	
+	
+#HotBrand{
+	margin-top:10px;
+	float:left;
+	height:140px;
+	width:188px;
+	border:1px solid #ccc;
+	
+	}
+#HotBrand dl img{
+	padding:0px 0px;
+	
+	height:36px;
+	width:86px;
+	
+	}		
+	#HotBrand dl{
+	padding:7px 4px;
+	float:left;
+	height:36px;
+	width:86px;
+	display:block;
+	
+	
+	
+	}
+#Correlation_Classification{
+	width:188px;
+	height:1118px;
+	float:left;
+	border:1px solid #ccc;
+	margin-top:10px;}	
+#HotBrand dl.BorderBottomS1{
+	
+	height:35px;
+	border-bottom:1px solid #ccc;}
+#HotBrand dl.BorderTopS1{
+	height:34px;
+	border-top:1px solid #ccc
+	}
+	#HotBrand dl.BorderRightS1{
+	width:85px;
+	border-right:1px solid #ccc
+	}
+#HotBrand dl.BorderLeftS1{
+	width:85px;
+	
+	border-left:1px solid #ccc
+	}					
+	
+#Content_Data{
+	float:left;
+	height:1600px;
+	
+
+	width:988px;
+	
+	border-right:1px solid #CCC;
+	border-left:1px solid #CCC;
+	border-bottom:1px solid #CCC;}
+#Content_Control{
+	
+	width:990px;
+	float:left;
+	margin-left:9px;}	
+	
+#Content_Title_Control{
+	height:40px;
+	width:990px;
+	background-color:#F3F3F3;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;}
+#Content_Title_Control div.Title{
+	float:left;
+	height:40px;
+	width:98px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#666px;
+	border-right:1px solid #ccc;
+	
+	}
+	
+#Data_Content{
+	float:left;
+	height:5805px;
+	width:1190px;
+	
+	}
+.CommodityIMG img{
+	height:80px;
+	width:80px;}	
+#Data_Content img{
+	display:block;
+	}	
+#Content_Information{
+	height:1500px;
+	width:950px;
+	padding:10px 20px;}
+#Content_Information img{
+	display:block;
+	}	
+.Information_DataSource .Title{
+	width:950px;
+	height:32px;
+	background:url(../img/ShopMall/CommodityInfo/tit.jpg) no-repeat;}
+#Commodity_Information .Information_DataSource{
+	height: 672px;
+    width: 950px;
+	}
+#Product_Advantage .Information_DataSource{
+	
+    width: 950px;
+	}	
+.Information_DataSource .TitleText{
+	width:350px;
+	height:32px;
+	margin-left:80px;
+	line-height:32px;
+	color:#E53;
+	font-family:"微软雅黑";
+	font-size:23px;
+	font-weight:normal;
+	}
+.English_TitleText{
+	color:#999;
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-weight:normal;
+	}
+#Commodity_Information{
+	width:950px;
+	height:672px;
+	float:left;}	
+.Information_DataSource_Content{
+	height:640px;
+	width:950px;
+	
+	}
+#Commodity_Information .IDCData{
+	padding:40px 115px;
+	width:720px;
+	height:560px;
+}
+#Product_Advantage .IDCData{
+	
+	padding:40px 115px;
+	width:720px;}
+	#Product_Advantage .IDCData_Content{
+
+	width:720px;}
+
+.IDCData_Title{
+	height:100px;
+	width:720px;
+	border-bottom:2px solid #000;
+	font-family:"微软雅黑";
+	font-size:30px;
+	line-height:10px;}
+.IDCData_Content{
+	height:340px;
+	width:720px;
+	}
+	.InfoControl{
+		width:380px;
+		height:340px;
+		float:left;
+		}
+	.Info{
+		width:380px;
+		height:30px;
+		
+		}
+.InfoIMG img{
+	display:block;}	
+.InfoIMG {
+	height:340px;
+	width:340px;
+	float:left;
+	}	
+.InfoText{
+	height:72px;
+	width:660px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	padding:10px 30px;
+	background-color:#fff4e3;
+	
+	}
+#Information_DataSource_Content{
+	width:950px;
+	height:640px;
+	
+	}
+#Product_Advantage{
+	float:left;
+	
+	width:950px;}
+#Product_Advantage_DataSource_Content{
+	
+    width: 950px;
+	}	
+#CommodityJudged{
+	padding:10px 10px;
+	margin-top:20px;
+	height:2035px;
+	width:968px;
+	float:left;
+	border:1px solid #ccc;
+	
+	
+	}
+	/*公共标题开始*/
+.Public_Tiltle{
+	height:32px;
+	width:970px;
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#4490f7;
+	line-height:32px;
+	border-bottom:2px solid #CCC;
+
+	}		
+.Public_Tiltle .SpanTiltle{
+	height:32px;
+	width:80px;
+	display:block;
+	text-align:center;
+	border-bottom:2px solid #4490f7;
+}/*公共标题结束*/
+
+#Total{
+	height:139px;
+	width:970px;
+	border-bottom:1px solid #E6E6E6;}
+#Fraction{
+	float:left;
+	height:139px;
+	width:200px;
+	background-color:#F3F3F3;}
+#Statistics{
+	float:left;
+	height:119px;
+	width:490px;
+	padding:10px 30px;}	
+#Explain{
+	float:left;
+	height:119px;
+	width:200px;
+	background-color:#F3F3F3;
+	font-family:"微软雅黑";
+	font-size:12px;
+	padding:10px 10px;
+	
+	}
+/*评分分数图片开始*/	
+.Fraction_content{
+	width:200px;
+	height:20px;
+
+	}
+.Fraction_Content_Control{
+	height:20px;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+
+	}	
+		
+.Fraction_All{
+	float:left;
+	display:block;
+	height:14px;
+	width:14px;
+	margin-left:5px;
+	background:url(../img/ShopMall/Star/star-All.png) no-repeat;
+	}
+.Fraction_Half{
+	float:left;
+	display:block;
+	height:14px;
+	width:14px;
+	margin-left:5px;
+	background:url(../img/ShopMall/Star/star-Half.png) no-repeat;
+	}
+
+/*评分分数图结束*/		
+#Fraction_UserNumber{
+	height:20px;
+	width:200px;
+	text-align:center;
+	color:#666;}
+#Fraction_score{
+	height:70px;
+	width:200px;
+	font-family:"微软雅黑";
+	line-height:70px;
+	}
+#F_Score{
+	height:70px;
+	width:120px;
+	font-size:40px;
+	display:block;
+	float:left;
+	text-align:right;
+	
+	
+	}
+.Line .precent{
+	
+	height:10px;
+	background: #e53;}	
+.LineControl{
+	width:300px;
+	height:10px;
+	background-color:#CCC;
+	float:left;
+	}
+.LineText{
+	height:15px;
+	width:80px;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#777;}
+.Line{
+	height:20px;
+	width:490px;
+	margin-top:10px;}
+#Com_Jud_Tag{
+	
+	height:30px;
+	width:970px;
+	border-bottom:1px solid #ccc;
+	float:left;
+	font-family:"微软雅黑";
+	font-size:12px;}
+.Jud_Tag_List{
+	height:30px;
+	width:90px;
+	float:left;
+	text-align:center;
+	line-height:30px;
+	
+	}
+.Jud_Tag_Select{
+	height:30px;
+	width:100px;
+	margin-left:300px;
+	float:left;
+	line-height:30px;}
+#Com_Jud_Content{
+	margin-top:10px;
+	height:1520px;
+	width:970px;}
+#Com_Jud_Content_Data{
+	float:left;
+	height:1820px;
+	width:970px;
+	}
+.Data_List{
+	width:970px;
+	height:155px;
+	border-bottom: 1px dashed #ccc;
+	margin-top:20px;}	
+/*评价内容开始*/	
+.Data_List_Left{
+	float:left;
+	height:155px;
+	width:40px;
+	padding:0px 25px;}
+.Data_List_Right{
+	float:left;
+	height:155px;
+	width:880px;}
+	
+.UserName{
+	font-size:11px;
+	width:40px;
+	height:20px;
+	line-height:20px;
+	}
+.UserGrade{
+	height:20px;
+	width:40px;
+	display:block;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:16px;
+	line-height:20px;
+	}
+.UserIMG{
+	height:40px;
+	width:40px;}			
+.c4490f7{
+	color:#4490f7;}
+#Com_Jud_Content_Data .Fraction_Content_Control{
+	float:left;
+	margin:0px;
+	height:16px;
+	
+	}	
+.Data_List_Right dt{
+	float:left;
+	color:#666;
+	font-family:"微软雅黑";
+	font-size:12px;
+
+	
+	}
+.Data_List_Right dd{
+	float:left;
+color:#333;
+	font-family:"微软雅黑";
+	font-size:12px;
+	
+	}		
+.Data_List_Right dl{
+	width:860px;
+	height:20px;
+	margin-top:5px;
+	}		
+	
+/*评价内容结束*/	
+																															
+/*CommodityData End*/
+
+/*After_Sale_Servie Start*/
+#After_Sale_Servie{
+	margin-top:20px;
+	height:748px;
+	width:968px;
+	float:left;
+	padding:10px 10px;
+	border:1px solid #CCC;}
+#ASS_Content{
+	height:678px;
+	width:968px;
+	}
+#ASS_Content dl{
+	padding:15px 10px;
+	display:block;
+	height:85px;
+	width:948px;
+	border-bottom: 1px dashed #ccc;
+	}
+#ASS_Content dl.Height177{
+	height:177px;
+}
+#ASS_Content dl.Height133{
+	height:133px;
+}		
+#ASS_Content dl dt{
+	background:url(../img/ShopMall/btn.png) no-repeat;
+	height:84px;
+	width:84px;
+	float:left;
+	margin-right:20px;
+	}
+	#ASS_Content dl dt.a{
+		background-position: 0 -243px;
+		
+	}
+	#ASS_Content dl dt.b{
+		background-position: -97px -243px;
+	}
+	#ASS_Content dl dt.c{
+		background-position: -193px -243px;
+	}
+	#ASS_Content dl dd.Title{
+		font-size:18px;
+		color:#4490f7;
+		
+	}
+		#ASS_Content dl dd{
+			margin-top:10px;
+			float:left;
+			height:25px;
+			display:block;
+			width:844px;
+		font-family:"微软雅黑";
+		font-size:14px;
+		color:#333;
+	
+		
+		
+	}
+#ASS_Content dl dd.Width948{
+		width:948px;}
+#ASS_Content dl dd.height50{
+		height:50px;}		
+/*After_Sale_Servie End*/
+/*Commodity_Consultation Start*/
+#Commodity_Consultation{
+	height:1288px;
+	width:968px;
+	float:left;
+	margin-top:20px;
+	padding:10px 10px;
+	border:1px solid #CCC;
+	
+	}
+#Commodity_Consultation .Content{
+	height:1260px;
+	width:970px;
+	
+  
+	
+	}
+#Commodity_Consultation .Ask_List{
+	height:98px;
+	width:970px;
+    border-bottom: 1px dashed #ccc;
+	padding-bottom:15px;
+	
+	}
+.Ask_List>div{
+	margin-top:13px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	padding:0px 5px;
+	
+	
+	}
+.Ask_Net{
+	color:#666;
+	
+	}
+.Ask_Que{
+	color:#333;
+	}
+.Ask_Replay{
+	color:#4490f7;}	
+#Publish_Consultation{
+	height:170px;
+	width:970px;}
+#Publish_Consultation strong{
+	display:block;
+	padding: 20px 0 10px;
+	font-family:"微软雅黑";
+	font-size:13px;
+	}
+#Publish_Consultation_TextAare{
+	margin-top:10px;
+	}
+#Publish_Consultation_TextAare textarea{
+	height:55px;
+	width:500px;
+	
+	}	
+#Submit_Publish_Consultation{
+	margin-top:10px;}
+#Submit_Publish_Consultation input{
+	border-width:0px;
+	background-color:#4490F7;
+	color:#FFF;
+	
+	}			
+					
+#ConsultationTips{
+	font-family:"微软雅黑";
+	font-size:12px;
+	
+	}
+	.ProductPrice{
+		font-size:14px;
+		font-weight:bold;
+		color:#922325;}
+/*Commodity_Consultation End*/
+
+/*公共数据开始*/
+.TitleV1{
+	height:40px;
+	width:188px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	border-bottom:1px solid #ccc;
+	}
+.TitleV1Control{
+	line-height:20px;
+	height:20px;
+	width:168px;
+	padding:10px;
+	border-bottom:1px solid #ccc;
+	}	
+.PublicSonClassificationConetentControl{
+	padding:10px 10px;
+	width:168px;
+	height:112px;
+	float:left;
+	border-bottom:1px solid #ccc;
+	
+	}
+.PublicSonClassificationContentTitle{
+	height:25px;
+	width:168px;
+	font-family:"微软雅黑";
+	font-size:15px;
+	color:#000;
+	line-height:25px;}
+.PublicSonClassificationContentData{
+	float:left;
+	height:20px;
+	width:84px;
+	color:#666;
+	font-family:"微软雅黑";
+	line-height:20px;
+	font-size:12px;
+	text-align:center;}		
+/*公共数据结束*/

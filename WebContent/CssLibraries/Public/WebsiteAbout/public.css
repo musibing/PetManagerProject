@@ -1,0 +1,219 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0px;}
+#Web_About_List div.List{
+	height:30px;
+	width:118px;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	font-family:"微软雅黑";}
+	#Web_About{
+		height:1005px;
+		width:1350px;
+		float:left;
+		margin-top:10px;}
+#Web_About_Control{
+
+height: 1000px;
+ width: 983px;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+       margin-left: 182px;
+	border-right: 1px solid #DDD;
+}
+/*Complaints Start*/
+#WACControrContent{
+	height:300px;
+	width:823px;}
+/*Complaints END*/
+
+#Web_About_List{
+	font-family:"微软雅黑";
+	font-size:15px;
+width:118px;
+height:1000px;
+float:left;
+background-color:#EFEFEF;
+border-right:1px solid #DDD;
+border-left:1px solid #DDD;
+}
+#Web_About_Content{
+width:823px;
+height:960px;
+float:left;
+padding: 20px 20px;
+}
+#WACCTitle{
+float:left;
+width:166px;
+height:28px;
+font-size:25px;
+font-famlly:"微软雅黑";
+text-align:center;
+background-color:#FFFFFF;
+margin-top:-15px;
+margin-left:338px;
+}
+#WACControl{
+width:823px;
+height:980px;
+
+float:left;
+}
+#WACControlTitle{
+height:40px;
+width:823px;
+}
+#WACControlContent{
+height:970px;
+width:1206px;
+}
+#WACCHR{
+	height:15px;
+width:823px;
+	border-bottom-color:#DBDBDB;
+border-bottom-style:solid;
+border-bottom-width:1px;
+	
+	}
+.WACControlTitleHR{
+height:1px;
+width:520px;
+border-bottom-color:#DDDDDD;
+border-bottom-style:solid;
+border-bottom-width:1px;
+}
+.WACControlTitleDIV{
+height:30px;
+width:520px;
+float:left;
+}
+.Contentlevel{
+color:#84bf96;
+height:40px;
+width:823px;
+line-height:40px;
+text-align:left;
+vertical-align:center;
+font-size:13px;
+font-family:"微软雅黑";
+}
+.ContentData{
+width:823px;
+text-indent:30px;
+color:#8a8c8e;
+line-height:20px;
+text-align:left;
+vertical-align:center;
+font-size:13px;
+font-family:"微软雅黑";
+}
+.ContentDataLink{
+float:left;
+height:30px;
+width:240px;
+}
+#LinkTips{
+width:1026px;
+height:200px;
+float:left;
+}
+#LinkTipsTitle{
+width:1026px;
+height:40px;
+}
+#LinkTipsContent{
+width:1026px;
+height:160px;
+}
+#ComplaintsSIMG{
+height:30px;
+width:580px;
+float:left;
+}
+#ComplaintsSC{
+height:30px;
+width:380px;
+float:left;
+}
+
+.ContentInput{
+	float:left;
+
+height:30px;
+width:823px;
+float:left;
+}
+.SitMapTitle{
+height:50px;
+width:842px;
+font-size:22px;
+line-height:50px;
+vertical-align:bottom;
+border-bottom:2px solid #84bf96;
+}
+.SitMapNavigation {
+
+height:40px;
+width:842px;
+font-size:18px;
+line-height:40px;
+vertical-align:bottom;
+font-family:"微软雅黑";
+}
+.ShoppingMall{
+	width:842px;
+	height:450px;
+	}
+.DataControl{
+	height:246px;
+}
+
+.SitMapNavigationContent{
+	height:40px;
+	width:842px;
+	border-bottom:#CCC dashed  1px;
+	}
+.SitMapNavigationContentControl{
+	height:20px;
+	width:842px;
+	padding-top:10px;}	
+.SitMapNavigationContentTitle{
+	float:left;
+	font-family:"微软雅黑";
+	font-size:15px;
+	vertical-align:middle;
+	line-htight:20px;
+	height:20px;
+	width:80px;
+	color:#84bf96;}
+.SitMapNavigationContentData{
+	float:left;
+	border-right:1px solid #ddd;
+	font-family:"微软雅黑";
+	font-size:15px;
+	vertical-align:middle;
+	line-htight:20px;
+	height:20px;
+	width:65px;
+	}		
+.SitMapControl{
+	margin-top:10px;}
+
+.SitMapNavigationTitle{
+height:30px;
+width:80px;
+font-size:15px;
+line-height:40px;
+font-family:"微软雅黑";
+margin-left:10px;
+margin-top:5px;
+background:#84BF96;
+text-align:center;
+float:left;
+line-height:30px;
+vertical-align:middle;
+}
+

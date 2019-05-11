@@ -1,0 +1,89 @@
+@CHARSET "UTF-8";
+#M0anagerControl{
+	height:4000px;
+	width:1350px;
+	}
+#CenterTitle{
+	height:50px;
+	width:1150px;
+	line-height:50px;
+	font-size:18px;
+	text-align:center;
+	font-family:"微软雅黑";}
+#UserContents{
+	width:1150px;
+	height:290px;}
+.Title{
+
+	
+	height:30px;
+	width:260px;
+	border-bottom:1px solid #88B7E0;}
+.ContentsControl{
+	width:1150px
+	height:800px;}
+.Contents{
+	
+	width:260px;
+	height:260px;}
+.ControlTags{
+	height:290px;
+	width:260px;
+	float:left;}
+	.DataTest{
+		height:0px;
+		width:0px;
+
+border-radius:100px;
+
+border-left-width:1px;
+border-top-width:1px;
+border-right-width:1px;
+border-bottom-width:1px;
+border-width:100px;
+border-style:solid;
+border-color: red blue green yellow;
+line-height:99em;
+overflow:hidden;
+cursor:pointer;
+margin: 30px auto;
+		}
+/*TestCase*/
+#circle {
+  width: 100px;
+    height: 100px;
+	border:1px solid #0026ff;
+   
+
+}
+#Control{
+	
+	height:300px;
+	width:1150px;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
+	
+	}
+.line{
+	float:left;
+	height:300px;
+	width:5px;
+	margin-left:20px;
+	background-color:#3B70AF;
+	
+	}
+.line1{
+	margin-top:160px;
+	height:140px;}
+.line2{
+	margin-top:140px;
+	height:160px;}
+.line3{
+	margin-top:20px;
+	height:280px;}
+.line4{
+	margin-top:40px;
+	height:260px;}								
+
+/*TestCase*/		
+				

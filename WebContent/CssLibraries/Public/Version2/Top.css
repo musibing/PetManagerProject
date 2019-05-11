@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+/*top Start*/
+#top {
+	float:left;
+	width: 1350px;
+	height: 30px;
+	border-bottom-color: #DDD;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+
+#topControl{
+	
+	height: 30px;
+	width: 986px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topleft {
+	float: left;
+	height: 30px;
+	width: 80px;
+}
+
+.topleftclass {
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
+#topcenter {
+	height: 30px;
+	width: 278px;
+	float: left;
+}
+
+.toprightclass {
+	margin-top: 8px;
+	height: 14px;
+	width: 60px;
+	float: left;
+	line-height: 14px;
+	text-align: center;
+	border-right-color: #999;
+	border-right-style: double;
+	border-right-width: 1px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+/*top End*/

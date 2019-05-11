@@ -1,0 +1,571 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;}
+#centerIMGSrc{
+	margin-left:25px;
+	margin-top:25px;}
+
+#inputsmscode{
+	border-color: #ccc;
+    border-style: solid;
+    border-width: 2px;
+	height:15px;
+	width:60px;
+
+	}
+#BuyCarControl{
+	height:auto;
+	width:1152px;
+	border-top:2px solid #4490f7;
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-bottom:2px solid #DDD;
+	}	
+#BuyCarData{
+	height:auto;
+	width:1154px;
+	
+	}
+#BuyCarControl div.BTitle{
+	background-color:#EFEFEF;
+	height: 35px;
+    width: 1132px;
+	padding:0px 10px;
+	border-bottom:1px solid #ddd;
+	
+	}
+	#TitleControl div{
+		font-family:"微软雅黑";
+		font-size:13px;
+		line-height:35px;
+		}
+		
+		
+		#TitleControl div.Tag1 a.Incos{
+		
+			margin-top:10px;
+			padding-left:14px;
+		
+			height:14px;
+			width:26px;
+			line-height:12px;
+			display:block;
+			background:url(../img/System/inco/cart_process.png) no-repeat  -10px -183px;
+			
+	}
+		#TitleControl {
+			height:35px;
+			width:1132px;
+	
+		
+		}
+	#Content div.BTitle{
+		margin-left:0px;
+		background-color:#FFF;
+		height:120px;
+		
+		}	
+#Content div.BTitle div.Tag2{
+	height:120px;
+		
+		}
+	#Content div.BTitle div.Tag1 img{
+		display:block;
+	height:80px;
+	width:80px;
+	float:left;
+	margin-left:20px;
+		margin-top:4px;
+		border:1px solid #ccc;	
+		}	
+
+		
+#BuyCarControl #Content{
+	width:1152px;
+	height:120px;
+
+	
+	}
+#BuyCarControl #Content div.BTitle div.Tag1 a.Incos{
+	background:url(../img/System/inco/cart_process.png) no-repeat -10px -183px;
+	display:block;
+	margin-top:30px;
+	
+	
+	padding:0px;
+	float:left;
+	
+	width:14px;
+
+	height:14px;
+}
+#BuyCarControl #Content div.BTitle div.Tag1 {
+	padding:16px 0px;
+float:left;
+	height:88px;;
+	width:125px;
+
+	
+	}
+	#BuyCarControl #Content div.BTitle div.Tag2{
+	padding:16px 0px;
+float:left;
+	height:88px;;
+	width:257px;
+
+	}
+	#BuyCarControl #Content{
+		font-family:"微软雅黑";
+		font-size:13px;}
+.CRed{
+	color:#F00;}		
+				
+				
+#ClassificationControl{
+	width:350px;
+	height:40px;
+	float:left;
+	}
+#SearchControl{
+	width:700px;
+	height:40px;
+	float:left;
+	}		
+#ReturnListMode{
+	height:40px;
+	width:104px;
+	float:left;}
+#Title{
+	height:40px;
+	width:1154px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	line-height:40px;
+	}	
+.MaginLeftWidth{
+	width:80px
+	
+	}
+.Tag1{
+	float:left;
+	height:35px;
+	width:125px;
+	text-align:center;
+	line-height:35px;
+	
+	}		
+.Tag2{
+	text-align:center;
+	line-height:35px;
+	height:35px;
+	width:237px;
+	float:left;}
+.CheckTags{
+	padding:30px 0px;
+	float:left;
+	height:60px;
+	width:20px;}
+.ProductPoolClass{
+	margin-top:18px;}		
+.CheckTableTags{
+	float:left;
+	height:35px;
+	width:20px;}					
+
+#zongbiao{
+	width:1366px;
+	height:auto;
+	}
+#UserCenterTitle{
+	margin-top:30px;
+	margin-left:15px;
+	border-left-color:#CCC;
+	border-left-style:solid;
+	border-left-width:1px;
+	height:40px;
+	width:160px;
+	font-family:"微软雅黑";
+	font-size:28px;
+	font-weight:700px;
+	color:#666666;
+	line-height:40px;
+	vertical-align:middle;
+	}
+#zhubiaocontrol{
+	float:left;
+	width:1366px;
+	height:auto;
+	}
+#CenterControl{
+	float:left;
+	height:auto;
+	width:1366px;
+	background-color:#f3f3f3;
+
+	}	
+#centerIMG{
+	float:left;
+	height:460px;
+	width:550px;}		
+#zhubiao{
+	float:left;
+	height:auto;
+	width:1154px;
+	background-color:#FFFFFF;}
+	#zhubiao tilte{
+		}
+.zhubiaokong{
+	float:left;
+	height:460px;
+	}
+#topkong{
+	height:150px;
+	width:400px;}
+
+#ViewControl{
+	height:50px;
+	width:1200px;}
+#center {
+	height: 1400px;
+	width: 1366px;
+}
+
+#logoControl {
+	height: 104px;
+	width: 1366px;
+	float:left;
+}
+
+#centerleft {
+	float: left;
+	height:104px;
+	
+}
+#top {
+	width:1366px;
+	height: 29px;
+	border-bottom-color:#ccc;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+
+#bottomCenterControl {
+	height: 150px;
+	width: 730px;
+	margin-left:260px;
+	margin-top: 30px;
+	float:left;
+}
+
+.bottomLink {
+	float: left;
+	height: 20px;
+	width: 80px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#bottomLinkID {
+	width: 163px;
+	height: 20px;
+	border-width: 0px;
+}
+
+#bottomBeianControl {
+	height: 20px;
+	width: 730px;
+	float: left;
+}
+
+.bottomBaian {
+	float: left;
+	height: 20px;
+	width: 240px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#BeianInfoControl {
+	float: left;
+	height: 20px;
+	width: 730px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #666666;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#BeianImgControl {
+	margin-left: 120px;
+	float: left;
+	height: 35px;
+	width: 480px;
+}
+
+.BeianImg {
+	float: left;
+	height: 35px;
+	width: 120px;
+}
+#bottomControl {
+	height: 180px;
+	width: 1366px;
+	float:left;
+}
+#topleft {
+	float: left;
+	height: 30px;
+	
+}
+
+.topleftclass {
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
+#topcenter {
+	height: 30px;
+	width: 450px;
+	float: left;
+	
+}
+
+.toprightclass {
+	margin-top: 8px;
+	height: 14px;
+	width: 60px;
+	float: left;
+	line-height: 14px;
+	text-align: center;
+	border-right-color: #999;
+	border-right-style: double;
+	border-right-width: 1px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+#logoimg {
+	float: left;
+	height: 104px;
+	width: 204px;
+}
+.UserRegisterInput{
+	height:15px;
+	width:160px;
+	border-color: #ccc;
+    border-style: solid;
+    border-width: 2px;}
+
+#searchTextDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	height: 30px;
+	width: 600px;
+}
+#UserConterControl{
+	height:104px;
+	width:570px;
+	float:left;}
+#UserLogin_Tip{
+	height:22px;
+	width:380px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	margin-top:40px;
+	background:url(../img/System/BuyCar/cart_process.png) no-repeat -0px -40px };
+#Setp div{
+	float:left;
+	
+	
+	
+	}
+#Setp{
+	height:22px;
+	width:380px;}		
+#Setp div.w116{
+	float:left;
+	width:80px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:12px;}
+	#Setp div.Center{
+	float:left;
+	width:220px;
+	line-height:22px;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-size:12px;}
+
+#searchButtonDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 0px;
+	height: 30px;
+	width: 100px;
+}
+#UserLogin{
+	float:left;
+	height:104px;
+	width:380px;}
+
+#searchTestGl {
+	width: 950px;
+	height: 104px;
+	float: left;
+	}
+
+#searchText {
+	height: 26px;
+	width: 596px;
+	border-color: #4490F7;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#searchButton {
+	height: 32px;
+	width: 96px;
+	background-color: #4490F7;
+	border-width: 0px;
+	color: #FFF;
+}
+
+#PetHomeAPP {
+	float: left;
+	width: 312px;
+	height: 104px;
+}
+
+	
+
+#centermanager{
+	height:460px;
+	width:436px;
+	
+	float:left;}
+#tips{
+	line-height:60px;
+	vertical-align:middle;
+	text-align:left;
+	height:60px;
+	width:400px;
+	color:#8F8F8F;
+	font-weight:600;
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+#centerkong{
+	width:400px;
+	height:50px;}	
+.center{
+	
+	font-family:"微软雅黑";
+	font-size:17px;
+	height:50px;
+	width:400px;
+	}
+.input{
+	height:16px;
+	width:308px;}
+.{
+	border-width:1px;
+	border-color:#996;
+	border-style:solid;}	
+.but{
+	margin-left:78px;
+	height:30px;
+	width:80px;
+	border-width:0px;
+	background-color:#2FB3FF;}	
+	#login_title{
+		height:50px;
+		width:400px;}							
+#ControlComponent{
+	margin-top:20px;
+	width:1132px;
+	height:90px;
+	padding:10px 10px;
+	background-color:#FFF;
+	border:1px solid #ddd;}
+#ControlComponent div.Tag1 a{
+	color:#333;
+	text-decoration:none}	
+	#ControlComponent div.Tag1 a.Incos{
+		
+			margin-top:10px;
+			padding-left:26px;
+		
+			height:14px;
+			width:35px;
+			line-height:12px;
+			display:block;
+			background:url(../img/System/inco/cart_process.png) no-repeat  -10px -183px;
+			
+	}
+	#ControlComponent div{
+		font-family:"微软雅黑";
+		font-size:13px;
+			
+	}
+	#OrderView{
+		float:left;
+		height:60px;
+		width:500px;
+		    margin-left: 257px;
+			}
+		#OrderInfo dl{
+			display:block;
+			
+			text-align:right;
+			}	
+	#OrderInfo{
+		height:60px;
+		width:370px;
+		float:left;
+		font-size:12px;
+		color:#999;
+	}
+	#OrderSettlement{
+		float:left;
+		height:40px;
+		width:110px;
+		padding:10px 10px;}
+	#OrderSettlement input{
+		display:block;
+		height:40px;
+		width:110px;
+		background-color:#4490f7;
+		border:0px;
+		color:#FFF;
+		}
+	#OderPrice{
+		color:#C30;
+		font-size:17px;}
+	#OderSum{
+		color:#c00;}														

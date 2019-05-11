@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+#zhubiao{
+	height:200px;
+	}
+.zhubiaokong{
+	
+	height:250px;
+	}
+#zhubiaocontrol{
+	
+	height:296px;
+	}
+#CenterControl{
+	width:;
+	
+	height:390px;
+	
+
+	}
+#UserLogin_Tip{
+	background-position:0px -76px;
+	
+	}	
+	
+#Result img{
+	display:block;
+	float:left;	
+	}
+#Result span{
+	display:block;
+	float:left;
+	margin-left:20px;
+	font-family:"微软雅黑";
+	font-size:20px;
+	color:#4490f7;
+	margin-top:10px;
+	
+	}
+#Result{
+	height:50px;
+	width:350px;
+	margin-right:auto;
+	margin-left:auto;}							

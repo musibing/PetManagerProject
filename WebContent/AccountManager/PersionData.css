@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+#PersionDataControl{
+	height:1800px;
+	width:816px;
+	backgroundcolor:#fff;
+	padding:20px 20px;
+	
+}
+
+#PersionData #Title{
+	vertical-align:middle;
+	line-height:10px;
+	padding:20px 0px;
+	height:10px;
+	font-size:17px;
+	font-family:"微软雅黑";
+}
+#SonTitle{
+	height:30px;
+	width:816px;
+	
+	border-bottom:2px  solid #ddd;
+	font-family:"微软雅黑";
+	font-size:14px;
+	
+}
+.SonTitleData{
+	
+	font-size:14px;
+	width:130px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	vertical-align:middle;
+	text-align:center;
+	
+}
+#PersionDataContent{
+	width:736px;
+	height:1800px;
+	padding:20px 40px;
+	font-family:"微软雅黑";
+	font-size:13px;
+	
+	}
+.PersionDataContentClass{
+	line-height:40px;
+	vertical-align:middle;
+	height:50px;
+	width:700px;
+	
+	}
+	.PersionDataImg{
+		margin-top:10px;
+		float:left;
+		height:20px;
+		width:15px;
+		background-image:url(../img/Account/AccountCenter/man/sprites.png);
+		
+		}
+	.Email{
+		background-position:-8px -245px}
+	.Telphone{
+		background-position:-50px -245px;}		
+.PersionDataText{
+	margin-top:11px;
+	height:20px;
+	width:140px;
+	border:1px solid #CCC;}
+.xb{
+	margin-left:20px;}
+.Address{
+	width:360px;}
+#PersionDataContent textarea{
+	height:80px;
+	width:360px;}
+	
+#PersionDataContent select{
+	margin-top:11px;}	
+.Textarea{
+	height:85px;
+	width:700px;}
+.PersionDataContentButton{
+	background-color:#F5F5F5;
+	height:30px;
+	width:80px;
+	color:#39F;
+	border:1px solid #ddd;
+	}
+.Tips{
+	font-family:"微软雅黑";
+	font-size:11px;
+	color:#aaa;}
+.PersionDataContentCheckbox{
+	
+	margin-top:8px;
+	
+	float:left;
+	
+	
+	}
+.Think{
+	height:160px;
+	width:700px;}
+.CheckboxText{
+	height:30px;
+	width:190px;
+	display:block;
+	float:left;
+	line-height:30px;
+	vertical-align:middle;}
+#CheckBoxControl{
+	height:110px;
+	width:660px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	margin-left:40px;
+	}
+.CheckBoxLine{
+	   width:660px;
+	   height:30px;
+	   float:left;}
+	.PersionDataSubmit{
+		border-width:0px;
+		margin-left:40px;
+		height:30px;
+		width:120px;
+		background-color:#C00;
+		color:#FFF;
+		font-size:14px;}
+.borderBRed{
+	border-bottom:2px solid #red;}
+.PersionDataContentTextName{
+	float:left;
+	display:block;
+	height:50px;
+	width:40px;}			    												

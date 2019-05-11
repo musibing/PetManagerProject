@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-6 9:31:42 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.PetEntryStatistics" table="petentrystatistics">
+        <id name="petEntryStatisticsID" type="int">
+            <column name="PETENTRYSTATISTICSID" />
+            <generator class="assigned" />
+        </id>
+        <property name="timesOfBrowsing" type="int">
+            <column name="TIMESOFBROWSING" />
+        </property>
+        <property name="rankTheRanking" type="int">
+            <column name="RANKTHERANKING" />
+        </property>
+        <property name="relevantArticles" type="int">
+            <column name="RELEVANTARTICLES" />
+        </property>
+        <property name="iInterrelatedQuestionsAndAnswers" type="int" access="field">
+            <column name="IINTERRELATEDQUESTIONSANDANSWERS" />
+        </property>
+        <property name="collectionNumber" type="int">
+            <column name="COLLECTIONNUMBER" />
+        </property>
+        <many-to-one name="pdvoc" class="com.musibing.vo.PetDataVOClass" fetch="join">
+            <column name="PDVOC" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

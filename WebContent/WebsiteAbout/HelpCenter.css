@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+#HelpCenterControl{
+	height:1030px;
+	width:1002px;
+	margin-left:173px
+}
+#HelpCenter_Navigation{
+	height:30px;
+	width:1366px
+	}
+#HelpCenter_Navigation_data{
+	height:30px;
+	width:1002px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	line-height:30px;
+	vertical-align:bottom;
+	}
+#HelpCenterIMGControl{
+	margin-left:10px;
+	float:left;
+	width:18px;
+	height:40px;
+	}	
+#HelpCenterIMG{
+	height:18px;
+	width:18px;
+	margin-top:8px;
+	}	
+#Help_Center_List{
+	height:1000px;
+	width:195px;
+	float:left;
+	}
+.HelpListText{
+	margin-left:10px;
+	float:left;
+	height:40px;
+	width:155px;}
+.HelpListIMG{
+	height:10px;
+	width:10px;
+	margin-top:15px;}
+.HelpList:hover img{
+	 -moz-transform:rotate(90deg);
+      -webkit-transform:rotate(90deg);
+      filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); 
+	}			
+#Help_Center_Content{
+	height:1000px;
+	width:805px;
+	float:left;}
+#Help_Center_Control{
+	width:1002px;
+	height:1035px;
+	margin-left:173px;
+	
+	}
+.HelpListIMGControl{
+	float:left;
+	height:40px;
+	width:10px;}	
+.HelpList{
+	height:40px;
+	width:195px;
+	font-family:"微软雅黑";
+	line-height:30px;
+	vertical-align:middle;
+	text-align:left;
+	border-bottom:1px solid #ddd;}
+#Help_Center_WACControl{
+	margin-left:20px;
+	height:999px;
+	width:785px;
+	border-bottom:1px solid #DDD;
+	border-right:1px solid #DDD;
+	border-left:1px solid #DDD;
+	background-color:#FFFFFF;
+	}
+#Help_Center_CenterDIVControl{
+	height:1045px;
+	width:1366px;
+	background-color:#f3f3f3;}
+#HelpListControl{
+	height:206px;
+	width:195px;
+	background-color:#FFFFFF;}	
+#ListDataContrl{
+	height:246px;
+	width:195px;
+	border:1px solid #DDD;
+
+	}
+#HelpListTitle{
+	
+	background-color:#efefef;}
+#Help_Center_WACControl_Navigation{
+	height:30px;
+	width:785px;
+	color:#99cc33;
+	font-family:"微软雅黑";
+	font-size:16px;
+	line-height:30px;
+	vertical-align:middle;
+	}
+#Help_Center_WACControl_Navigation_Control{
+	height:256px;
+	width:785px;
+	border-top:2px solid #99cc33;}
+#Self_help_ListControl{
+	height:200px;
+	width:785px}
+.SHListDataControl{
+	height:200px;
+	width:765px;
+	}
+.MG10{
+	margin-left:10px;}
+.SHListBox{
+	height:200px;
+	width:140px;
+	float:left;
+	padding: 0px 24px;}
+.SHListborderr {
+    border-right: dashed 1px #ddd;
+}							
+.IMGControl{
+	height:80px;
+	width:140px;
+	overflow: hidden;
+	clear:both;
+	}
+.IMGClass{
+	
+}
+.IMGSrcData{
+	height:60px;
+	width:60px;
+	margin:10px auto;
+	}
+.SHL_Title{
+	height:36px;
+	width:140px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:36px;
+	color:#333333;
+	}	
+.SHtext{
+	font-family:"微软雅黑";
+	font-size:15px;}
+.SHL_Conent{
+	font-family:"微软雅黑";
+	font-size:12px;
+	height:84px;
+	width:140px;
+	color:#999999;
+	}
+#DataSourceControl{
+	height:40px;
+	width:785px;
+	border-top:2px solid #99cc33;}
+.DataSourceTitle{
+	height:40px;
+	width:110px;
+	float:left;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:15px;
+	color:#666666;
+	font-family:"微软雅黑";
+	border-right:1px solid #DDD;
+	
+	}
+#DataSourceContent{
+	height:700px;
+	width:785px;
+	color:#333333;
+	font-size:14px;
+	font-family:"微软雅黑";
+	float:left;
+}
+#TitleControl{
+	height:40px;
+	width:785px;
+	border-bottom:1px solid #DDD;
+	background-color:#F9f9f9;}
+#DSControl{
+	margin-top:20px;
+	margin-left:20px;}
+#DSControl dt{
+	display:block;
+	height:30px;
+	width:745px;
+	line-height:30px;
+	vertical-align:middle;
+	color:#99CC33;
+	font-family:"微软雅黑";
+	font-size:14px;}
+#DSControl dd{
+	display:block;
+	
+	width:745px;
+	line-height:30px;
+	vertical-align:middle;
+	color:#333333;
+	font-family:"微软雅黑";
+	font-size:13px;}													

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-2-13 14:37:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.BuyCar" table="buycar">
+        <id name="buyCarID" type="int">
+            <column name="BUYCARID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="aVO" class="com.musibing.vo.AccountVO" column="accountId" lazy="false">
+        	
+        </many-to-one>
+        <set name="buyCarList" table="buycarlist" cascade="all" inverse="true" lazy="false">
+            <key>
+                <column name="BUYCARID" />
+            </key>
+            <one-to-many class="com.musibing.vo.BuyCarList" />
+        </set>
+    </class>
+</hibernate-mapping>

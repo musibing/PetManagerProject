@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+#zongbiao{
+	width:1366px;
+	height:800px;
+	}
+#zhubiao{
+	float:left;
+	height:800px;
+	width:1165px;}
+.zhubiaokong{
+	float:left;
+	height:800px;
+	width:100px;}
+#topkong{
+	height:150px;
+	width:800px;}
+.topsubmit{
+	float:left;
+	height:35px;
+	width:130px;}
+#topsubmitgl{
+	width:260px;
+	height:35px;}		
+#top{
+	line-height:80px;
+	text-align:center;
+	vertical-align:middle;
+	font-family:"楷体";
+	font-size:30px;
+	font-weight:600;
+	height:80px;
+	width:1165px;}
+#centermanager{
+	height:670px;
+	width:1165px;}
+#tips{
+	line-height:35px;
+	vertical-align:middle;
+	text-align:left;
+	height:35px;
+	width:1165px;
+	color:#8F8F8F;
+	font-weight:600;
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+#centerkong{
+	width:1165px;
+	height:50px;}	
+#center{
+	
+	font-family:"微软雅黑";
+	font-size:17px;
+	height:635px;
+	width:1165px;
+	}
+.input{
+	height:21px;
+	width:240px;}
+.but{
+	margin-left:50px;
+	height:30px;
+	width:80px;
+	border-width:0px;
+	background-color:#2FB3FF;}
+.buttop{
+	margin-left:5px;
+	height:30px;
+	width:120px;
+	border-width:0px;
+	background-color:#2FB3FF;
+	}									

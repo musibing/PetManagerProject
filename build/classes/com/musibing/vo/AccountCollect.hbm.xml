@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-3-25 5:21:44 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.AccountCollect" table="accountcollect">
+        <id name="accountCollectID" type="int">
+            <column name="ACCOUNTCOLLECTID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="articleID" class="com.musibing.vo.Article" fetch="join" lazy="false">
+            <column name="ARTICLEID" />
+        </many-to-one>
+        <many-to-one name="petDataVOClass" class="com.musibing.vo.PetDataVOClass" fetch="join" lazy="false">
+            <column name="PETDATAVOCLASS" />
+        </many-to-one>
+        <property name="collectSataus" type="java.lang.String">
+            <column name="COLLECTSATAUS" />
+        </property>
+        <many-to-one name="accountVO" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+            <column name="ACCOUNTVO" />
+        </many-to-one>
+        <many-to-one name="product" class="com.musibing.vo.Product" fetch="join" lazy="false">
+            <column name="PRODUCT" />
+        </many-to-one>
+        <property name="collectTime" type="java.util.Date">
+            <column name="COLLECTTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

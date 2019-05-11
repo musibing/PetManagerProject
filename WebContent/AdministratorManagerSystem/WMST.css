@@ -1,0 +1,271 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+}
+
+#BodyControl {
+	height: 1200px;
+	width: 1366px;
+}
+
+#Top {
+	height: 60px;
+	width: 1366px;
+	background-color: #08A2BA;
+	color: #FFF;
+	font-family: 微软雅黑;
+}
+
+#LogoControl {
+	width: 300x;
+	height: 60px;
+}
+
+#Left {
+	height: 1120px;
+	width: 160px;
+	float: left;
+	background-color: #283440;
+}
+
+#Center {
+	height: 1120px;
+	width: 1195px;
+	margin-left: 10px;
+	float: left;
+	background-color: #F8F8F8;
+	color: #6C7A81;
+}
+
+#LogoIMG {
+	height: 60px;
+	width: 184px;
+	float: left;
+	background-image:url(../img/Account/AccountCenter/man/sprites.png);
+	background-position: 10px -12px;
+}
+
+#LogoText {
+	width: 102px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	vertical-align: central;
+	text-align: left;
+	font-size: 15px;
+}
+
+#TopKong {
+	float: left;
+	height: 60px;
+	width: 429px;
+}
+
+.TopInco {
+	height: 60px;
+	width: 90px;
+	float: left;
+	border-left-color: #24BFD7;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.IncoIMG {
+	height: 40px;
+	width: 90px;
+}
+
+.TopText {
+	height: 20px;
+	width: 90px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: central;
+	text-align: center;
+}
+
+.TopClassIMG {
+	height: 25px;
+	width: 25px;
+	margin-left:30px;
+	margin-top:10px;
+}
+
+.Nli {
+	height: 35px;
+	width: 160px;
+	font-family: "微软雅黑";
+	color: #FFF;
+	font-size: 15px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #25303A;
+}
+
+.NliImg {
+	height: 18px;
+	width: 18px;
+	float: left;
+	
+}
+
+.NliText {
+	height: 25px;
+	width: 135px;
+	float: left;
+}
+
+#CenterTitle {
+	height: 20px;
+	width: 1195px;
+	background-color: #fff;
+	font-family: "微软雅黑";
+	font-size: 13px;
+	border-bottom-color: #E0E0E0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+#CTImg {
+	float: left;
+	height: 20px;
+	width: 20px;
+	float: left;
+}
+
+#CTText {
+	float: left;
+	height: 20px;
+	width: 300px;
+}
+
+#CTKong {
+	float: left;
+	height: 20px;
+	width: 570px;
+}
+
+#CTTime {
+	float: left;
+	height: 20px;
+	width: 230px;
+}
+
+#OderSearchTitle {
+	height: 32px;
+	width: 1170px;
+	border-color: #E4E4E4;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #F4F4F4;
+}
+
+#OderSearchControl {
+	height: 800px;
+	width: 1172px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#SeachICOImger {
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+
+#OderNumber {
+	height: 30px;
+	width: 180px;
+	float: left;
+	margin-left: 5px;
+}
+
+#OderLogistics {
+	height: 30px;
+	width: 180px;
+	float: left;
+	margin-left: 5px;
+}
+
+#Region {
+	height: 30px;
+	width: 160px;
+	float: left;
+	margin-left: 5px;
+}
+
+#OderSearchSubmit {
+	height: 30px;
+	width: 60px;
+	float: left;
+	margin-left: 5px;
+}
+
+#OderSearchDataView {
+	margin-top: 10px;
+	height: 800px;
+	width: 1172px;
+}
+
+#OSDVTitle {
+	background-color: #F4F4F4;
+}
+
+.OSDVTitle {
+	height: 25px;
+	width: 84px;
+	float: left;
+	border-left-color: #E4E4E4;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+#CTN {
+	height: 25px;
+	width: 125px;
+}
+
+#CTNShowOSVD {
+	border-left-width: 0px;
+	width: 125px;
+}
+
+#OSDVBody {
+	height: 800px;
+	width: 1172px;
+	background-color: #FFF;
+}
+
+#ENO {
+	height: 25px;
+	width: 125px;
+}
+
+#POT {
+	height: 25px;
+	width: 160px;
+}
+
+#DOT {
+	height: 25px;
+	width: 160px;
+}
+
+#Operation {
+	height: 25px;
+	width: 256px;
+	border-right-color: #E4E4E4;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.OSVD {
+	width: 1172px;
+	height: 25px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	border-top-color: #E4E4E4;
+	border-top-style: solid;
+	border-top-width: 1px;
+}

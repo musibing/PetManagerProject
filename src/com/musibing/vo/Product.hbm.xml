@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-28 17:20:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.Product" table="product">
+        <id name="productID" type="int">
+            <column name="PRODUCTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="productName" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="retailPrice" type="double">
+            <column name="RETAILPRICE" />
+        </property>
+        <property name="manufacturerGuidancePrice" type="double">
+            <column name="MANUFACTURERGUIDANCEPRICE" />
+        </property>
+        <property name="distributionLocality" type="int">
+            <column name="DISTRIBUTIONLOCALITY" />
+        </property>
+        <property name="evaluationIndex" type="double">
+            <column name="EVALUATIONINDEX" />
+        </property>
+         <property name="tagVel1" type="java.lang.String">
+            <column name="TAGVEL1" />
+        </property>
+        <property name="tagVel2" type="java.lang.String">
+            <column name="TAGVEL2" />
+        </property>
+        <property name="tagVelTOP" type="java.lang.String">
+            <column name="TAGVELTOP" />
+        </property>
+        <property name="salesVolumes" type="int">
+            <column name="SALESVOLUMES" />
+        </property>
+        <property name="brandName" type="java.lang.String">
+            <column name="BRANDNAME" />
+        </property>
+        <property name="specifications" type="java.lang.String">
+            <column name="SPECIFICATIONS" />
+        </property>
+        <property name="applicableObject" type="java.lang.String">
+            <column name="APPLICABLEOBJECT" />
+        </property>
+        <property name="productDescribe" type="java.lang.String">
+            <column name="PRODUCTDESCRIBE" />
+        </property>
+         <property name="exhibitionIMGPath" type="java.lang.String">
+            <column name="EXHIBITIONIMGPATH" />
+        </property>
+        
+        <set name="pimg" table="PRODUCTIMG"  cascade="all" inverse="true" lazy="false">
+            <key>
+               
+            </key>
+            <one-to-many class="com.musibing.vo.ProductIMG" />
+        </set>
+        <set name="productOderID" table="PRODUCTODER" cascade="all" inverse="true" lazy="false">
+            <key>
+                <column name="PRODUCTID" />
+            </key>
+            <one-to-many class="com.musibing.vo.ProductOder" />
+        </set>
+          
+        <property name="datasourceIdentification" type="java.lang.String">
+            <column name="DATASOURCEIDENTIFICATION" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

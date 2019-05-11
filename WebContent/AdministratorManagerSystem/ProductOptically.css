@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+#ProductOptically{
+	height:1800px;
+	width:1195px;
+	
+}
+.inputTextBorderColorCCC{
+	margin-top:5px;}
+.inputButtonColorBule{
+	margin-left:100px;}
+.magingtop5{
+	margin-top:5px;}		
+
+.OderDataOpteratveLine{
+
+	width:1175px;
+	height:30px;
+	
+	
+	}
+#OderDataOpteratveControl{
+	margin-top:10px;
+	width:1175px;
+	height:800px;
+	font-family:"微软雅黑";
+	font-size:13px;
+	border:1px solid #ddd;}
+.OderDataOpteratveDataSourcePulicSonTags{
+	float:left;
+	width:151px;}
+.OderDataOpteratveDataSourceTitleSonTags{
+	
+	height:40px;
+	}
+.OderDataOpteratveDataSourceContentTags{
+	height:30px;
+	border-bottom:1px solid #ddd;
+	line-height:30px;
+	text-align:center;
+	
+	}	
+.SonTagsWidth560{
+	height:40px;
+	width:420px;}
+.ContentTagsWidth420{
+	height:30px;
+	width:420px;
+	}	
+.OderDataOpteratveTitle{
+	background-color:#F5F5F5;
+	
+	text-align:center;
+	line-height:40px;
+	height:40px;
+	width:1175px;
+	font-size:15px;
+	}			

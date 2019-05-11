@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-9-25 8:52:45 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.ProductOder" table="productoder">
+        <id name="productOderID" type="int">
+            <column name="PRODUCTODERID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="accountId" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+            <column name="ACCOUNTID" />
+        </many-to-one>
+        <many-to-one name="productID" class="com.musibing.vo.Product" fetch="join" lazy="false">
+            <column name="PRODUCTID" />
+        </many-to-one>
+        <property name="oderPrice" type="double">
+            <column name="ODERPRICE" />
+        </property>
+        <property name="oderTips" type="java.lang.String">
+            <column name="ODERTIPS" />
+        </property>
+        <property name="submitTime" type="java.util.Date">
+            <column name="SUBMITTIME" />
+        </property>
+        <property name="mailCode" type="int">
+            <column name="MAILCODE" />
+        </property>
+        <property name="oderAddress" type="java.lang.String">
+            <column name="ODERADDRESS" />
+        </property>
+        <property name="personName" type="java.lang.String">
+            <column name="PERSONNAME" />
+        </property>
+        <property name="personTel" type="java.lang.String">
+            <column name="PERSONTEL" />
+        </property>
+        <property name="payAccount" type="java.lang.String">
+            <column name="PAYACCOUNT" />
+        </property>
+        <property name="productOderSataus" type="java.lang.String">
+            <column name="PRODUCTODERSTATUS" />
+        </property>
+        <property name="productOderPage" type="java.lang.String">
+            <column name="PRODUCTODERPAGE" />
+        </property>
+        <property name="logisticsOrderNumber" type="java.lang.String">
+            <column name="LOGISTICSODERNUMBER" />
+        </property>
+        
+        <property name="judgedContent" type="java.lang.String">
+            <column name="JUDGEDCONTENT" />
+        </property>
+        <property name="judgedMark" type="java.lang.String">
+            <column name="JUDGEDMARK" />
+        </property>
+        <property name="judgedGrade" type="java.lang.String">
+            <column name="JUDGEDGRADE" />
+        </property>
+        <property name="judgedTime" type="java.lang.String">
+            <column name="JUDGEDTIME" />
+        </property>
+        <property name="judgedSource" type="java.lang.String">
+            <column name="JUDGEDSOURCE" />
+        </property>
+        <set name="simg" table="ORDERSUNBURNIMG" cascade="all" inverse="true"  lazy="true">
+            <key>
+                <column name="PRODUCTODERID" />
+            </key>
+            <one-to-many class="com.musibing.vo.OrderSunburnImg" />
+        </set>
+    </class>
+</hibernate-mapping>

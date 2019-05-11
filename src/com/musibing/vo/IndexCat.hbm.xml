@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-5-28 17:20:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.IndexCat" table="indexcat">
+        <id name="UserP1Title" type="java.lang.String">
+            <column name="USERP1TITLE" />
+            <generator class="assigned" />
+        </id>
+        <property name="UserP1ImgPath" type="java.lang.String">
+            <column name="USERP1IMGPATH" />
+        </property>
+        <property name="UserP1ProductDescribe" type="java.lang.String">
+            <column name="USERP1PRODUCTDESCRIBE" />
+        </property>
+        <property name="UserP2Title" type="java.lang.String">
+            <column name="USERP2TITLE" />
+        </property>
+        <property name="UserP2ImgPath" type="java.lang.String">
+            <column name="USERP2IMGPATH" />
+        </property>
+        <property name="UserP2ProductDescribe" type="java.lang.String">
+            <column name="USERP2PRODUCTDESCRIBE" />
+        </property>
+        <property name="UserP3ImgPath" type="java.lang.String">
+            <column name="USERP3IMGPATH" />
+        </property>
+        <property name="UserP3ProductDescribe" type="java.lang.String">
+            <column name="USERP3PRODUCTDESCRIBE" />
+        </property>
+        <property name="UserP3Title" type="java.lang.String">
+            <column name="USERP3TITLE" />
+        </property>
+        <property name="UserP4ImgPath" type="java.lang.String">
+            <column name="USERP4IMGPATH" />
+        </property>
+        <property name="UserP4ProductDescribe" type="java.lang.String">
+            <column name="USERP4PRODUCTDESCRIBE" />
+        </property>
+        <property name="UserP4Title" type="java.lang.String">
+            <column name="USERP4TITLE" />
+        </property>
+        <property name="Server1Title" type="java.lang.String">
+            <column name="SERVER1TITLE" />
+        </property>
+        <property name="Server1ImgPath" type="java.lang.String">
+            <column name="SERVER1IMGPATH" />
+        </property>
+        <property name="Server1Describe" type="java.lang.String">
+            <column name="SERVER1DESCRIBE" />
+        </property>
+        <property name="Server2Title" type="java.lang.String">
+            <column name="SERVER2TITLE" />
+        </property>
+        <property name="Server2ImgPath" type="java.lang.String">
+            <column name="SERVER2IMGPATH" />
+        </property>
+        <property name="Server2Describe" type="java.lang.String">
+            <column name="SERVER2DESCRIBE" />
+        </property>
+        <property name="Server3Title" type="java.lang.String">
+            <column name="SERVER3TITLE" />
+        </property>
+        <property name="Server3ImgPath" type="java.lang.String">
+            <column name="SERVER3IMGPATH" />
+        </property>
+        <property name="Server3Describe" type="java.lang.String">
+            <column name="SERVER3DESCRIBE" />
+        </property>
+        <property name="Forum1Title" type="java.lang.String">
+            <column name="FORUM1TITLE" />
+        </property>
+        <property name="Forum1ImgPath" type="java.lang.String">
+            <column name="FORUM1IMGPATH" />
+        </property>
+        <property name="Forum1Describe" type="java.lang.String">
+            <column name="FORUM1DESCRIBE" />
+        </property>
+        <property name="Forum2Title" type="java.lang.String">
+            <column name="FORUM2TITLE" />
+        </property>
+        <property name="Forum2ImgPath" type="java.lang.String">
+            <column name="FORUM2IMGPATH" />
+        </property>
+        <property name="Forum2Describe" type="java.lang.String">
+            <column name="FORUM2DESCRIBE" />
+        </property>
+        <property name="EncyclopediaTitle" type="java.lang.String">
+            <column name="ENCYCLOPEDIATITLE" />
+        </property>
+        <property name="EncyclopediaDescribe" type="java.lang.String">
+            <column name="ENCYCLOPEDIADESCRIBE" />
+        </property>
+        <property name="EncyclopediaImgPath" type="java.lang.String">
+            <column name="ENCYCLOPEDIAIMGPATH" />
+        </property>
+        <property name="VarietiesImgPath" type="java.lang.String">
+            <column name="VARIETIESIMGPATH" />
+        </property>
+        <property name="VarietiesDescribe" type="java.lang.String">
+            <column name="VARIETIESDESCRIBE" />
+        </property>
+        <property name="VarietiesTitle" type="java.lang.String">
+            <column name="VARIETIESTITLE" />
+        </property>
+    </class>
+</hibernate-mapping>

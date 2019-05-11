@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.PersionDataSubmit{
+	margin-left:6px;
+	}
+.datacontentLine{
+	height: 30px;
+	width: 716px;
+	line-height: 30px;
+	vertical-align: middle;
+	padding: 0px 30px;
+	margin-top:10px;}
+#addressViewControl{
+	margin-top:20px;
+	height:360px;
+	width:780px;
+	border:1px solid #ddd;
+	}		
+#addressAddControl{
+	border:1px solid #ddd;
+	width:780px;
+	
+	height:80px;}
+.addressdatacontentLine{
+	height:30px;
+	}	

@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;}
+#centerIMGSrc{
+	margin-left:25px;
+	margin-top:25px;}
+
+#inputsmscode{
+	border-color: #ccc;
+    border-style: solid;
+    border-width: 2px;
+	height:15px;
+	width:60px;
+
+	}
+#MapControl{
+	height:400px;
+	width:1114px;
+	margin-left:20px;
+	border:1px solid #ddd;}	
+#MapData{
+	height:420px;
+	width:1154px;
+	
+	}	
+#ClassificationControl{
+	width:350px;
+	height:40px;
+	float:left;
+	}
+#SearchControl{
+	width:700px;
+	height:40px;
+	float:left;
+	}		
+#ReturnListMode{
+	height:40px;
+	width:104px;
+	float:left;}
+#Title{
+	height:40px;
+	width:1154px;
+	}	
+.MaginLeftWidth{
+	width:80px
+	
+	}
+		
+			
+
+#zongbiao{
+	width:1366px;
+	height:800px;
+	}
+#UserCenterTitle{
+	margin-top:30px;
+	margin-left:15px;
+	border-left-color:#CCC;
+	border-left-style:solid;
+	border-left-width:1px;
+	height:40px;
+	width:160px;
+	font-family:"微软雅黑";
+	font-size:28px;
+	font-weight:700px;
+	color:#666666;
+	line-height:40px;
+	vertical-align:middle;
+	}
+#zhubiaocontrol{
+	float:left;
+	width:1366px;
+	height:490px;
+	}
+#CenterControl{
+	float:left;
+	height:750px;
+	width:1366px;
+	background-color:#f3f3f3;
+
+	}	
+#centerIMG{
+	float:left;
+	height:460px;
+	width:550px;}		
+#zhubiao{
+	float:left;
+	height:460px;
+	width:1154px;
+	background-color:#FFFFFF;}
+.zhubiaokong{
+	float:left;
+	height:460px;
+	}
+#topkong{
+	height:150px;
+	width:400px;}
+
+#ViewControl{
+	height:50px;
+	width:1200px;}
+#center {
+	height: 1400px;
+	width: 1366px;
+}
+
+#logoControl {
+	height: 104px;
+	width: 1366px;
+	float:left;
+}
+
+#centerleft {
+	float: left;
+	height:104px;
+	
+}
+#top {
+	width:1366px;
+	height: 29px;
+	border-bottom-color:#ccc;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+
+#bottomCenterControl {
+	height: 150px;
+	width: 730px;
+	margin-left:260px;
+	margin-top: 30px;
+	float:left;
+}
+
+.bottomLink {
+	float: left;
+	height: 20px;
+	width: 80px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#bottomLinkID {
+	width: 163px;
+	height: 20px;
+	border-width: 0px;
+}
+
+#bottomBeianControl {
+	height: 20px;
+	width: 730px;
+	float: left;
+}
+
+.bottomBaian {
+	float: left;
+	height: 20px;
+	width: 240px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#BeianInfoControl {
+	float: left;
+	height: 20px;
+	width: 730px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #666666;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#BeianImgControl {
+	margin-left: 120px;
+	float: left;
+	height: 35px;
+	width: 480px;
+}
+
+.BeianImg {
+	float: left;
+	height: 35px;
+	width: 120px;
+}
+#bottomControl {
+	height: 180px;
+	width: 1366px;
+	float:left;
+}
+#topleft {
+	float: left;
+	height: 30px;
+	
+}
+
+.topleftclass {
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 80px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+}
+
+#topcenter {
+	height: 30px;
+	width: 450px;
+	float: left;
+	
+}
+
+.toprightclass {
+	margin-top: 8px;
+	height: 14px;
+	width: 60px;
+	float: left;
+	line-height: 14px;
+	text-align: center;
+	border-right-color: #999;
+	border-right-style: double;
+	border-right-width: 1px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+#logoimg {
+	float: left;
+	height: 104px;
+	width: 204px;
+}
+.UserRegisterInput{
+	height:15px;
+	width:160px;
+	border-color: #ccc;
+    border-style: solid;
+    border-width: 2px;}
+
+#searchTextDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	height: 30px;
+	width: 600px;
+}
+#UserConterControl{
+	height:104px;
+	width:768px;
+	float:left;}
+#UserLogin_Tip{
+	height:30px;
+	width:182px;
+	font-family:"微软雅黑";
+	font-size:12px;
+	margin-top:74px;}
+
+#searchButtonDiv {
+	float: left;
+	margin-top: 30px;
+	margin-left: 0px;
+	height: 30px;
+	width: 100px;
+}
+#UserLogin{
+	float:left;
+	height:104px;
+	width:182px;}
+
+#searchTestGl {
+	width: 950px;
+	height: 104px;
+	float: left;
+	}
+
+#searchText {
+	height: 26px;
+	width: 596px;
+	border-color: #4490F7;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#searchButton {
+	height: 32px;
+	width: 96px;
+	background-color: #4490F7;
+	border-width: 0px;
+	color: #FFF;
+}
+
+#PetHomeAPP {
+	float: left;
+	width: 312px;
+	height: 104px;
+}
+
+	
+
+#centermanager{
+	height:460px;
+	width:436px;
+	
+	float:left;}
+#tips{
+	line-height:60px;
+	vertical-align:middle;
+	text-align:left;
+	height:60px;
+	width:400px;
+	color:#8F8F8F;
+	font-weight:600;
+	font-size:16px;
+	font-family:"微软雅黑";
+	}
+#centerkong{
+	width:400px;
+	height:50px;}	
+.center{
+	
+	font-family:"微软雅黑";
+	font-size:17px;
+	height:50px;
+	width:400px;
+	}
+.input{
+	height:16px;
+	width:308px;}
+.{
+	border-width:1px;
+	border-color:#996;
+	border-style:solid;}	
+.but{
+	margin-left:78px;
+	height:30px;
+	width:80px;
+	border-width:0px;
+	background-color:#2FB3FF;}	
+	#login_title{
+		height:50px;
+		width:400px;}							
+	border-width:0px;
+	background-color:#2FB3FF;}								

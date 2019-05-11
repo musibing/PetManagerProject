@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+#rightleirong{
+	
+	margin-left:0px;
+	float:left;
+	height:520px;
+	width:1120px;
+	}
+#righttips{
+	font-weight:500;
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#20425B;
+	height:20px;
+	width:1120px;}
+	
+#userinfotips{
+
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#CCCCCC;
+	float:left;
+	height:40px;
+	width:1120px;
+	color:#FFF;
+	background:-moz-linear-gradient(top,#6F9EB2,#57919F);
+	}
+#userinfolist{
+	border-width:1px;
+	border-style:solid;
+	border-color:#9E9E9E;
+	float:left;
+	line-height:40px;
+	text-align:center;
+	vertical-align:bottom;
+	
+	width:1120px;
+	color:#2F2F2F;
+	background:-moz-linear-gradient(top,#E4EFE7,#F5F5F5);
+	}
+#userinfotitle{
+	font-family:"微软雅黑";
+	font-size:15px;
+	color:#2E2E2E;
+	float:left;
+	width:1120px;
+	height:40px;
+
+	}	
+#username{
+	float:left;
+	height:40px;
+	width:118px;
+	}
+.userinfo{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color:#CCCCCC;
+	float:left;
+	height:40px;
+	width:90px;
+	overflow:auto;}
+.daohang{
+	float:left;
+	height:40px;
+	width:90px;}
+#daohanggl{
+	border-top-color:#CCCCCC;
+	border-top-style:solid;
+	border-top-width:1px;
+	float:left;
+	height:40px;
+	width:1120px;}					 

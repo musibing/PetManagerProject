@@ -1,0 +1,690 @@
+* {
+	margin: 0px;
+}
+
+#center{
+	height:2000px;
+	width:1350px;
+	
+	}
+
+#Content {
+	height: 370px;
+	width: 1350px;
+
+	background-color: #F6F2E9;
+	
+}
+
+#Mankongleft {
+	height: 350px;
+	width: 300px;
+	float: left;
+}
+
+#MIMG {
+	height: 350px;
+	width: 912px;
+	float: left;
+	margin-left: 80px;
+}
+
+#ManListControl {
+	height: 350px;
+	width: 267px;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	font-weight: lighter;
+	margin-left: 10px;
+}
+
+.manlist {
+	height: 82px;
+	widows: 250px;
+	margin-top: 4px;
+	line-height: 82px;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+.ManListIMGClass {
+	float: left;
+	height: 72px;
+	width: 72px;
+}
+
+#Mankongright {
+	height: 350px;
+	width: 165px;
+	float: left;
+}
+
+#adviertisementControl {
+	height: 120px;
+	width: 1366px;
+	background-color: #F3F3F3;
+}
+
+#adviertisementDiv {
+	height: 120px;
+	width: 1004px;
+	margin-left: 179px;
+}
+
+.adviertisementClass {
+	float: left;
+	height: 120px;
+	width: 250px;
+	border-left-color: #DDDDDD;
+	border-left-width: 1px;
+	border-left-style: solid;
+	color: #666666;
+	font-size: 13px;
+}
+
+.adviertisementText {
+	height: 120px;
+	width: 150px;
+	float: left;
+	color: #999999;
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.adviertisementIMG {
+	float: left;
+	height: 120px;
+	width: 100px;
+}
+
+.adviertisementName {
+	color: #4490f7;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 400;
+}
+
+#adviertisementListTeleter {
+	font-size: 17px;
+}
+
+.ClassificationControl {
+	width: 1030px;
+	height: 636px;
+	margin-left: 179px;
+	margin-top: 10px;
+}
+
+.ClassificationContentControl {
+	height: 595px;
+	width: 1030px;
+	border-color: #E6E6E6;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.ClassificationBottomControl {
+	height: 215px;
+	width: 1030px;
+	background-color: #F3F3F3;
+}
+
+.ClassificationBottomContentControl {
+	height: 180px;
+	width: 1030px;
+}
+
+.ClassificationTitle {
+	height: 40px;
+	width: 1030px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 30px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-weight: 400;
+}
+
+.ClassificationLogoImg {
+	height: 40px;
+	width: 40px;
+	float: left;
+}
+
+.ClassificationCenterIMG {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 360px;
+	width: 360px;
+}
+
+.ClassificationCenterControl {
+	height: 380px;
+	width: 1030px;
+}
+
+.ClassificationCenterIMGControl {
+	height: 379px;
+	width: 380px;
+	float: left;
+	border-bottom-color: #E6E6E6;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.ClassificationLeftControl {
+	height: 379px;
+	width: 649px;
+	float: left;
+	border-left-color: #E6E6E6;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-bottom-color: #E6E6E6;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.ClassificationUseringTitle {
+	width: 650px;
+	height: 30px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+.ClassificationUsering {
+	float: left;
+	height: 160px;
+	width: 161px;
+	border-right-color: #E6E6E6;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.ClassificationUseringControl {
+	height: 190px;
+	width: 650px;
+}
+
+.ProductName {
+	height: 20px;
+	width: 162px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 17px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.ProductDescribe {
+	height: 20px;
+	width: 162px;
+	color: #999999;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#BorderClean {
+	border-right-width: 0px;
+}
+
+.ClassificationServiceControl {
+	margin-top: 15px;
+	height: 173px;
+	width: 650px;
+	border-top-color: #E6E6E6;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+#ClassificationServiceCleanBorder {
+	border-width: 0px;
+}
+
+.ClassificationServiceTitle {
+	height: 30px;
+	width: 650px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+.ClassificationServiceContent {
+	width: 650px;
+	height: 110px;
+}
+
+.ClassificationServiceClass {
+	float: left;
+	height: 110px;
+	width: 215px;
+	border-right-color: #E6E6E6;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.ClassificationServiceImg {
+	float: left;
+	height: 110px;
+	width: 108px;
+}
+
+.CSISRC {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 90px;
+	width: 90px;
+}
+
+.ClassificationServiceClassTitle {
+	float: left;
+	height: 40px;
+	width: 106px;
+	color: #131313;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.ClassificationServiceText {
+	float: left;
+	height: 70px;
+	width: 106px;
+	color: #999999;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.ClassificationForumControl {
+	float: left;
+	height: 216px;
+	width: 380px;
+	border-right-color: #E6E6E6;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.ClassificationEncyclopediaControl {
+	float: left;
+	height: 216px;
+	width: 648px;
+}
+
+.ClassificationForumTitle {
+	height: 35px;
+	width: 380px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height: 35px;
+	vertical-align: bottom;
+}
+
+.ClassificationForumContent {
+	height: 181px;
+	width: 380px;
+}
+
+.ClassificationForumImg {
+	float: left;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.ClassificationForumTextControl {
+	float: left;
+	height: 60px;
+	width: 320px;
+}
+
+.ClassificationForumTextTitle {
+	width: 320px;
+	height: 35px;
+	color: #131313;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 35px;
+	vertical-align: bottom;
+}
+
+.ClassificationForumTextContent {
+	height: 25px;
+	width: 320px;
+	color: #999999;
+	font-size: 12px;
+	line-height: 25px;
+	vertical-align: bottom;
+	font-family: "微软雅黑";
+}
+
+.ClassificationForumContentControl {
+	height: 60px;
+	width: 380px;
+}
+
+.EncyclopediaTitle {
+	height: 35px;
+	width: 648px;
+	color: #4490F7;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height: 35px;
+	vertical-align: bottom;
+}
+
+.EncyclopediaContentTitle {
+	color: #131313;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height: 35px;
+	vertical-align: bottom;
+	height: 35px;
+	width: 274px;
+}
+
+.EncyclopediaContentText {
+	height: 110px;
+	width: 274px;
+	color: #999999;
+	font-size: 12px;
+	line-height: 25px;
+	vertical-align: bottom;
+	font-family: "微软雅黑";
+}
+
+.EncyclopediaContentControl {
+	float: left;
+	width: 274px;
+	height: 181px;
+}
+
+.EncyclopediaContentImgControl {
+	float: left;
+	height: 181px;
+	width: 209px;
+}
+
+.EncyclopediaContentImg {
+	margin-top: 2px;
+	margin-left: 10px;
+	width: 189px;
+	height: 140px;
+}
+
+.VarietiesControl {
+	float: left;
+	height: 171px;
+	width: 160px;
+	border-left-color: #ECECEC;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.VarietiesTitle {
+	height: 30px;
+	width: 161px;
+	color: #131313;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 30px;
+	vertical-align: bottom;
+}
+
+.VarietiesContent {
+	height: 20px;
+	width: 161px;
+	color: #999999;
+	font-size: 12px;
+	line-height: 20px;
+	vertical-align: bottom;
+	font-family: "微软雅黑";
+}
+#DataControl{
+	float: left;
+	overflow:hidden;
+	padding: 10px 75px;
+	height:auto;
+	width:1200px;
+	
+	
+	}
+#HotPet {
+	height: 340px;
+	width: 1190px;
+}
+
+#HotPetTitle {
+	height: 40px;
+	width: 1190px;
+}
+
+#HotPetTitleText {
+	height: 40px;
+	width: 595px;
+	float: left;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: left;
+	font-family: "方正兰亭超细黑简体";
+	font-size: 18px;
+	font-weight: 800;
+}
+
+#HotPetTitleMore {
+	height: 40px;
+	width: 595px;
+	float: left;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: right;
+	font-family: "方正兰亭超细黑简体";
+	font-size: 14px;
+}
+
+#HotPetBody {
+	height: 300px;
+	width: 1190px;
+}
+
+.HotPetControlClassIMGControl {
+	height: 125px;
+	width: 190px;
+}
+
+.HotPetControlClassIMG {
+	height: 125px;
+	width: 190px;
+}
+
+.HotPetControlClassText {
+	height: 20px;
+	width: 190px;
+	background-color:#EFEFEF;
+	line-height:20px;
+	vertical-align:middle;
+	font-family:"微软雅黑";
+	font-size:14px;
+	
+	text-align:center;
+}
+#HotPetControlClass1{
+	margin-right:0px;}
+	#HotPetControlClass2{
+	margin-right:0px;}
+
+.HotPetControlClass {
+	height: 145px;
+	width: 188px;
+	float: left;
+	margin-right:10px;
+	
+	
+}
+
+.BaiKeControlTitle {
+	width: 1190px;
+	height: 45px;
+	background-color:#99CC33;
+}
+
+.BaiKeControlTitleText {
+	float:left;
+	height: 40px;
+	width: 140px;
+	float: left;
+	background-color:#99CC33;
+	font-family:"微软雅黑";
+	font-size:18px;
+	line-height:40px;
+	font-weight:900;
+	color:#FFFFFF;
+	vertical-align:middle;
+	text-align:center;
+	
+}.BaiKeControlTitleKong{
+	float:left;
+	background-color:#FFF;
+	height: 40px;
+	width:770px;
+	}
+.BaiKeControlTitleIMG{
+	float:left;
+	height:40px;
+	width:40px;
+	background-color:#FFF;}
+
+.BaikeControlList {
+	background-color:#FFF;
+	height: 40px;
+	width: 240px;
+	float: left;
+	
+}
+
+.BaiKeControl {
+	height: 410px;
+	width: 1190px;
+
+}
+
+.BaikeControlListClass {
+	margin-top:10px;
+	height: 20px;
+	width: 79px;
+	float: left;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#000500;
+	text-align:center;
+	vertical-align:middle;
+	line-height:20px;
+}
+#BaikeControlListClassTraing{
+	
+	border-left-color:#CCCCCC;
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-color:#CCCCCC;
+	border-right-style:solid;
+	border-right-width:1px;
+	}
+
+.BaikeControlBody {
+	height: 350px;
+	width: 1190px;
+}
+.BaikeControlIMG{
+	width:290px;
+	height:220px
+	}
+.BaikeControlIMGDis {
+	margin-top:20px;
+	font-size: 13px;
+	width: 290px;
+	height: 85px;
+	line-height:23px;
+}
+
+.BaikeLogoControl {
+	height: 325px;
+	width: 290px;
+	margin-top: 20px;
+	float: left;
+	background-color:#F3F3F3;
+}
+
+.BaikeIMGClass {
+	height: 66px;
+	width: 90px;
+	float: left;
+}
+
+.BaikeIMGControl {
+	height: 345px;
+	width: 610px;
+	float: left;
+}
+
+.BaikeIMGClassText {
+	height: 66px;
+	width: 185px;
+	float: left;
+	line-height:20px;
+	vertical-align:middle;
+	font-family:"微软雅黑";
+	font-size:13px;
+	
+	text-align:left;
+}
+
+.BaikeIMGClassControl {
+	
+	height: 66px;
+	width: 285px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+.InterlocutionControl{
+	margin-top:20px;
+	
+	height:325px;
+	width:290px;
+	float:left;
+	}
+.InterlocutionControlTitle{
+	margin-top:1px;
+	
+	float:left;
+	height:32px;
+	width:290px;}
+.InterlocutionControlTitleIMGDIV{
+	height:32px;
+	width:30px;
+	float:left;}
+.InterlocutionControlTitleIMG{
+	height:27px;
+	width:30px;}
+.InterlocutionControlTitleText{
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+	height:30px;
+	width:260px;
+	float:left;
+	line-height:30px;
+	vertical-align:middle;
+	font-family:"微软雅黑";
+	font-size:14px;
+	
+	text-align:left;}				

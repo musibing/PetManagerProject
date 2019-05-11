@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+/*bottom Start*/
+#bottom {
+	height: 180px;
+	width: 1350px;
+	float:left;
+}
+
+#bottomLinkControl {
+	float: left;
+	height: 20px;
+	width: 730px;
+}
+
+.bottomBaian img {
+	display: block;
+	float: left;
+}
+
+#bottomControl {
+	height: 95px;
+	width: 730px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bottomLink {
+	float: left;
+	height: 20px;
+	width: 80px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#bottomLinkID {
+	width: 163px;
+	height: 20px;
+	border-width: 0px;
+}
+
+#bottomBeianControl {
+	height: 20px;
+	width: 730px;
+	float: left;
+}
+
+.bottomBaian {
+	float: left;
+	height: 20px;
+	width: 240px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	border-right-color: #DDDDDD;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+#BeianInfoControl {
+	float: left;
+	height: 20px;
+	width: 730px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #666666;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#BeianImgControl {
+	margin-left: 120px;
+	float: left;
+	height: 35px;
+	width: 480px;
+}
+
+.BeianImg {
+	float: left;
+	height: 35px;
+	width: 120px;
+}
+
+.BeianImg img {
+	display: block;
+}
+/*bottom Start*/

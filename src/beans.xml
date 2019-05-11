@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	   http://www.springframework.org/schema/aop
+	   http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	   http://www.springframework.org/schema/tx
+	   http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<context:component-scan base-package="com.musibing"></context:component-scan>
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="org.gjt.mm.mysql.Driver" />
+		<property name="jdbcUrl"
+			value="jdbc:mysql://127.0.0.1:3306/petmanager?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="user" value="root" />
+		<property name="password" value="Musibing@007" />
+		<property name="initialPoolSize" value="1" />
+		<property name="minPoolSize" value="1" />
+		<property name="maxPoolSize" value="300" />
+		<property name="maxIdleTime" value="60" />
+		<property name="acquireIncrement" value="10" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		
+	</bean>
+	<!-- <bean id ="productOderListServiceBean" class="com.musibing.Bean.ProductOderListServiceBean" ></bean> 
+	<bean id ="productOderListService" class="com.musibing.server.ProductOderListService" > 
+	<property name="productOderListServiceBean" ref="productOderListServiceBean"/> 
+	</bean> -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingResources">
+			<list>
+				<value>com/musibing/vo/AccountCollect.hbm.xml</value>
+				<value>com/musibing/vo/AccountVO.hbm.xml</value>
+				<value>com/musibing/vo/IndexCat.hbm.xml</value>
+				<value>com/musibing/vo/PetDataVOClass.hbm.xml</value>
+				<value>com/musibing/vo/PetType.hbm.xml</value>
+				<value>com/musibing/vo/Product.hbm.xml</value>
+				<value>com/musibing/vo/ProductIMG.hbm.xml</value>
+				<value>com/musibing/vo/ProductOder.hbm.xml</value>
+				<value>com/musibing/vo/OrderSunburnImg.hbm.xml</value>
+				<value>com/musibing/vo/BuyCar.hbm.xml</value>
+				<value>com/musibing/vo/BuyCarList.hbm.xml</value>
+				<value>com/musibing/vo/PetIMG.hbm.xml</value>
+				<value>com/musibing/vo/PetEntryStatistics.hbm.xml</value>
+				<value>com/musibing/vo/AccountRecords.hbm.xml</value>
+				<value>com/musibing/vo/Article.hbm.xml</value>
+				<value>com/musibing/vo/Employinfo.hbm.xml</value>
+				<value>com/musibing/vo/JobiInfo.hbm.xml</value>
+				<value>com/musibing/vo/FreshProduct.hbm.xml</value>
+				<value>com/musibing/vo/ProductOderList.hbm.xml</value>
+				<value>com/musibing/vo/ProductJudged.hbm.xml</value>
+				<value>com/musibing/vo/Car.hbm.xml</value>
+				<value>com/musibing/vo/Owner.hbm.xml</value>
+				
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+				hibernate.hbm2ddl.auto=update
+				hibernate.show_sql=flase
+				hibernate.format_sql=false
+			
+			</value>
+		</property>
+	</bean>
+	 <!-- <bean id ="accountVO" class="com.musibing.vo.AccountVO" ></bean>  -->
+	 <!-- <bean id ="accountServerBa" class="com.musibing.Bean.AccountServerBa" ></bean>  -->
+		<!-- <bean id ="accountServer" class="com.musibing.server.AccountServer" > 
+		<property name="accountServerBa" ref="accountServerBa"/> 
+		</bean> -->
+	<!-- 让Spring接管Hibernate的事务管理器 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- <bean id ="petServerBean" class="com.musibing.Bean.PetServerBean" ></bean> 
+		<bean id ="petServer" class="com.musibing.server.PetServer" > <property name="petServerBean" 
+		ref="petServerBean"/> </bean> -->
+ 
+	<!-- 使用基于注解方式配置要务 -->
+	
+	<tx:annotation-driven transaction-manager="txManager" />
+</beans>

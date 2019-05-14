@@ -17,12 +17,7 @@
 <script src="../jquery/jquery-1.7.2.js"></script>
 <script>
 function load(){
-	  
-	
-	}
-	
-	$(function() {
-		$.ajax({
+	  $.ajax({
 				url : "..//UserLoginStatusCheck.action",
 				data : {
 					},
@@ -41,7 +36,12 @@ function load(){
 					
 			}
 
-			})	
+			})
+	
+	}
+	
+	$(function() {
+			
 		$("#searchText").change(function(){
 			
 		

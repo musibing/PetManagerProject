@@ -234,7 +234,7 @@ function load(){
 
 			</div>
 		</div>
-		
+		<div id="AnimalDataViewControl">
 		<c:forEach var="x" items="${requestScope.Animal}">
         <div class="AnimalDataView">
 			<c:if test="${x eq 'Dog'}">
@@ -406,7 +406,7 @@ function load(){
             </div>
 			<!--分类结束-->
 		</c:forEach>
-        
+        </div>
 	</div>
 	
     <!--bottomControl Start-->

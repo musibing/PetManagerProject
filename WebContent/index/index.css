@@ -1,6 +1,11 @@
 *{
 	margin: 0px;
 }
+#AnimalDataViewControl{
+	float:left;
+	height:3000px;
+	width:1350px;
+	}
 
 #Cat .ClassificationLogoImg{
 	background-position:-79px 0px;}
@@ -38,7 +43,7 @@
 	}				
 
 #center{
-	height: 3270px;
+	height: 3615px;
 	width:1350px;
 }
 

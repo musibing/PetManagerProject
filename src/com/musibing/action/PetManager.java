@@ -80,10 +80,15 @@ public class PetManager {
 			}
 		
 		System.out.println("商品ID属性为："+PetIDData);
+		AccountCollect accountcollect=null;
+	if(accountID!=null){
+		
 		String HQL="from AccountCollect where petDataVOClass.petID="+PetIDData+" and accountVO.accountId="+accountID.getAccountId();
 		System.out.println("HQL属性为："+HQL);
-		AccountCollect accountcollect=acccountCollectService.ViewAccountCollectForParameterID(HQL);
+		 accountcollect=acccountCollectService.ViewAccountCollectForParameterID(HQL);
 		System.out.println(accountcollect);
+		
+	}	
 		
 		if(accountcollect!=null){
 			HSR.getSession().setAttribute("AccountcollectStatus", accountcollect);

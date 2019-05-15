@@ -99,11 +99,13 @@ public class ArticleManager extends ActionSupport{
 			int ArticleID=Integer.parseInt(ArticleIDStr);
 			Article ac=as.selectArticleForID(ArticleID);
 			System.out.println("文章属性为："+ArticleID);
-			String HQL="from AccountCollect where articleID.articleID="+ArticleID+" and accountVO.accountId="+accountID.getAccountId();
-			System.out.println("HQL属性为："+HQL);
-			AccountCollect accountcollect=acccountCollectService.ViewAccountCollectForParameterID(HQL);
-			System.out.println(accountcollect);
+			AccountCollect accountcollect=null;
 			
+			if(accountID!=null){String HQL="from AccountCollect where articleID.articleID="+ArticleID+" and accountVO.accountId="+accountID.getAccountId();
+			System.out.println("HQL属性为："+HQL);
+				accountcollect=acccountCollectService.ViewAccountCollectForParameterID(HQL);
+			System.out.println(accountcollect);
+			}
 			if(accountcollect!=null){
 				HSR.getSession().setAttribute("AccountcollectStatus", accountcollect);
 			}else{

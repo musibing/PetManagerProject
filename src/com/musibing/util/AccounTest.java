@@ -1,10 +1,27 @@
 package com.musibing.util;
 
 import java.io.File;
+import java.util.List;
+
+import javax.annotation.Resource;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.musibing.server.AccountCollectService;
+import com.musibing.server.AccountServer;
+import com.musibing.server.BuyCarServer;
+import com.musibing.vo.AccountCollect;
+import com.musibing.vo.AccountVO;
+import com.musibing.vo.BuyCar;
 
 public class AccounTest {
+	@Resource
+	AccountServer accountservice;	
+	BuyCar bc;
+	BuyCarServer bcs;
+	AccountVO accountvo;
 @Test
 public void testIMG(){
 	String basePath="I:/Java_Resoure/PetManagerProject/WebContent/img/Account/";
@@ -20,4 +37,24 @@ if(!files.isDirectory()){
 }
 }
 }
+@Test
+public void intiControl(){
+	ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
+	accountservice =(AccountServer)act.getBean("accountServerBa");
+	bcs=(BuyCarServer)act.getBean("buyCarServerBean");
+}
+@Test
+public void moidFo(){
+	intiControl();
+	List<AccountVO> accoutVO=accountservice.ViewAllUser();
+	
+	for(int  j=4;j<accoutVO.size();j++){
+		int buyCarID=50000000+j;
+		bcs.AddBuyCar(new BuyCar(buyCarID,accoutVO.get(j)));
+		
+	}
+	
+	
+}
+
 }

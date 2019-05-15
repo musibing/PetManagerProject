@@ -40,8 +40,9 @@
 }
 
 #CenterControl{
+	padding:20px 0px;
 	float: left;
-	height: 750px;
+	height: 600px;
 	width: 1350px;
 	background-color: #f3f3f3;
 }

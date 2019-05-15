@@ -58,7 +58,7 @@ $("#userloginid").blur(function(){
 
 
 	<div id="top">
-		<div id="topContorl">
+		<div id="topControl">
 
 			<div class="topleftclass"><a href="../index/index.jsp">宠物之家</a></div>
 		<div class="topleftclass"><a href="../SelectClassificationProductForArrayList">宠物商城</a></div>
@@ -112,7 +112,7 @@ $("#userloginid").blur(function(){
 登录名称:<s:textfield cssClass="input" name="uvo.accountId" id="userloginid"></s:textfield>
 </div>
 <div class="center">
-登录密码:<s:textfield cssClass="input" name="uvo.passWord" id="userpass"></s:textfield>
+登录密码:<s:password cssClass="input" name="uvo.passWord" id="userpass"></s:password>
 </div>
 <div class="center">
 

@@ -102,7 +102,7 @@ public class AccountManager extends ActionSupport {
 		ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
 		
 		acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
-		
+		accountservice=(AccountServer)act.getBean("accountServerBa");
 		pimgsb=(ProductIMGServer)act.getBean("productimgServerBean");
 		
 		BCS=(BuyCarServer)act.getBean("buyCarServerBean");
@@ -201,7 +201,8 @@ public class AccountManager extends ActionSupport {
 	}
 	public void SelectAccountIMGForAccountID(){
 		try {
-		/*System.out.println("系统检测");
+			ActionInit();
+		System.out.println("系统检测");
 		String accountid=HSR.getParameter("accountid");
 		int accountidint=0;
 		System.out.println("得到的数据账户是"+accountid);
@@ -210,7 +211,7 @@ public class AccountManager extends ActionSupport {
 		String accountIMGPath=uvo.getAccountIMGPath();
 		System.out.println("得到的数据图片是"+accountIMGPath);
 		
-			HSP.getWriter().print(accountIMGPath);*/
+			HSP.getWriter().print(accountIMGPath);
 		} catch (Exception e) {
 			
 			e.printStackTrace();
@@ -247,17 +248,11 @@ public class AccountManager extends ActionSupport {
 		 accountvo=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
 		System.out.println("accountvo状态:"+(accountvo==null));
 		BuyCar bc=BCS.SelectBuyCarForAccountID(accountvo.getAccountId());
+		if(bc!=null){
+			li=BCLS.SelectBuyCarListForBuyCarID(bc.getBuyCarID());
+			 BuyCarNumber=li.size();
+		}
 		
-		
-		li=BCLS.SelectBuyCarListForBuyCarID(bc.getBuyCarID());
-		 BuyCarNumber=li.size();
-		
-		
-		
-			/*HSP.getWriter().print("<a href=\"../viewAccountByAccountID?accountID=+/+\">"+accountvo.getAccountName()+"</a>");*/
-			
-		
-			
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

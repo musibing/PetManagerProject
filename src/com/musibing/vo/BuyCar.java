@@ -15,9 +15,9 @@ public class BuyCar implements Serializable{
 	public BuyCar() {
 		super();
 	}
-	public BuyCar(AccountVO aVO) {
+	public BuyCar(int buyCarID,AccountVO aVO) {
 		super();
-		
+		this.buyCarID=buyCarID;
 		this.aVO = aVO;
 	}
 	public int getBuyCarID() {

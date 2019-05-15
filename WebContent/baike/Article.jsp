@@ -96,35 +96,36 @@
 			</div>
 		</div>
 		<div id="Navigation">
-			<div id="NavigationControl">
+		<div id="NavigationControl">
 
-				<div class="Navigation2 NavigationWidth">
-                <div id="ALLCommodityControl">
+			<div class="Navigation2 NavigationWidth">
+				<div id="ALLCommodityControl">
 					<span id="ALLCommodityText">全部分类商品</span>
 					<div id="ALLCommodityICO">
 						<div id="ALLCommodityICOIMG"></div>
 					</div>
-                    </div>
 				</div>
-				<div class="Navigation2 Nvaindex">首页</div>
-				<div class="Navigation2">狗狗</div>
-				<div class="Navigation2">猫猫</div>
-				<div class="Navigation2">小宠</div>
-				<div class="Navigation2">水族</div>
-				<div class="Navigation3">全球购</div>
-				<div class="Navigation4">创意生活馆</div>
-				<div class="Navigation3">品牌馆</div>
-				<div class="Navigation4">宠物服务</div>
-				<div id="Shop_Car">
-					<div id="CarIMGControl">
-						<div id="Sop_CarIMG"></div>
+			</div>
+			<div class="Navigation2 Nvaindex">首页</div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=狗狗专区">狗狗</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=猫咪专区">猫猫</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=小宠专区">小宠</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=水族专区">水族</a></div>
+			<div class="Navigation3">全球购</div>
+			<div class="Navigation4">创意生活馆</div>
+			<div class="Navigation3">品牌馆</div>
+			<div class="Navigation4">宠物服务</div>
+			<div id="Shop_Car">
+				<div id="CarIMGControl">
+					<div id="Sop_CarIMG"></div>
+				</div>
+				<div id="Shop_CarText">
+					<a href="../ViewBuyCarList" class="BuyCarHref">购物车</a> <div class="BuyCarTotalNumber"><s:property value='#session.BuyCarNumber'></s:property>
 					</div>
-					<p id="Shop_CarText">
-						购物车 <span id="total">0</span>
-					</p>
 				</div>
 			</div>
 		</div>
+	</div>
 
 
 
@@ -200,4 +201,38 @@
 
 
 </body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+function load(){
+	  $.ajax({
+				url : "..//UserLoginStatusCheck.action",
+				data : {
+					},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,
+				success : function(str) {
+					
+					if(str!="null"){
+						$("#Remvoe").remove();
+					$("#accontid").html(str);
+					$("#ChengWidth").css("width",120);
+					
+						}
+					
+			}
+
+			})
+	
+	}
+</script>
 </html>

@@ -1,9 +1,11 @@
 * {
 	margin: 0px;
 }
-
+#BaiKeDataControl{
+	height:1640px;
+	width:1190px;}
 #center{
-	height:2000px;
+	height:2500px;
 	width:1350px;
 	
 	}

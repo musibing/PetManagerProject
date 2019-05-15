@@ -8,21 +8,14 @@
 <html>
 <head>
 <script src="../jquery/jquery-1.7.2.js"></script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="index.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Top.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Logo.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Navigation.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Bottom.css">
+
 <title>宠物情报系统</title>
 <%
 	String[] AnimalClassification = { "Dog", "Cat", "Aquarium",
@@ -87,10 +80,10 @@ var _hmt = _hmt || [];
 				</div>
 			</div>
 			<div class="Navigation2 Nvaindex">首页</div>
-			<div class="Navigation2">狗狗</div>
-			<div class="Navigation2">猫猫</div>
-			<div class="Navigation2">小宠</div>
-			<div class="Navigation2">水族</div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=狗狗专区">狗狗</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=猫咪专区">猫猫</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=小宠专区">小宠</a></div>
+			<div class="Navigation2"><a href="../SelectClassificationProductForTags?ProductTagVelName=水族专区">水族</a></div>
 			<div class="Navigation3">全球购</div>
 			<div class="Navigation4">创意生活馆</div>
 			<div class="Navigation3">品牌馆</div>
@@ -99,9 +92,10 @@ var _hmt = _hmt || [];
 				<div id="CarIMGControl">
 					<div id="Sop_CarIMG"></div>
 				</div>
-				<p id="Shop_CarText">
-					购物车 <span id="total">0</span>
-				</p>
+				<div id="Shop_CarText">
+					<a href="../ViewBuyCarList" class="BuyCarHref">购物车</a> <div class="BuyCarTotalNumber"><s:property value='#session.BuyCarNumber'></s:property>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -165,6 +159,7 @@ var _hmt = _hmt || [];
                 </s:iterator>
 			</div>
 		</div>
+        <div id="BaiKeDataControl">
 		<div class="BaiKeControl">
 			<div class="BaiKeControlTitle">
 				<div class="BaiKeControlTitleIMG"><img src="../img/BaiKe/BaiKe/Title/CatIMG.png" width="40" height="40"></div><div class="BaiKeControlTitleText">狗狗百科</div>
@@ -206,6 +201,131 @@ var _hmt = _hmt || [];
                
                 
 			</div>
+            <div class="BaiKeControl">
+			<div class="BaiKeControlTitle">
+				<div class="BaiKeControlTitleIMG"><img src="../img/BaiKe/BaiKe/Title/CatIMG.png" width="40" height="40"></div><div class="BaiKeControlTitleText">猫猫百科</div>
+                <div class="BaiKeControlTitleKong"></div>
+				<div class="BaikeControlList">
+					<div class="BaikeControlListClass">猫猫饲养</div>
+					<div id="BaikeControlListClassTraing" class="BaikeControlListClass">猫猫训练</div>
+					<div class="BaikeControlListClass">猫猫医疗</div>
+				</div>
+			</div>
+              
+			<div class="BaikeControlBody">
+				<div class="BaikeLogoControl">
+					<div class="BaikeControlIMG">
+						<img src="../img/BaiKe/Logo/Logo.jpg" width="290" height="220">
+					</div>
+					<div class="BaikeControlIMGDis">
+						为狗狗做好驱虫工作不只是为了防止某些寄生虫对我们的健康造成影响，更主要的是因为寄生虫对于狗狗的危害来的更大，而且寄生虫不</div>
+				</div>
+				<div class="BaikeIMGControl">
+                 <s:iterator value="#session.AllArticleInfo" var="lidata">
+					<div class="BaikeIMGClassControl">
+						<div class="BaikeIMGClass">
+							<img src="<s:property value='#lidata.articleIMG'></s:property>" width="90" height="66">
+						</div>
+						<div class="BaikeIMGClassText"><a href="../viewArticleForID?ArticleID=<s:property value='#lidata.articleID'></s:property>"><s:property value='#lidata.articleName'></s:property></a></div>
+					</div>
+                    
+                     </s:iterator>
+				</div>
+              <div class="InterlocutionControl">
+                <s:iterator value="#session.AllQuestion" var="Questionli">
+                <div class="InterlocutionControlTitle">
+                <div class="InterlocutionControlTitleIMGDIV">
+                <img src="../img/WebINCO/Que.png" class="InterlocutionControlTitleIMG"></div> <div class="InterlocutionControlTitleText"><a href="../viewArticleForID?ArticleID=<s:property value='#Questionli.articleID'></s:property>"><s:property value='#Questionli.articleName'></s:property></a></div></div>
+                  </s:iterator>
+              </div>
+                </div><!-- end -->
+               
+                
+			</div>
+            <div class="BaiKeControl">
+			<div class="BaiKeControlTitle">
+				<div class="BaiKeControlTitleIMG"><img src="../img/BaiKe/BaiKe/Title/CatIMG.png" width="40" height="40"></div><div class="BaiKeControlTitleText">小宠百科</div>
+                <div class="BaiKeControlTitleKong"></div>
+				<div class="BaikeControlList">
+				  <div class="BaikeControlListClass">小宠饲养</div>
+					<div id="BaikeControlListClassTraing" class="BaikeControlListClass">小宠训练</div>
+					<div class="BaikeControlListClass">小宠医疗</div>
+				</div>
+			</div>
+              
+			<div class="BaikeControlBody">
+				<div class="BaikeLogoControl">
+					<div class="BaikeControlIMG">
+						<img src="../img/BaiKe/Logo/Logo.jpg" width="290" height="220">
+					</div>
+					<div class="BaikeControlIMGDis">
+						为狗狗做好驱虫工作不只是为了防止某些寄生虫对我们的健康造成影响，更主要的是因为寄生虫对于狗狗的危害来的更大，而且寄生虫不</div>
+				</div>
+				<div class="BaikeIMGControl">
+                 <s:iterator value="#session.AllArticleInfo" var="lidata">
+					<div class="BaikeIMGClassControl">
+						<div class="BaikeIMGClass">
+							<img src="<s:property value='#lidata.articleIMG'></s:property>" width="90" height="66">
+						</div>
+						<div class="BaikeIMGClassText"><a href="../viewArticleForID?ArticleID=<s:property value='#lidata.articleID'></s:property>"><s:property value='#lidata.articleName'></s:property></a></div>
+					</div>
+                    
+                     </s:iterator>
+				</div>
+              <div class="InterlocutionControl">
+                <s:iterator value="#session.AllQuestion" var="Questionli">
+                <div class="InterlocutionControlTitle">
+                <div class="InterlocutionControlTitleIMGDIV">
+                <img src="../img/WebINCO/Que.png" class="InterlocutionControlTitleIMG"></div> <div class="InterlocutionControlTitleText"><a href="../viewArticleForID?ArticleID=<s:property value='#Questionli.articleID'></s:property>"><s:property value='#Questionli.articleName'></s:property></a></div></div>
+                  </s:iterator>
+              </div>
+                </div><!-- end -->
+               
+                
+			</div>
+            <div class="BaiKeControl">
+			<div class="BaiKeControlTitle">
+				<div class="BaiKeControlTitleIMG"><img src="../img/BaiKe/BaiKe/Title/CatIMG.png" width="40" height="40"></div>
+				<div class="BaiKeControlTitleText">爬虫百科</div>
+                <div class="BaiKeControlTitleKong"></div>
+				<div class="BaikeControlList">
+					<div class="BaikeControlListClass">爬虫饲养</div>
+					<div id="BaikeControlListClassTraing" class="BaikeControlListClass">爬虫训练</div>
+					<div class="BaikeControlListClass">爬虫医疗</div>
+				</div>
+			</div>
+              
+			<div class="BaikeControlBody">
+				<div class="BaikeLogoControl">
+					<div class="BaikeControlIMG">
+						<img src="../img/BaiKe/Logo/Logo.jpg" width="290" height="220">
+					</div>
+					<div class="BaikeControlIMGDis">
+						为狗狗做好驱虫工作不只是为了防止某些寄生虫对我们的健康造成影响，更主要的是因为寄生虫对于狗狗的危害来的更大，而且寄生虫不</div>
+				</div>
+				<div class="BaikeIMGControl">
+                 <s:iterator value="#session.AllArticleInfo" var="lidata">
+					<div class="BaikeIMGClassControl">
+						<div class="BaikeIMGClass">
+							<img src="<s:property value='#lidata.articleIMG'></s:property>" width="90" height="66">
+						</div>
+						<div class="BaikeIMGClassText"><a href="../viewArticleForID?ArticleID=<s:property value='#lidata.articleID'></s:property>"><s:property value='#lidata.articleName'></s:property></a></div>
+					</div>
+                    
+                     </s:iterator>
+				</div>
+              <div class="InterlocutionControl">
+                <s:iterator value="#session.AllQuestion" var="Questionli">
+                <div class="InterlocutionControlTitle">
+                <div class="InterlocutionControlTitleIMGDIV">
+                <img src="../img/WebINCO/Que.png" class="InterlocutionControlTitleIMG"></div> <div class="InterlocutionControlTitleText"><a href="../viewArticleForID?ArticleID=<s:property value='#Questionli.articleID'></s:property>"><s:property value='#Questionli.articleName'></s:property></a></div></div>
+                  </s:iterator>
+              </div>
+                </div><!-- end -->
+               
+                
+			</div>
+            </div>
             </div>
 		</div>
 
@@ -254,4 +374,38 @@ var _hmt = _hmt || [];
 	</div>
 
 </body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+function load(){
+	  $.ajax({
+				url : "..//UserLoginStatusCheck.action",
+				data : {
+					},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,
+				success : function(str) {
+					
+					if(str!="null"){
+						$("#Remvoe").remove();
+					$("#accontid").html(str);
+					$("#ChengWidth").css("width",120);
+					
+						}
+					
+			}
+
+			})
+	
+	}
+</script>
 </html>

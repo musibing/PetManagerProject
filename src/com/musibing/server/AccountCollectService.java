@@ -7,6 +7,6 @@ import com.musibing.vo.AccountCollect;
 public interface AccountCollectService {
 	public List<AccountCollect> ViewAllAccountCollect();
 	public AccountCollect ViewAccountCollectForParameterID(String HQL);
-	
+	public List<AccountCollect> ViewAccountCollectListForParameterID(String HQL);
 
 }

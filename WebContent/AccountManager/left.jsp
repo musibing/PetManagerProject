@@ -44,7 +44,7 @@
   <a href="GetPorductContent.jsp" id="GetPorductContent" target="righttager">到货记录</a>
     </div>
     <div class="listTitleContent">
-     <a href="ShopCollect.jsp" id="ShopCollect" target="righttager">我的收藏</a>
+     <a href="../viewProductCollectListInfoByAccountID" id="ShopCollect" target="righttager">我的收藏</a>
     				 	
     </div>
     </div>

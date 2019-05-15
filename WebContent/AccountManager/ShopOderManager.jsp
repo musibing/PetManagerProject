@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>商城订单管理</title>
 <link type="text/css" rel="stylesheet" href="index.css">
-<link type="text/css" rel="stylesheet" href="PersionCenter.css">
+<link type="text/css" rel="stylesheet" href="PersionCenterPublic.css">
 <link type="text/css" rel="stylesheet" href="ShopOderManager.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
   	待评价
     </div>
      <div class="titleClass search">
-     <div id="test">
+     <div id="searchControl">
   	<input type="text" class="oderinfotext" value="订单编号/商品名称"><input type="button" class="odersearch" value="搜索订单"> 
     </div>
     </div>
@@ -96,12 +96,6 @@
     </div>
     
     </div>
-    
- <div class="userlove datacontent">
-    <div class="datacontentTitle">
-    用户喜欢
-    </div>
-    </div>
-    <!--数据源结束-->
+ <!--数据源结束-->
 </body>
 </html>

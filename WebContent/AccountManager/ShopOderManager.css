@@ -13,31 +13,7 @@
 .shopOder{
 	height:200px;
 	}
-.search{
-	width:296px;
-	text-align:right;
-	
-	
-	
-	}
-.oderinfotext{
-	width:160px;
-	
-	height:20px;
-	color:#777;
-	
-	
-	} 
-.odersearch{
-	margin-top:2px;
-	background-color:#EEE;
-	height:20px;
-	width:80px;
-	color:#777;
-	}
-#test{
-	height:24px;
-	width:244px;}
+
 .sonTitleContent{
 	float:left;
 	color:#555;

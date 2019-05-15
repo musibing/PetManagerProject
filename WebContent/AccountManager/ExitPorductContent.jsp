@@ -34,23 +34,25 @@
     </div>
     </div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
-    <div class="sonTitleContent width150">
-    订单编号
-    </div>
-     <div class="sonTitleContent width150">
+   
+     <div class="dataSourceTitleContent ProductID">
      商品编号
     </div>
-     <div class="sonTitleContent width200">
+     <div class="dataSourceTitleContent ProductInfo">
      商品信息
     </div>
-     <div class="sonTitleContent borderleftandright1">
-     退款时间
+     <div class="dataSourceTitleContent">
+     退款金额 
      
     </div>
-    <div class="sonTitleContent width122">
-    退款金额
+    <div class="dataSourceTitleContent">收款账户</div>
+    <div class="dataSourceTitleContent">
+    退款时间
+    </div>
+    <div class="dataSourceTitleContent">
+   操作
     </div>
     </div>
     
@@ -59,7 +61,7 @@
     暂无订单数据,去<a href="../BusinessesService/MapMode.jsp">宠物服务</a>看看吧!
     
     </div>
-    </div>
+  </div>
     
     </div>
  <!--数据源结束-->

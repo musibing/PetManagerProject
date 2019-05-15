@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+    
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,33 +37,59 @@
     </div>
     </div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
    
-     <div class="sonTitleContent ProductID">
+     <div class="dataSourceTitleContent ProductID">
      商品编号
     </div>
-     <div class="sonTitleContent ProductInfo">
+     <div class="dataSourceTitleContent ProductInfo">
      商品信息
     </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent">
      价格
      
     </div>
-    <div class="sonTitleContent width122">
+    <div class="dataSourceTitleContent ">
     库存状态
     </div>
     
     
-    <div class="sonTitleContent width122">
+    <div class="dataSourceTitleContent">
    操作
     </div>
     </div>
     
     
     <div id="contentBody">
-    暂无订单数据,去<a href="../BusinessesService/MapMode.jsp">宠物商城</a>看看吧!
+<!--     暂无订单数据,去<a href="../BusinessesService/MapMode.jsp">宠物商城</a>看看吧! -->
+    <s:iterator value="#session.AccountCollectStatus" var="lidata">
+    <div class="dataSourceLineControl">
     
+   
+     <div class="dataSourceContentData ProductID">
+     <s:property value='#lidata.product.productID'></s:property>
+    
+    </div>
+     <div class="dataSourceContentData ProductInfo">
+      <s:property value='#lidata.product.productName'></s:property>
+    </div>
+     <div class="dataSourceContentData">
+     <s:property value='#lidata.product.retailPrice'></s:property>
+     
+    </div>
+    <div class="dataSourceContentData">
+    有货
+    </div>
+    
+    
+    <div class="dataSourceContentData">
+   取消收藏
+    </div>
+    </div>
+    
+    
+    </s:iterator>
     </div>
     </div>
     

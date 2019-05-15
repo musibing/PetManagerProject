@@ -25,6 +25,13 @@ public class AccountCollectServicBean implements AccountCollectService{
 	public AccountCollect ViewAccountCollectForParameterID(String HQL) {
 		return (AccountCollect)factory.getCurrentSession().createQuery(HQL).uniqueResult();
 	}
+
+
+	
+	public List<AccountCollect> ViewAccountCollectListForParameterID(String HQL) {
+		
+		return factory.getCurrentSession().createQuery(HQL).list();
+	}
 	
 	
 

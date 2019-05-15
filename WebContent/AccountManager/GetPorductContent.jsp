@@ -16,26 +16,26 @@
     <div class="datacontentTitle">
     到货通知</div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
    
-     <div class="sonTitleContent ProductID">
+     <div class="dataSourceTitleContent ProductID">
      商品编号
     </div>
-     <div class="sonTitleContent ProductInfo">
+     <div class="dataSourceTitleContent ProductInfo">
      商品信息
     </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent">
      价格
      
     </div>
-    <div class="sonTitleContent width122">
+    <div class="dataSourceTitleContent">
     库存状态
     </div>
-    <div class="sonTitleContent width122">
+    <div class="dataSourceTitleContent">
     通知状态
     </div>
-    <div class="sonTitleContent width122">
+    <div class="dataSourceTitleContent">
    操作
     </div>
     </div>

@@ -294,4 +294,33 @@ public class AccountManager extends ActionSupport {
 		HSR.getSession().setAttribute("AccountVOProductOderlist", productList);
 		return "OK";
 	}
+	
+	public String viewProductCollectListInfoByAccountID(){
+	System.out.println("帐户收藏检测");
+	ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
+	acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
+	AccountVO accountID=(AccountVO)ServletActionContext.getRequest().getSession().getAttribute("AccountInfo");
+	
+	if(accountID!=null){
+		
+		System.out.println("帐户信息是否为空："+"帐户属性为："+accountID);
+		
+	String HQL="from AccountCollect where product.productID IS NOT NULL and accountVO.accountId="+accountID.getAccountId();
+	System.out.println("HQL属性为："+HQL);
+	List<AccountCollect> accountcollect=acccountCollectService.ViewAccountCollectListForParameterID(HQL);
+		for(int j=0;j<accountcollect.size();j++){
+			System.out.println(accountcollect.get(j).toString());
+		}
+	
+	if(accountcollect!=null){
+		HSR.getSession().setAttribute("AccountCollectStatus", accountcollect);
+	}else{
+		HSR.getSession().setAttribute("AccountCollectStatus", null);
+	}
+	
+	}
+	return "OK";	
+	
+	/*帐户收藏结束*/
+	}
 }

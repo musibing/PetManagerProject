@@ -2,7 +2,18 @@
 /* CSS Document */
 
 .ProductCollect{
-	height:180px
+	height:420px;
 	}
+
 .ProductInfo{
-	width:354px;}		
+	width:354px;}
+.sonLine{
+	height:30px;
+	width:774px;}	
+	
+
+#contentBody div{
+	float:left;
+	height:30px;}
+.ProductID{
+	width:150px;}			

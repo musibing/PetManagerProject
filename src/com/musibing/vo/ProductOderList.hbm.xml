@@ -14,6 +14,9 @@
         <property name="dealPrice" type="double">
             <column name="DEALPRICE" />
         </property>
+         <property name="totalPrice" type="double">
+            <column name="TOTALPRICE" />
+        </property>
         <property name="productOderStatus" type="java.lang.String">
             <column name="PRODUCTODERSTATUS" />
         </property>

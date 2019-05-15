@@ -107,7 +107,7 @@ public class OderManager extends ActionSupport{
 			
 			bcl =bcls.SelectBuyCarListForID(BuyCarListID);
 			
-			int MAXProductOderListID=polsq.SelectMAXProductOderListID();
+		/*	int MAXProductOderListID=polsq.SelectMAXProductOderListID();
 			System.out.println("得到的最大订单列表参数是："+MAXProductOderListID);
 			prl.setProductOderListID(++MAXProductOderListID);
 			prl.setDealPrice(bcl.getDealPrice());
@@ -115,7 +115,7 @@ public class OderManager extends ActionSupport{
 			prl.setProductOderStatus("订单已经创建");
 			prl.setProductID(bcl.getProduct());
 			System.out.println("属性检查!"+prl.toString());
-			polsq.SaveProductOderList(prl);
+			polsq.SaveProductOderList(prl);*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

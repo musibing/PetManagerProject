@@ -10,6 +10,7 @@ public class ProductOderList  implements Serializable{
 	private int productOderListID;
 	private int number;
 	private double dealPrice;
+	private double totalPrice;
 	private String productOderStatus;/*订单状态*/
 	private Product productID;
 	private ProductOder productoderID;
@@ -19,12 +20,14 @@ public class ProductOderList  implements Serializable{
 	}
 
 	public ProductOderList(int productOderListID, int number, double dealPrice,
-			String productOderStatus, Product productID,
+			double totalPrice,String productOderStatus, Product productID,
 			ProductOder productoderID) {
 		super();
+		
 		this.productOderListID = productOderListID;
 		this.number = number;
 		this.dealPrice = dealPrice;
+		this.totalPrice=totalPrice;
 		this.productOderStatus = productOderStatus;
 		this.productID = productID;
 		this.productoderID = productoderID;
@@ -52,6 +55,14 @@ public class ProductOderList  implements Serializable{
 
 	public void setDealPrice(double dealPrice) {
 		this.dealPrice = dealPrice;
+	}
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
 	}
 
 	public String getProductOderStatus() {
@@ -84,14 +95,16 @@ public class ProductOderList  implements Serializable{
 		return serialVersionUID;
 	}
 
-
+	
 	public String toString() {
 		return "ProductOderList [productOderListID=" + productOderListID
 				+ ", number=" + number + ", dealPrice=" + dealPrice
-				+ ", productOderStatus=" + productOderStatus
-				+ ", freshProduct=" + productID + ", productoderID="
-				+ productoderID + "]";
+				+ ", totalPrice=" + totalPrice + ", productOderStatus="
+				+ productOderStatus + ", productID=" + productID
+				+ ", productoderID=" + productoderID + "]";
 	}
 
+
+	
 	
 }

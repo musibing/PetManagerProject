@@ -149,7 +149,7 @@ $(function() {
 										<div class="Tag1"></div>
 										<div class="Tag1"><s:property value='#ProductInfo.number'></s:property></div>
 										<div class="Tag1 CRed">
-											<b>￥<s:property value='#ProductInfo.dealPrice'></s:property>
+											<b>￥<s:property value='#ProductInfo.totalPrice'></s:property>
 											
 											</b>
 										</div>

@@ -237,6 +237,7 @@ public class BuyManager extends ActionSupport{
 					POL.setDealPrice(BCL.getDealPrice());
 					POL.setNumber(BCL.getBuyNumber());
 					POL.setProductID(BCL.getProduct());
+					POL.setTotalPrice(BCL.getTotalPrice());
 					POL.setProductoderID(PO);
 					POL.setProductOderStatus("订单已经创建");
 					POLS.SaveProductOderList(POL);

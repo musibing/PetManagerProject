@@ -38,7 +38,7 @@ $(function(){
 			}
 
 			}) 
-	$("#BuyCarData .Content").click(function(){
+	$("#BuyCarData .ProductPoolClass").click(function(){
 		var $allContentLine=$("#BuyCarData .Content");
 		var selectProductNumber=0;
 		var selectProductPrice=0;
@@ -46,16 +46,15 @@ $(function(){
 			var  $checkbox=$allContentLine.eq(j).find(".ProductPoolClass");
 			
 			if($checkbox.is(":checked")){
-				alert("选中!");
+				
 				selectProductNumber+=1;
 				var totalPrice=$allContentLine.eq(j).find(".totalPrice").text();
-				alert("价格值："+totalPrice);
+				
 				
 				selectProductPrice+=parseFloat(totalPrice);
 				
 				}else{
-					selectProductNumber=0;
-					selectProductPrice=0;
+					
 					}
 				
 				
@@ -65,7 +64,41 @@ $(function(){
 	$(".OderPrice").eq(1).text(selectProductPrice);
 	$(".OderPrice").eq(0).text(selectProductPrice);		
 		})
-	
+	$(".Checked").click(function(){
+		var checkedStatus=$(".Checked").eq(0).attr("checked");
+		alert("checkedStatus"+checkedStatus);
+		var $allContentLine=$("#BuyCarData .Content");
+		var selectProductNumber=0;
+		var selectProductPrice=0;
+		for(var j=0;j<$allContentLine.length;j++){
+			
+			var  $checkbox=$allContentLine.eq(j).find(".ProductPoolClass");
+			if(checkedStatus="checked"){
+				
+				 $checkbox.eq(0).attr("checked",true);
+				}else{
+					$checkbox.eq(0).attr("checked",false);
+					}
+			
+			
+			if($checkbox.is(":checked")){
+				
+				selectProductNumber+=1;
+				var totalPrice=$allContentLine.eq(j).find(".totalPrice").text();
+				selectProductPrice+=parseFloat(totalPrice);
+				
+				}else{
+					
+					}
+				
+				
+			};
+			
+	$("#OderSum").text(selectProductNumber);	
+	$(".OderPrice").eq(1).text(selectProductPrice);
+	$(".OderPrice").eq(0).text(selectProductPrice);	
+		
+		})
 	
 	})
 
@@ -137,7 +170,7 @@ $(function(){
 <div class="BTitle">
 <div id="TitleControl">
 <div class="CheckTableTags"></div>
-<div class="Tag1"><a href="#" class="Incos Checked">全选</a></div>
+<div class="Tag1"><input type="checkbox" class="Incos Checked">全选</input></div>
 <div class="Tag2">商品</div> 
 <div class="Tag1">重量</div>
 <div class="Tag1">价格(￥)</div>
@@ -173,7 +206,7 @@ $(function(){
 </div>
 
 <div id="ControlComponent">
-<div class="Tag1"><a href="#" class="Incos Checked">全选</a></div>
+
 <div class="Tag1"><a href="#" class=""><strong>删除所选商品</strong></a></div>
 <div class="Tag1"><a href="#" class=""><strong>清空购物车</strong></a></div>
 <div id="OrderView">

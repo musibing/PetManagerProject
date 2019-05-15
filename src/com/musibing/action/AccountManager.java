@@ -289,9 +289,12 @@ public class AccountManager extends ActionSupport {
 		List<ProductOder> productList=new ArrayList<ProductOder>();
 		if(accountVO!=null){
 			productList=POS.viewProductOderByAccountID(accountVO.getAccountId());
+			for (int i = 0; i < productList.size(); i++) {
+				System.out.println(productList.get(i).toString());
+			}
 			
 		}
-		HSR.getSession().setAttribute("AccountVOProductOderlist", productList);
+		HSR.getSession().setAttribute("ProductOderlistByAccountID", productList);
 		return "OK";
 	}
 	

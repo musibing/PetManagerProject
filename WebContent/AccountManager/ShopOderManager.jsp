@@ -36,20 +36,59 @@
     </div>
     </div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
-    <div class="sonTitleContent width350">
-    订单信息
+   
+     <div class="dataSourceTitleContent ProductID">订单编号
     </div>
-     <div class="sonTitleContent borderleftandright1">
-     收货人
+     <div class="dataSourceTitleContent ProductInfo">
+     商品信息
     </div>
-     <div class="sonTitleContent">
-     订单金额
-    </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent">
+      订单金额
      
-     <select>
+    </div>
+    <div class="dataSourceTitleContent ">
+    收货人
+    </div>
+    
+    
+    <div class="dataSourceTitleContent">
+   订单状态
+    </div>
+    <div class="dataSourceTitleContent">
+   操作
+    </div>
+    </div>
+    
+    
+    <div id="contentBody">
+<!--     暂无订单数据,去<a href="../BusinessesService/MapMode.jsp">宠物商城</a>看看吧! -->
+    <s:iterator value="#session.ProductOderlistByAccountID" var="lidata">
+    <div class="dataSourceLineControl">
+    
+   
+     <div class="dataSourceContentData ProductID">
+     <s:property value='#lidata.productOderID'></s:property>
+    
+    </div>
+     <div class="dataSourceContentData ProductInfo">
+  订单备注:
+    <s:property value='#lidata.oderTips'></s:property>
+
+    </div>
+     <div class="dataSourceContentData">
+     								
+      <s:property value="#lidata.oderPrice"></s:property>
+     
+    </div>
+    <div class="dataSourceContentData">
+    <s:property value="#lidata.accountId.accountName"></s:property>
+    </div>
+    
+    
+    <div class="dataSourceContentData">
+   <select>
      <option value="">
      已完成
      </option>
@@ -64,38 +103,13 @@
      </option>
      </select>
     </div>
-    <div class="sonTitleContent width122">
-     操作
     </div>
-    </div>
-    <div id="contentBody">
-    <s:iterator value="#session.AccountVOProductOderlist" var="VarData">
-    <div class="sonTitleContentLine">
-    <div class="sonTitleContent width350">
     
-     订单ID:<s:property value='#VarData.productOderID'></s:property>;
-  订单备注:<s:property value='#VarData.oderTips'></s:property>
-    </div>
-     <div class="sonTitleContent borderleftandright1">
- <s:property value="#VarData.accountId.accountName"></s:property>
-    </div>
-     <div class="sonTitleContent">
-     
-    <s:property value="#VarData.oderPrice"></s:property>
-    </div>
-     <div class="sonTitleContent borderleftandright1">
-     
-     <s:property value="#VarData.productOderSataus"></s:property>
-    </div>
-    <div class="sonTitleContent width122">
-    删除/查看详情
-    </div>
-    </div>
+    
     </s:iterator>
     </div>
     </div>
-    
-    </div>
+ </div>
  <!--数据源结束-->
 </body>
 </html>

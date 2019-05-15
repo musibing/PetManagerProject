@@ -78,14 +78,14 @@ $.ajax({
 	<div id="top">
 		<div id="topContorl">
 
-			<div class="topleftclass"><a href="../index/index.jsp">宠物之家</a></div>
-		<div class="topleftclass"><a href="../SelectClassificationProductForArrayList">宠物商城</a></div>
-		<div class="topleftclass"><a href="../BusinessesService/MapMode.jsp">宠物服务</a></div>
+			<div class="topleftclass"><a href="../index/index.jsp" target="righttager">宠物之家</a></div>
+		<div class="topleftclass"><a href="../SelectClassificationProductForArrayList" target="righttager">宠物商城</a></div>
+		<div class="topleftclass"><a href="../BusinessesService/MapMode.jsp" target="righttager">宠物服务</a></div>
 		<div class="topleftclass">宠物论坛</div>
-		<div class="topleftclass"><a href="../SelectArticleByBaiKeiIndex">宠物百科</a></div>
+		<div class="topleftclass"><a href="../SelectArticleByBaiKeiIndex" target="righttager"> 宠物百科</a></div>
 		<div id="topcenter"></div>
-		<div class="toprightclass" id="ChengWidth"><a href="../login/login.jsp" id="accontid">登录</a></div>
-		<div class="toprightclass" id="Remvoe"><a href="../register/register.jsp">注册</a></div>
+		<div class="toprightclass" id="ChengWidth"><a href="../login/login.jsp" id="accontid" target="righttager">登录</a></div>
+		<div class="toprightclass" id="Remvoe"><a href="../register/register.jsp" target="righttager">注册</a></div>
 			<div class="toprightclass">微博</div>
 			<div class="toprightclass">微信</div>
 			<div class="toprightclass">手机版</div>

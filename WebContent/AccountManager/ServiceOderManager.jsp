@@ -29,24 +29,24 @@
     </div>
     
      <div class="titleClass search">
-     <div id="test">
+     <div id="searchControl">
   	<input type="text" class="oderinfotext" value="订单编号/商品名称"><input type="button" class="odersearch" value="搜索订单"> 
     </div>
     </div>
     </div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
-    <div class="sonTitleContent width350">
+    <div class="dataSourceTitleContent width350">
     服务信息
     </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent borderleftandright1">
      数量
     </div>
-     <div class="sonTitleContent">
+     <div class="dataSourceTitleContent">
      订单金额
     </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent borderleftandright1">
      
      <select>
      <option value="">
@@ -71,7 +71,31 @@
     
     <div id="contentBody">
     暂无订单数据,去<a href="../BusinessesService/MapMode.jsp">宠物服务</a>看看吧!
+    <s:iterator value="#session.AccountCollectStatus" var="lidata">
+    <div class="dataSourceLineControl">
     
+   
+     <div class="dataSourceContentData width350">
+     <s:property value='#lidata.product.productID'></s:property>
+    
+    </div>
+     <div class="dataSourceContentData borderleftandright1">
+      <s:property value='#lidata.product.productName'></s:property>
+    </div>
+     <div class="dataSourceContentData">
+     <s:property value='#lidata.product.retailPrice'></s:property>
+     
+    </div>
+    <div class="dataSourceContentData borderleftandright1">
+    完成
+    </div>
+    
+    
+    <div class="dataSourceContentData width122"></div>
+    </div>
+    
+    
+    </s:iterator>
     </div>
     </div>
     

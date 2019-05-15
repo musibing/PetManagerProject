@@ -31,7 +31,7 @@
     </div>
     
      <div class="titleClass search">
-     <div id="test">
+     <div id="searchControl">
   	<input type="text" class="oderinfotext" value="订单编号/商品名称"><input type="button" class="odersearch" value="搜索收藏"> 
     </div>
     </div>

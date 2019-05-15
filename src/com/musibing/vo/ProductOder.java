@@ -183,7 +183,21 @@ public class ProductOder implements Serializable{
 		this.simg = simg;
 	}
 	
-	
+	public String toString() {
+		return "ProductOder [productOderID=" + productOderID + ", accountId="
+				+ accountId + ", productID=" + productID + ", oderPrice="
+				+ oderPrice + ", oderTips=" + oderTips + ", submitTime="
+				+ submitTime + ", mailCode=" + mailCode + ", oderAddress="
+				+ oderAddress + ", personName=" + personName + ", personTel="
+				+ personTel + ", payAccount=" + payAccount
+				+ ", productOderSataus=" + productOderSataus
+				+ ", productOderPage=" + productOderPage
+				+ ", logisticsOrderNumber=" + logisticsOrderNumber
+				+ ", judgedContent=" + judgedContent + ", judgedMark="
+				+ judgedMark + ", judgedGrade=" + judgedGrade + ", judgedTime="
+				+ judgedTime + ", judgedSource=" + judgedSource + ", simg="
+				 + "]";
+	}
 	
 
 }

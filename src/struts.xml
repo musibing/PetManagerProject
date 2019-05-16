@@ -256,5 +256,25 @@
 		
 		</action>
 		<!-- 帐户地址列表开始 -->
+		<!-- 帐户获取手机号并发送验证码 -->
+		<action name="sendObtainCode" class="com.musibing.action.AccountManager" method="sendObtainCode">
+		
+		
+		</action>
+		
+		<action name="obtainMobliePhoneNumberByAccount"  class="com.musibing.action.AccountManager" method="obtainMobliePhoneNumberByAccount">
+			<result name="OK" type="chain">accountSafetySettingCheck</result>
+		<result name="error" type="redirect">/AccountManager/error.jsp</result>
+		</action>
+		
+		<action name="accountSafetySettingCheck" class="com.musibing.action.AccountManager" method="accountSafetySettingCheck">
+		<result name="OK" type="redirect">/AccountManager/SafetySetting.jsp</result>
+		</action>
+		<!-- 帐户获取手机号并发送验证码 -->
+		<!-- 支付帐户信息查看-->
+		<action name="viewPayAccountByAccounID" class="com.musibing.action.AccountManager" method="viewPayAccountByAccounID">
+		<result name="OK" type="redirect">/AccountManager/PersionAccount.jsp</result>
+		</action>
+		<!-- 支付帐户信息查看-->
 	</package>
 </struts>

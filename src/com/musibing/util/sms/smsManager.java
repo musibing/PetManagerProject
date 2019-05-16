@@ -18,8 +18,10 @@ public class smsManager {
 		String url = "http://gw.api.taobao.com/router/rest";
 		String appkey = "23586532";
 		String secret = "05ef71fa49e3778f304df45325177dec";
+		String appkeynew = "LTAIKlZOlSD5yrV6";
+		String secretnew = " hCqJ6e85TnLCJ4oGj7bLEcnVtM3phc ";
 		String product = "cool_moon";
-		TaobaoClient client = new DefaultTaobaoClient(url, appkey, secret);
+		TaobaoClient client = new DefaultTaobaoClient(url, appkeynew, secret);
 		AlibabaAliqinFcSmsNumSendRequest req = new AlibabaAliqinFcSmsNumSendRequest();
 		req.setExtend("1234");
 		req.setSmsType("normal");

@@ -12,5 +12,5 @@ public interface PayAccountService {
 
 	public void updatePayAccount(PayAccount PayAccount);
 
-	public List<PayAccount> viewPayAccountByAccountID(int accountID);
+	public PayAccount viewPayAccountByAccountID(int accountID);
 }

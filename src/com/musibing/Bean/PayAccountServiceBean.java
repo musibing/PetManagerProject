@@ -36,9 +36,9 @@ public class PayAccountServiceBean implements PayAccountService {
 		factory.getCurrentSession().update(PayAccount);
 	};
 
-	public List<PayAccount> viewPayAccountByAccountID(int accountID) {
-		return (List<PayAccount>) factory.getCurrentSession()
+	public PayAccount viewPayAccountByAccountID(int accountID) {
+		return (PayAccount) factory.getCurrentSession()
 				.createQuery("from PayAccount where accountVO.accountId=?")
-				.setInteger(0, accountID).list();
+				.setInteger(0, accountID).uniqueResult();
 	}
 }

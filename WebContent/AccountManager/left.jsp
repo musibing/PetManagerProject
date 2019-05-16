@@ -53,7 +53,7 @@
     资金管理
     </div>
     <div class="listTitleContent">
-   <a href="PersionAccount.jsp" id="PersionAccount" target="righttager">余额</a>
+   <a href="../viewPayAccountByAccounID" id="PersionAccount" target="righttager">余额</a>
     </div>
     <div  class="listTitleContent"><a href="Coupons.jsp" id="Coupons" target="righttager">我的优惠券</a></div>
     </div>
@@ -78,7 +78,7 @@
     个人设置
     </div>
     <div class="listTitleContent">
-   <a href="SafetySetting.jsp" id="SafetySetting" target="righttager" > 安全设置</a>
+   <a href="../accountSafetySettingCheck" id="SafetySetting" target="righttager" > 安全设置</a>
     </div>
     <div class="listTitleContent">
     <a href="../viewAddressListByAccountID" id="Adderss" class="AxajGetDataSource" target="righttager"> 收货地址</a>

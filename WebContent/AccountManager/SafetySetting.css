@@ -75,6 +75,9 @@
 	.centerPassword{
 		background-position:-321px -236px;
 		}
+	#email{
+		color:222;
+		 font-weight: bolder;}	
 	.safetyTitle{
 		width:160px;
 		height:80px;

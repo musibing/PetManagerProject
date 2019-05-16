@@ -9,9 +9,11 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.musibing.action.JSONTest;
 import com.musibing.server.AccountCollectService;
 import com.musibing.server.AccountServer;
 import com.musibing.server.BuyCarServer;
+import com.musibing.util.sms.smsManager;
 import com.musibing.vo.AccountCollect;
 import com.musibing.vo.AccountVO;
 import com.musibing.vo.BuyCar;
@@ -40,7 +42,7 @@ if(!files.isDirectory()){
 @Test
 public void intiControl(){
 	ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
-	accountservice =(AccountServer)act.getBean("accountServerBa");
+	
 	bcs=(BuyCarServer)act.getBean("buyCarServerBean");
 }
 @Test
@@ -53,6 +55,17 @@ public void moidFo(){
 		bcs.AddBuyCar(new BuyCar(buyCarID,accoutVO.get(j)));
 		
 	}
+	
+	
+}
+@Test
+public void sencode(){
+	
+/*	smsManager sms=new  smsManager();
+	sms.sendSmsValidateCode(890191, "15528296986");*/
+}
+@Test
+public void stringToClass(){
 	
 	
 }

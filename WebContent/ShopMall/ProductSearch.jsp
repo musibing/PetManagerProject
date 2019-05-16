@@ -6,279 +6,7 @@
 <html>
 <head>
 <script src="../jquery/jquery-1.7.2.js"></script>
-<script>
-function load(){
-	
-		var $allproductName=$(".productName");	 
-		for(var j=0;j<$allproductName.length;j++){
-			var temp=$allproductName.eq(j).text()
-			$allproductName.eq(j).html(temp);
-			
-			
-			}
-				$.ajax({
-				url : "..//UserLoginStatusCheck.action",
-				data : {
-					},
-					scriptCharset : 'utf-8',
-					contentType : "application/x-www-form-urlencoded; charset=utf-8",
-				type : "post",
-				traditional : true,
-				success : function(str) {
-					if(str!="null"){
-					$("#Remvoe").remove();
-					$("#accontid").text(str);
-					$("#ChengWidth").css("width",120);
-					}
-			}
 
-			}) 
-	}
-	var _hmt = _hmt || [];
-/* 	(function() {
-		var hm = document.createElement("script");
-		hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})();
- */
-	$(function() {
-		$("#searchText").change(function(){
-			
-		
-			var searchTextValue=$("#searchText").val();
-			
-			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
-		})
-
-		$("#ViewControlButton")
-				.click(
-						function() {
-							var ViewControlTypeData = document
-									.getElementsByName("ViewControlRadio");
-							for (var i = 0; i < ViewControlTypeData.length; i++) {
-								if (ViewControlTypeData[i].checked) {
-									ViewTypeData = ViewControlTypeData[i].value;
-								}
-							}
-							if (ViewTypeData == "List") {
-
-								var $ResultDataViewControl = $("#ResultDataViewControl>div");
-								var ControlDivHeight = 0;
-								ControlDivHeight = (50 * ($ResultDataViewControl.length))
-										+ $ResultDataViewControl.length;
-
-								var CenterControlHeight = $("#center").height();
-
-								if (ControlDivHeight >= 1200) {
-									var newHeight = 0;
-									newHeight = CenterControlHeight
-											+ (ControlDivHeight - 1200);
-
-									$("#center").css("height", newHeight + 502);
-									$(".BaiKeControl").css("height", 1200 + 50);
-									$(".BaikeControlBody").css("height",
-											1050 + 50);
-								}
-
-								for (var i = 0; i < $ResultDataViewControl.length; i++) {
-
-									var $ResultDivIMGID = $ResultDataViewControl
-											.eq(i)
-											.find("img[class=ResultDivIMGID]");
-									var $ResultText = $ResultDataViewControl
-											.eq(i)
-											.find("div[class=ResultText]")
-											.find("div[class=ResultTextClass]");
-									var $ResultIMGContrl = $ResultDataViewControl
-											.eq(i).find("div[class=ResultIMG]");
-									var $ResultTextControl = $ResultDataViewControl
-											.eq(i)
-											.find("div[class=ResultText]");
-									$ResultDivIMGID.eq(0).attr({
-										"width" : "70",
-										"height" : "50"
-									});
-
-									$ResultTextControl.eq(0).css({
-										"width" : "1129",
-										"height" : "50",
-										"float" : "left",
-										"float" : "left"
-									});
-									$ResultIMGContrl.eq(0).css({
-										"width" : "70",
-										"height" : "50",
-										"float" : "left"
-									});
-
-									$ResultDataViewControl.eq(i).css({
-										"width" : "1200",
-										"height" : "50",
-										"border-top" : "1px solid #cdcbcb"
-									});
-									for (var a = 0; a < $ResultText.length; a++) {
-										if (!(a == ($ResultText.length - 1))) {
-
-											$ResultText
-													.eq(a)
-													.css(
-															{
-																"width" : "160",
-																"height" : "50",
-																"float" : "left",
-																"border-left" : "1px solid #cdcbcb"
-															});
-										} else {
-
-											$ResultText
-													.eq(a)
-													.css(
-															{
-																"width" : "800",
-																"height" : "50",
-																"float" : "left",
-																"border-left" : "1px solid #cdcbcb"
-															});
-
-										}
-									}
-
-									if (i == ($ResultDataViewControl.length - 1)) {
-
-										$("#ResultDataViewControl")
-												.css(
-														{
-															"border-left" : "1px solid #cdcbcb",
-															"border-right" : "1px solid #cdcbcb",
-															"border-bottom" : "1px solid #cdcbcb",
-															"height" : ControlDivHeight
-														});
-
-									}
-
-								}
-							} else {/*结果等于缩略图*/
-								var $ResultClassControl = $(".ResultClassControl");
-
-								var $ResultDivIMGID = null;
-								var $ResultText = null;
-								var $ResultIMGContrl = null;
-								var $ResultTextControl = null;
-
-								for (var i = 0; i < $ResultClassControl.length; i++) {
-
-									if (!(i == 0)) {
-
-										$ResultDivIMGID = $ResultClassControl
-												.eq(i)
-												.find(
-														"img[class=ResultDivIMGID]");
-										$ResultText = $ResultClassControl
-												.eq(i)
-												.find("div[class=ResultText]")
-												.find(
-														"div[class=ResultTextClass]");
-										$ResultIMGContrl = $ResultClassControl
-												.eq(i).find(
-														"div[class=ResultIMG]");
-										$ResultTextControl = $ResultClassControl
-												.eq(i)
-												.find("div[class=ResultText]");
-
-										$ResultDivIMGID.eq(0).attr({
-											"width" : "180",
-											"height" : "135"
-										});
-
-										$ResultIMGContrl.eq(0).css({
-											"width" : "180",
-											"height" : "135"
-										});
-
-										$ResultClassControl.eq(i).css({
-											"width" : "180",
-											"height" : "170",
-											"border" : "1px solid #cdcbcb",
-											"margin-left" : "9px",
-											"margin-top" : "9px"
-										});
-
-										for (var a = 0; a < $ResultText.length; a++) {
-											if (a == 0) {
-												var $IMGclone = $ResultIMGContrl
-														.eq(0).clone(true);
-												$ResultText.eq(a).parent()
-														.before($IMGclone);
-
-											} else if (a == 1) {
-
-												var $ResultTextClone = $ResultText
-														.eq(a).clone(true);
-												$ResultText
-														.eq(a)
-														.parent()
-														.parent()
-														.append(
-																$ResultTextClone);
-
-												$ResultText.eq(a).css({
-													"width" : "180",
-													"height" : "130"
-												});
-											} else {
-
-											}
-											$ResultText.eq(a).remove();
-										}
-										$ResultIMGContrl.eq(0).remove();
-
-										$ResultTextControl.get(0).remove();
-
-										$ResultClassControl
-												.eq(i)
-												.wrap(
-														"<div class='dataControl'></div>");
-
-									} else {
-
-										$ResultClassControl.eq(i).remove();
-
-									}
-
-								}
-								/**/
-
-								var $ClassControl = $(".ResultClassControl>div");
-								for (var i = 1; i <= $ClassControl.length; i++) {
-									if ($ClassControl.eq(i).attr("class") != "ResultIMG") {
-
-										$ClassControl.eq(i).css({
-											"width" : "180",
-											"height" : "35"
-										});
-
-									} else {
-										$ClassControl.eq(i).css({
-											"width" : "180",
-											"height" : "135"
-										});
-									}
-								}
-								var $dataControl = $(".dataControl");
-								for (var i = 0; i < $dataControl.length; i++) {
-									$dataControl.eq(i).css({
-										"width" : "200",
-										"height" : "190",
-										"float" : "left"
-									});
-								}
-
-							}
-						})
-
-	})
-</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <title>宠物情报系统</title>
@@ -798,6 +526,279 @@ function load(){
       </div>
 </div>
 </body>
+<script>
+function load(){
+	
+		var $allproductName=$(".productName");	 
+		for(var j=0;j<$allproductName.length;j++){
+			var temp=$allproductName.eq(j).text()
+			$allproductName.eq(j).html(temp);
+			
+			
+			}
+				$.ajax({
+				url : "..//UserLoginStatusCheck.action",
+				data : {
+					},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,
+				success : function(str) {
+					if(str!="null"){
+					$("#Remvoe").remove();
+					$("#accontid").html(str);
+					$("#ChengWidth").css("width",120);
+					}
+			}
+
+			}) 
+	}
+	var _hmt = _hmt || [];
+/* 	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+ */
+	$(function() {
+		$("#searchText").change(function(){
+			
+		
+			var searchTextValue=$("#searchText").val();
+			
+			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
+		})
+
+		$("#ViewControlButton")
+				.click(
+						function() {
+							var ViewControlTypeData = document
+									.getElementsByName("ViewControlRadio");
+							for (var i = 0; i < ViewControlTypeData.length; i++) {
+								if (ViewControlTypeData[i].checked) {
+									ViewTypeData = ViewControlTypeData[i].value;
+								}
+							}
+							if (ViewTypeData == "List") {
+
+								var $ResultDataViewControl = $("#ResultDataViewControl>div");
+								var ControlDivHeight = 0;
+								ControlDivHeight = (50 * ($ResultDataViewControl.length))
+										+ $ResultDataViewControl.length;
+
+								var CenterControlHeight = $("#center").height();
+
+								if (ControlDivHeight >= 1200) {
+									var newHeight = 0;
+									newHeight = CenterControlHeight
+											+ (ControlDivHeight - 1200);
+
+									$("#center").css("height", newHeight + 502);
+									$(".BaiKeControl").css("height", 1200 + 50);
+									$(".BaikeControlBody").css("height",
+											1050 + 50);
+								}
+
+								for (var i = 0; i < $ResultDataViewControl.length; i++) {
+
+									var $ResultDivIMGID = $ResultDataViewControl
+											.eq(i)
+											.find("img[class=ResultDivIMGID]");
+									var $ResultText = $ResultDataViewControl
+											.eq(i)
+											.find("div[class=ResultText]")
+											.find("div[class=ResultTextClass]");
+									var $ResultIMGContrl = $ResultDataViewControl
+											.eq(i).find("div[class=ResultIMG]");
+									var $ResultTextControl = $ResultDataViewControl
+											.eq(i)
+											.find("div[class=ResultText]");
+									$ResultDivIMGID.eq(0).attr({
+										"width" : "70",
+										"height" : "50"
+									});
+
+									$ResultTextControl.eq(0).css({
+										"width" : "1129",
+										"height" : "50",
+										"float" : "left",
+										"float" : "left"
+									});
+									$ResultIMGContrl.eq(0).css({
+										"width" : "70",
+										"height" : "50",
+										"float" : "left"
+									});
+
+									$ResultDataViewControl.eq(i).css({
+										"width" : "1200",
+										"height" : "50",
+										"border-top" : "1px solid #cdcbcb"
+									});
+									for (var a = 0; a < $ResultText.length; a++) {
+										if (!(a == ($ResultText.length - 1))) {
+
+											$ResultText
+													.eq(a)
+													.css(
+															{
+																"width" : "160",
+																"height" : "50",
+																"float" : "left",
+																"border-left" : "1px solid #cdcbcb"
+															});
+										} else {
+
+											$ResultText
+													.eq(a)
+													.css(
+															{
+																"width" : "800",
+																"height" : "50",
+																"float" : "left",
+																"border-left" : "1px solid #cdcbcb"
+															});
+
+										}
+									}
+
+									if (i == ($ResultDataViewControl.length - 1)) {
+
+										$("#ResultDataViewControl")
+												.css(
+														{
+															"border-left" : "1px solid #cdcbcb",
+															"border-right" : "1px solid #cdcbcb",
+															"border-bottom" : "1px solid #cdcbcb",
+															"height" : ControlDivHeight
+														});
+
+									}
+
+								}
+							} else {/*结果等于缩略图*/
+								var $ResultClassControl = $(".ResultClassControl");
+
+								var $ResultDivIMGID = null;
+								var $ResultText = null;
+								var $ResultIMGContrl = null;
+								var $ResultTextControl = null;
+
+								for (var i = 0; i < $ResultClassControl.length; i++) {
+
+									if (!(i == 0)) {
+
+										$ResultDivIMGID = $ResultClassControl
+												.eq(i)
+												.find(
+														"img[class=ResultDivIMGID]");
+										$ResultText = $ResultClassControl
+												.eq(i)
+												.find("div[class=ResultText]")
+												.find(
+														"div[class=ResultTextClass]");
+										$ResultIMGContrl = $ResultClassControl
+												.eq(i).find(
+														"div[class=ResultIMG]");
+										$ResultTextControl = $ResultClassControl
+												.eq(i)
+												.find("div[class=ResultText]");
+
+										$ResultDivIMGID.eq(0).attr({
+											"width" : "180",
+											"height" : "135"
+										});
+
+										$ResultIMGContrl.eq(0).css({
+											"width" : "180",
+											"height" : "135"
+										});
+
+										$ResultClassControl.eq(i).css({
+											"width" : "180",
+											"height" : "170",
+											"border" : "1px solid #cdcbcb",
+											"margin-left" : "9px",
+											"margin-top" : "9px"
+										});
+
+										for (var a = 0; a < $ResultText.length; a++) {
+											if (a == 0) {
+												var $IMGclone = $ResultIMGContrl
+														.eq(0).clone(true);
+												$ResultText.eq(a).parent()
+														.before($IMGclone);
+
+											} else if (a == 1) {
+
+												var $ResultTextClone = $ResultText
+														.eq(a).clone(true);
+												$ResultText
+														.eq(a)
+														.parent()
+														.parent()
+														.append(
+																$ResultTextClone);
+
+												$ResultText.eq(a).css({
+													"width" : "180",
+													"height" : "130"
+												});
+											} else {
+
+											}
+											$ResultText.eq(a).remove();
+										}
+										$ResultIMGContrl.eq(0).remove();
+
+										$ResultTextControl.get(0).remove();
+
+										$ResultClassControl
+												.eq(i)
+												.wrap(
+														"<div class='dataControl'></div>");
+
+									} else {
+
+										$ResultClassControl.eq(i).remove();
+
+									}
+
+								}
+								/**/
+
+								var $ClassControl = $(".ResultClassControl>div");
+								for (var i = 1; i <= $ClassControl.length; i++) {
+									if ($ClassControl.eq(i).attr("class") != "ResultIMG") {
+
+										$ClassControl.eq(i).css({
+											"width" : "180",
+											"height" : "35"
+										});
+
+									} else {
+										$ClassControl.eq(i).css({
+											"width" : "180",
+											"height" : "135"
+										});
+									}
+								}
+								var $dataControl = $(".dataControl");
+								for (var i = 0; i < $dataControl.length; i++) {
+									$dataControl.eq(i).css({
+										"width" : "200",
+										"height" : "190",
+										"float" : "left"
+									});
+								}
+
+							}
+						})
+
+	})
+</script>
 <link type="text/css" rel="stylesheet" href="Search.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Bottom.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Logo.css">

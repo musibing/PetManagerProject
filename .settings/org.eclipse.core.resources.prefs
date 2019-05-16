@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//WebContent/AccountManager/GetPorductContent.jsp=UTF-8
 encoding//WebContent/AccountManager/PersionData.jsp=UTF-8
 encoding//WebContent/AccountManager/ShopOderManager.jsp=UTF-8
+encoding//WebContent/AccountManager/error.jsp=UTF-8
 encoding//WebContent/BusinessesService/NewFile.jsp=UTF-8
 encoding//WebContent/BusinessesService/NewFile1.jsp=UTF-8
 encoding//WebContent/ShopMall/info.jsp=UTF-8

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-5-16 20:52:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.NotificationInterface" table="NOTIFICATIONINTERFACE">
+        <id name="notificationID" type="int">
+            <column name="NOTIFICATIONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="java.lang.String">
+            <column name="CODE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="notificationType" type="java.lang.String">
+            <column name="NOTIFICATIONTYPE" />
+        </property>
+        <many-to-one name="accountvo" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+            <column name="ACCOUNTVO" />
+        </many-to-one>
+        <property name="createDate" type="java.util.Date">
+            <column name="CREATEDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

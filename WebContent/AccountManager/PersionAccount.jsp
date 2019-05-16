@@ -17,10 +17,10 @@
 	<div class="datacontent">
 		<div class="datacontentTitle">帐户余额</div>
 		<div class="datacontentLine">
-			帐户可用余额:<span id="accountMoney">￥0.00</span>
+			帐户可用余额:<span id="accountMoney" class="maginright120">￥<s:property value='#session.payAccount.money'></s:property></span> <span >宠物豆：<span  class="kidneyBean"><s:property value='#session.payAccount.kidneyBean'></s:property></span></span></div>
 		</div>
 		<div class="datacontentLine">
-			手机已经绑定<a href="#" class="maginleft120">修改手机号</a> <span
+			手机已经绑定<a href="#" class="maginright120">修改手机号</a> <span
 				class="colorRed">未设置支付密码</span><a href="#">点击设置</a>
 		</div>
 	</div>

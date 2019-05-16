@@ -20,7 +20,7 @@
         <property name="creatDate" type="java.util.Date">
             <column name="CREATDATE" />
         </property>
-        <many-to-one name="accountVO" class="com.musibing.vo.AccountVO" fetch="join">
+        <many-to-one name="accountVO" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
             <column name="ACCOUNTVO" />
         </many-to-one>
     </class>

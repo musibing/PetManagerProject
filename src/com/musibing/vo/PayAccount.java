@@ -3,6 +3,8 @@ package com.musibing.vo;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.springframework.stereotype.Repository;
+@Repository
 public class PayAccount implements Serializable{
 	
 	private int payAccountID;

@@ -14,13 +14,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musibing.vo.AddressList;
+import com.musibing.vo.NotificationInterface;
 import com.musibing.vo.PayAccount;
 
 public class VOInit {
 	@Test
 	public void main() {
-		PayAccount payaccount=new PayAccount();
-		servicInit(payaccount);
+		NotificationInterface notificationInterface=new NotificationInterface();
+		servicInit(notificationInterface);
 		
 	}public void servicInit(Object bean){
 		String simpleClassName =bean.getClass().getSimpleName();
@@ -83,7 +84,7 @@ public class VOInit {
 					"import org.springframework.transaction.annotation.Transactional;\n"+
 					"import com.musibing.server."+simpleClassName+"Service;\n"+
 					"import "+bean.getClass().getName()+";\n"+
-					"@Service("+simpleClassName+")\n"+
+					"@Service(\""+simpleClassName+"\")\n"+
 					"@Transactional\n"+
 					"public class "+simpleClassName+"ServiceBean  implements "+simpleClassName+"Service"+"{\n"+
 					"@Resource\n"+

@@ -26,12 +26,15 @@ import com.musibing.server.AddressListService;
 import com.musibing.server.BuyCarListServer;
 import com.musibing.server.BuyCarServer;
 import com.musibing.server.OrderSunburnImgService;
+import com.musibing.server.PayAccountService;
 import com.musibing.server.ProductIMGServer;
 import com.musibing.server.ProductJudgedService;
 import com.musibing.server.ProductOderListService;
 import com.musibing.server.ProductOderServer;
 import com.musibing.server.ProductServer;
 import com.musibing.util.MobileScode;
+import com.musibing.util.NumberSupport;
+import com.musibing.util.email.Sendmail;
 import com.musibing.util.network.publicIpAddress;
 import com.musibing.util.sms.smsManager;
 import com.musibing.vo.AccountCollect;
@@ -41,6 +44,7 @@ import com.musibing.vo.AddressList;
 import com.musibing.vo.BuyCar;
 import com.musibing.vo.BuyCarList;
 import com.musibing.vo.OrderSunburnImg;
+import com.musibing.vo.PayAccount;
 import com.musibing.vo.Product;
 import com.musibing.vo.ProductOder;
 import com.musibing.vo.ProductOderList;
@@ -67,7 +71,8 @@ public class AccountManager extends ActionSupport {
 	ProductOderList POL;
 	@Resource
 	ProductOderListService POLS;
-	
+	PayAccountService payAccountService;
+	PayAccount payAccount;
 	Product pd;
 	BuyCar bC;
 	OrderSunburnImg OSI;
@@ -85,6 +90,14 @@ public class AccountManager extends ActionSupport {
 	AddressListService addressListService;
 	AddressList addressList;
 	
+	public PayAccount getPayAccount() {
+		return payAccount;
+	}
+
+	public void setPayAccount(PayAccount payAccount) {
+		this.payAccount = payAccount;
+	}
+
 	public AddressList getAddressList() {
 		return addressList;
 	}
@@ -132,7 +145,7 @@ public class AccountManager extends ActionSupport {
 		
 		addressListService=(AddressListService)act.getBean("addressListServiceBean");
 		
-		
+		payAccountService=(PayAccountService)act.getBean("payAccountServiceBean");
 
 		try {
 			HSR.setCharacterEncoding("UTF-8");
@@ -142,6 +155,7 @@ public class AccountManager extends ActionSupport {
 		}
 		HSP.setContentType("text/html;charset=UTF-8");
 	}
+	
 	public void ViewAccountCollectForArticle(){
 		
 		String ParameterID=HSR.getParameter("ParameterID");
@@ -392,6 +406,54 @@ public class AccountManager extends ActionSupport {
 	
 		HSR.getSession().setAttribute("addressListdefaultValue",addressList);
 		HSR.getSession().setAttribute("addressList", addressListData);
+		return "OK";
+	}
+	
+	public void  sendObtainCode(){
+		String obtainAddress=HSR.getParameter("obtainAddress");
+		String requestPage=HSR.getParameter("requestPage");
+		int validateCode=new  NumberSupport().Random(1000000);
+		Sendmail sendmail=new Sendmail() ;
+		smsManager sms=new  smsManager();
+		if("MobilePhoneBind.jsp".equals(requestPage)){
+			/*sms.sendSmsValidateCode(890191, obtainAddress);*/
+			}else{
+				sendmail.sendEmail(validateCode,obtainAddress);
+				System.out.println("邮件发送成功,"+"验证码:"+validateCode);
+				HSR.getSession().setAttribute("validateCode", validateCode);
+				HSR.getSession().setAttribute("obtainAddress", obtainAddress);
+			}
+	}public String obtainMobliePhoneNumberByAccount(){
+		ActionInit();
+		String accountvalidateCode=HSR.getParameter("obtainCode");
+		Object validateCode=HSR.getSession().getAttribute("validateCode");
+		System.out.println(validateCode.toString());
+		String validate="error";
+		if(validateCode.toString().equals(accountvalidateCode)){
+			validate="OK";
+			AccountVO account=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			String obtainAddress=(String)HSR.getSession().getAttribute("obtainAddress");
+			account.setEmail(obtainAddress);
+			accountservice.update(account);
+		}
+		return validate;
+	}public String accountSafetySettingCheck(){
+		ActionInit();
+		AccountVO account=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+		AccountVO accountnew=accountservice.findForAccountID(account.getAccountId());
+		HSR.getSession().setAttribute("AccountInfo", accountnew);
+		return "OK";
+	}public String viewPayAccountByAccounID(){
+		ActionInit();
+		try {
+			AccountVO account=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			PayAccount payAccount=payAccountService.viewPayAccountByAccountID(account.getAccountId());
+			System.out.println(payAccount.toString());
+			HSR.getSession().setAttribute("payAccount",payAccount);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return "OK";
 	}
 }

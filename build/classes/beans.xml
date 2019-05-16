@@ -57,6 +57,7 @@
 				<value>com/musibing/vo/Car.hbm.xml</value>
 				<value>com/musibing/vo/Owner.hbm.xml</value>
 				<value>com/musibing/vo/AddressList.hbm.xml</value>
+				<value>com/musibing/vo/PayAccount.hbm.xml</value>
 				
 			</list>
 		</property>

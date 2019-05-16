@@ -13,17 +13,11 @@ public class CreateHibernateMapping {
 		Boolean bool=false;
 		System.out.println("实体类文件得到的集合长度为："+templowString.size());
 		try{
-			
 			if(!TempHabernateMapping.exists()){
 				TempHabernateMapping.getParentFile().mkdirs();
-				
 				bool=true;
-				
-				
 			}
-			
 			TempHabernateMapping.createNewFile();
-			
 			
 			FileWriter fwx=new FileWriter(TempHabernateMapping,true);
 			BufferedWriter bfx=new BufferedWriter(fwx);

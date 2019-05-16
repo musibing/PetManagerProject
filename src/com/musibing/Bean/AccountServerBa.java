@@ -2,17 +2,12 @@ package com.musibing.Bean;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.annotation.Resource;
-import javax.annotation.Resources;
-
-import org.hibernate.Hibernate;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.musibing.server.AccountServer;
 import com.musibing.vo.AccountVO;
 import com.musibing.vo.BuyCar;
@@ -36,6 +31,7 @@ public class AccountServerBa implements AccountServer{
 		AccountVO Uvo=(AccountVO)factory.getCurrentSession().get(AccountVO.class,avo);
 		return Uvo;
 	}
+	@Transactional
 	public void deletePet(String... name) {
 		
 		

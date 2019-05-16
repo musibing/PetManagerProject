@@ -55,16 +55,6 @@
     <div class="listTitleContent">
    <a href="PersionAccount.jsp" id="PersionAccount" target="righttager">余额</a>
     </div>
-    <div class="listTitleContent">
-    服务订单
-    </div>
-    <div class="listTitleContent">
-    退货记录
-    
-    </div>
-    <div class="listTitleContent">
-   到货记录
-    </div>
     <div  class="listTitleContent"><a href="Coupons.jsp" id="Coupons" target="righttager">我的优惠券</a></div>
     </div>
     <div class="messingManager listTitleManager">

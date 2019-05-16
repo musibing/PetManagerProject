@@ -50,6 +50,7 @@ float: right;}
 }
 
 .datacontentLine {
+	float:left;
 	height: 30px;
 	width: 716px;
 	line-height: 30px;
@@ -174,6 +175,7 @@ float: right;}
 	
 	}
 #View{
+	float:left;
 	margin-top:10px;
 	border:2px solid #C00;
 	font-family:"微软雅黑";
@@ -198,15 +200,7 @@ float: right;}
 	}
 .datacontentSelect{
 	height:30px;}
-.datacontentSelect a{
-	float:right;
-	display:block;
-	height:30px;
-	width:39px;
-	text-align:left;
-	line-height:30px;
-	
-	}
+
 .selectInco{
 	background-image:url(../img/Account/AccountCenter/man/sprites.png);
 	background-position:-335px -189px;}

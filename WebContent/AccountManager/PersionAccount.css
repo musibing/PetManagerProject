@@ -14,4 +14,8 @@
 .width110{
 	width:110px;}
 .width122{
-	width:105px;}						
+	width:105px;}
+#dataDourceControl{
+	width:816px;
+	float:left;
+	height:auto;}							

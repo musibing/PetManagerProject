@@ -5,8 +5,6 @@
 <struts>
 	<constant name="struts.objectFactory" value="spring" />
 	<constant name="struts.ui.theme" value="simple" />
-
-
 	<package name="Pet" namespace="/" extends="struts-default">
 		<action name="ViewData" class="petAction">
 			<result name="list">/view/list.jsp</result>
@@ -248,5 +246,11 @@
 		</action>
 		
 		<!--收藏请求结束-->
+		<!-- 帐户地址列表开始 -->
+		<action name="saveAddressList"  class="com.musibing.action.AccountManager" method="saveAddressList">
+			<result name="OK" type="redirect">/AccountManager/Adderss.jsp</result>
+		
+		</action>
+		<!-- 帐户地址列表开始 -->
 	</package>
 </struts>

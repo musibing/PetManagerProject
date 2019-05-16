@@ -5,7 +5,12 @@
 	
 .width174{
 	width:174px;
-	line-height:25px;}
+	
+	line-height:25px;
+	overflow:hidden; 
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	}
 .ProductID{
 	width:150px;
 	}

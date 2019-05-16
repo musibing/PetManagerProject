@@ -16,7 +16,7 @@
 		<property name="driverClass" value="org.gjt.mm.mysql.Driver"/>
 		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/petmanager?useUnicode=true&amp;characterEncoding=UTF-8" />
 		<property name="user" value="root" />
-		<property name="password" value="Musibing@007"/>
+		<property name="password" value=""/>
 		<property name="initialPoolSize" value="1" />
 		<property name="minPoolSize" value="1" />
 		<property name="maxPoolSize" value="100" />
@@ -56,6 +56,7 @@
 				<value>com/musibing/vo/ProductJudged.hbm.xml</value>
 				<value>com/musibing/vo/Car.hbm.xml</value>
 				<value>com/musibing/vo/Owner.hbm.xml</value>
+				<value>com/musibing/vo/AddressList.hbm.xml</value>
 				
 			</list>
 		</property>

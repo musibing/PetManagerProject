@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -21,6 +22,7 @@ import com.musibing.number.RandomNumber;
 import com.musibing.server.AccountCollectService;
 import com.musibing.server.AccountRecordsService;
 import com.musibing.server.AccountServer;
+import com.musibing.server.AddressListService;
 import com.musibing.server.BuyCarListServer;
 import com.musibing.server.BuyCarServer;
 import com.musibing.server.OrderSunburnImgService;
@@ -35,6 +37,7 @@ import com.musibing.util.sms.smsManager;
 import com.musibing.vo.AccountCollect;
 import com.musibing.vo.AccountRecords;
 import com.musibing.vo.AccountVO;
+import com.musibing.vo.AddressList;
 import com.musibing.vo.BuyCar;
 import com.musibing.vo.BuyCarList;
 import com.musibing.vo.OrderSunburnImg;
@@ -78,6 +81,18 @@ public class AccountManager extends ActionSupport {
 	AccountVO uvo;
 	AccountRecordsService arss;
 	AccountRecords ars;
+	@Resource
+	AddressListService addressListService;
+	AddressList addressList;
+	
+	public AddressList getAddressList() {
+		return addressList;
+	}
+
+	public void setAddressList(AddressList addressList) {
+		this.addressList = addressList;
+	}
+
 	HttpServletRequest HSR = ServletActionContext.getRequest();
 	HttpServletResponse HSP = ServletActionContext.getResponse();
 	HttpSession HSession = HSR.getSession();
@@ -114,6 +129,8 @@ public class AccountManager extends ActionSupport {
 		BCLS=(BuyCarListServer)act.getBean("buyCarListServerBean");	
 		
 		POLS=(ProductOderListService)act.getBean("productOderListServiceBean");
+		
+		addressListService=(AddressListService)act.getBean("addressListServiceBean");
 		
 		
 
@@ -325,5 +342,28 @@ public class AccountManager extends ActionSupport {
 	return "OK";	
 	
 	/*帐户收藏结束*/
+	}public String saveAddressList(){
+		try {
+			ActionInit();
+			String placeOfOwnership=HSR.getParameter("placeOfOwnership");
+			AccountVO account =(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			int maxAddressListID=addressListService.selectMaxAddressListID();
+			addressList.setAddressListID(++maxAddressListID);
+			if(placeOfOwnership!=null){
+				addressList.setAddress(placeOfOwnership+addressList.getAddress());
+				
+			}if(account!=null){
+				
+				addressList.setTakeDeliveryPersion(account);
+			}
+			String defaultValue=HSR.getParameter("addressList.defaultValue");
+			System.out.println(defaultValue);
+			System.out.println(addressList);
+			addressListService.saveAddressList(addressList);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "OK";
 	}
 }

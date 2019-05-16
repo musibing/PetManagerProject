@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-5-16 7:59:25 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.AddressList" table="ADDRESSLIST">
+        <id name="addressListID" type="int">
+            <column name="ADDRESSLISTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="takeDeliveryPersionName" type="java.lang.String">
+            <column name="TAKEDELIVERYPERSIONNAME" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="postalCode" type="java.lang.String">
+            <column name="POSTALCODE" />
+        </property>
+        <property name="mobileTelphoneNumber" type="java.lang.String">
+            <column name="MOBILETELPHONENUMBER" />
+        </property>
+        <property name="telphoneNumber" type="java.lang.String">
+            <column name="TELPHONENUMBER" />
+        </property>
+        <property name="defaultValue" type="java.lang.String">
+            <column name="DEFAULTVALUE" />
+        </property>
+        <many-to-one name="takeDeliveryPersion" class="com.musibing.vo.AccountVO" fetch="join" lazy="false">
+            <column name="TAKEDELIVERYPERSION" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

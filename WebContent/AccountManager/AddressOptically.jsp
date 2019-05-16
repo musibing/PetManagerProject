@@ -59,19 +59,22 @@ $(".AxajGetDataSource").click(function(){
 <!--数据源开始-->
 
     <div id="contentControl">
+   
       <div class="datacontent addressOpticallyBody">
+      <s:form action="../saveAddressList" method="post">
+       <div  id="datacontentControl">
 		<div class="datacontentTitle">收货地址</div>
 		<div class="datacontentLine">
 		<div class="attrbuteName">
 		收货人姓名:
 		</div>
-         <input type="text" class="inputText">
+         <input type="text" class="inputText" name="addressList.takeDeliveryPersionName">
 		</div>
 		<div class="datacontentLine">
 		<div class="attrbuteName">
 		所在地区:
 		</div>
-		<select class="addselect">
+		<select class="addselect" name="placeOfOwnership" >
         
         <option>
         四川
@@ -88,17 +91,17 @@ $(".AxajGetDataSource").click(function(){
 		<div class="attrbuteName">
 		街道地址:
 		</div>
-        <input type="text" class="inputText width300">
+        <input type="text" class="inputText width300" name="addressList.address">
 		</div>
 		<div class="datacontentLine">
 		<div class="attrbuteName">
 		手机号码:
 		</div>
-        <input type="text" class="inputText">
+        <input type="text" class="inputText" name="addressList.mobileTelphoneNumber">
         <div class="attrbuteName maginLeft20">
 		或固定电话:
 		</div>
-        <input type="text" class="inputText">
+        <input type="text" class="inputText" name="addressList.telphoneNumber">
         <span class="tips">
         tips:正确的固定电话格式:021-36154686
         </span>
@@ -107,15 +110,17 @@ $(".AxajGetDataSource").click(function(){
 		<div class="attrbuteName">
 		邮政编码:
 		</div>
-        <input type="text" class="inputText">
+        <input type="text" class="inputText" name="addressList.postalCode">
 		</div>
 		<div class="datacontentLine">
-        <input type="checkbox">设置为默认收货地址
+        <input type="checkbox"  name="addressList.defaultValue">设置为默认收货地址
         </div>
         <div class="datacontentLine">
         <input type="submit" value="保存地址" class="PersionDataSubmit MaginLeft100">
         </div>
 	</div>
+    </s:form>
+    </div>
     </div>
     
 

@@ -26,30 +26,30 @@
      <div class="titleClass search"></div>
     </div>
     <div id="dataSource">
-    <div id="sonTitle">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
     
    
-     <div class="sonTitleContent ProductID">
+     <div class="dataSourceTitleContent ProductID">
      优惠券编号
     </div>
-     <div class="sonTitleContent">
+     <div class="dataSourceTitleContent">
      面 值
     </div>
-     <div class="sonTitleContent borderleftandright1">
+     <div class="dataSourceTitleContent borderleftandright1">
      需消费金额
      
     </div>
-    <div class="sonTitleContent ">
+    <div class="dataSourceTitleContent ">
    生效时间
     </div>
-    <div class="sonTitleContent ">
+    <div class="dataSourceTitleContent ">
   失效时间
     </div>
-    <div class="sonTitleContent width174">
+    <div class="dataSourceTitleContent width174">
   使用说明
     </div>
   
-    <div class="sonTitleContent ">
+    <div class="dataSourceTitleContent ">
    操作
     </div>
     </div>

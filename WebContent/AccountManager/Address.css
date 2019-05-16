@@ -10,9 +10,14 @@
 	vertical-align: middle;
 	padding: 0px 30px;
 	margin-top:10px;}
+#datacontentControl{
+	float:left;
+	width:776px;
+	height:310px;
+	}	
 #addressViewControl{
 	margin-top:20px;
-	height:360px;
+	height:auto;
 	width:780px;
 	border:1px solid #ddd;
 	}		

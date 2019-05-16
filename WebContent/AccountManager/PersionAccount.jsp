@@ -13,6 +13,7 @@
 </head>
 <body>
 <!--数据源开始-->
+<div id="dataDourceControl">
 	<div class="datacontent">
 		<div class="datacontentTitle">帐户余额</div>
 		<div class="datacontentLine">
@@ -38,15 +39,14 @@
 
 		</div>
 		<div id="dataSource">
-			<div id="sonTitle">
+			<div id="dataSourceTitle"  class="dataSourceLineControl">
 
-				<div class="sonTitleContent width170">订单编号</div>
-				<div class="sonTitleContent width110">交易时间</div>
-				<div class="sonTitleContent">交易类型</div>
-				<div class="sonTitleContent borderleftandright1">使用频道</div>
-				<div class="sonTitleContent width122">支出金额</div>
-				<div class="sonTitleContent width122">状态</div>
-				<div class="sonTitleContent width122">备注</div>
+				<div class="dataSourceTitleContent width170">订单编号</div>
+				<div class="dataSourceTitleContent width110">交易时间</div>
+				<div class="dataSourceTitleContent">交易类型</div>
+				<div class="dataSourceTitleContent width122">支出金额</div>
+				<div class="dataSourceTitleContent width122">状态</div>
+				<div class="dataSourceTitleContent width122">备注</div>
 			</div>
 
 
@@ -55,7 +55,7 @@
 
 	</div>
 
-
+</div>
 <!--数据源结束-->
 </body>
 </html>

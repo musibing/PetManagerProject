@@ -81,7 +81,7 @@
    <a href="SafetySetting.jsp" id="SafetySetting" target="righttager" > 安全设置</a>
     </div>
     <div class="listTitleContent">
-    <a href="Adderss.jsp" id="Adderss" class="AxajGetDataSource" target="righttager"> 收货地址</a>
+    <a href="../viewAddressListByAccountID" id="Adderss" class="AxajGetDataSource" target="righttager"> 收货地址</a>
     </div>
     <div class="listTitleContent">
     发票抬头

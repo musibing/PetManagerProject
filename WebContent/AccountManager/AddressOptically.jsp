@@ -113,7 +113,7 @@ $(".AxajGetDataSource").click(function(){
         <input type="text" class="inputText" name="addressList.postalCode">
 		</div>
 		<div class="datacontentLine">
-        <input type="checkbox"  name="addressList.defaultValue">设置为默认收货地址
+        <input type="checkbox"  name="addressList.defaultValue" value="defaultValueOn">设置为默认收货地址
         </div>
         <div class="datacontentLine">
         <input type="submit" value="保存地址" class="PersionDataSubmit MaginLeft100">

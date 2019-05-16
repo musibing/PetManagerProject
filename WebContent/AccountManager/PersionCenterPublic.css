@@ -41,11 +41,18 @@ float: right;}
 	font-family: "微软雅黑";
 	padding: 20px 20px;
 }
+#dataSourceContentControl{
+	float:left;
+	border:1px solid #ccc;
+	height:auto;
+	width:780px;
+	}
 
 .datacontentTitle {
+	margin-top:10px;
 	float:left;
 	font-size: 16px;
-	width: 776px;
+	width: 780px;
 	height: 30px;
 }
 
@@ -110,8 +117,9 @@ float: right;}
 	float:left;
 	height:35px;}
 .dataSourceLineControl{
+	float:left;
 	
-	width: 774px;
+	width: 780px;
 	border-bottom: 1px solid #ccc;
 	
 	}
@@ -136,6 +144,7 @@ float: right;}
 }
 
 .dataSourceContentData{
+	float:left;
 	
 	height:30px;
 	width:90px;}
@@ -214,7 +223,10 @@ float: right;}
 .ProductID{
 	width:150px;}
 .ProductInfo{
-	width:264px;}
+	width:264px;
+	overflow:hidden; 
+	white-space:nowrap;
+	text-overflow:ellipsis;}
 .contentDataLine{
 	height:80px;
 	width:774px;

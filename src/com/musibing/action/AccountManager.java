@@ -356,14 +356,42 @@ public class AccountManager extends ActionSupport {
 				
 				addressList.setTakeDeliveryPersion(account);
 			}
-			String defaultValue=HSR.getParameter("addressList.defaultValue");
-			System.out.println(defaultValue);
+			String[] defaultValue=HSR.getParameterValues("addressList.defaultValue");
+			
+			if(defaultValue[0]!=null){
+				addressList.setDefaultValue("defaultValueOn");
+			}else{
+				
+				addressList.setDefaultValue("defaultValueNo");
+			}
 			System.out.println(addressList);
 			addressListService.saveAddressList(addressList);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return "OK";
+	}
+	public String viewAddressListByAccountID(){
+		ActionInit();
+		AccountVO account =(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+		List<AddressList> addressListData=new ArrayList<AddressList>();
+		if(account!=null){
+		addressListData=addressListService.viewAddressListByAccountID(account.getAccountId());
+		 
+		
+		for(int j=0;j<addressListData.size();j++){
+			
+			if("defaultValueOn".equals(addressListData.get(j).getDefaultValue())){
+				System.out.println(addressListData.get(j));
+				addressList=addressListData.get(j);
+			}
+			
+		}
+		}
+	
+		HSR.getSession().setAttribute("addressListdefaultValue",addressList);
+		HSR.getSession().setAttribute("addressList", addressListData);
 		return "OK";
 	}
 }

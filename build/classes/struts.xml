@@ -251,6 +251,10 @@
 			<result name="OK" type="redirect">/AccountManager/Adderss.jsp</result>
 		
 		</action>
+		<action name="viewAddressListByAccountID"  class="com.musibing.action.AccountManager" method="viewAddressListByAccountID">
+			<result name="OK" type="redirect">/AccountManager/Adderss.jsp</result>
+		
+		</action>
 		<!-- 帐户地址列表开始 -->
 	</package>
 </struts>

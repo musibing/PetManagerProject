@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,40 +21,44 @@
         </div>
 		<div id="addressViewControl">
 		<div class="datacontentTitle">地址预览</div>
+<s:iterator value="#session.addressListdefaultValue" var="lidata">
 		<div id="View">
         <div id="Viewtitle">
-        母四兵-默认收货地址
+         <s:property value='#lidata.takeDeliveryPersionName'></s:property>-默认收货地址
         </div>
         <div id="ViewContent">
         <div class="datacontentLine addressdatacontentLine">
         <div class="attrbuteName">
         收货人:
         </div>
-        母四兵
+        <s:property value='#lidata.takeDeliveryPersionName'></s:property>
        </div>
         <div class="datacontentLine addressdatacontentLine">
         <div class="attrbuteName">
         所在地区:
         </div>
-        皿川省成都市新都区
+        <s:property value='#lidata.address'></s:property>
        </div>
         <div class="datacontentLine addressdatacontentLine">
         <div class="attrbuteName">
         街道地址:
         </div>
-        工业大道西段199号1栋2单元304室
+       <s:property value='#lidata.address'></s:property>
+
        </div>
         <div class="datacontentLine addressdatacontentLine">
         <div class="attrbuteName">
         手机号码:
         </div>
-        15528296986
+        <s:property value='#lidata.telphoneNumber'></s:property>
+
        </div>
         <div class="datacontentLine addressdatacontentLine">
         <div class="attrbuteName">
         邮政编码:
         </div>
-        628300
+         <s:property value='#lidata.postalCode'></s:property>
+      
        </div>
          <div class="datacontentSelect optically">
        
@@ -62,6 +68,54 @@
        </div>
         </div>
 	</div>
+</s:iterator>
+    <div class="datacontentTitle">地址列表预览</div>
+<div id="dataSourceContentControl">
+    <div id="dataSourceTitle" class="dataSourceLineControl">
+    
+   
+     <div class="dataSourceTitleContent ProductID">
+     地址编号
+    </div>
+     <div class="dataSourceTitleContent ProductInfo"><span class="attrbuteName">地址</span></div>
+     <div class="dataSourceTitleContent"><span class="attrbuteName">手机号码</span></div>
+    <div class="dataSourceTitleContent"><span class="attrbuteName">收货人</span></div>
+    <div class="dataSourceTitleContent"><span class="attrbuteName">邮政编码</span></div>
+    <div class="dataSourceTitleContent">
+   操作
+    </div>
+    </div>
+    <s:iterator value="#session.addressList" var="lidata">
+    <div class="dataSourceLineControl">
+    
+   
+     <div class="dataSourceContentData ProductID">
+   <s:property value='#lidata.addressListID'></s:property>
+    
+    </div>
+     <div class="dataSourceContentData ProductInfo">
+  
+     <s:property value='#lidata.address'></s:property>
+
+    </div>
+     <div class="dataSourceContentData">
+     								
+     <s:property value='#lidata.telphoneNumber'></s:property>
+     
+    </div>
+    <div class="dataSourceContentData">
+     <s:property value='#lidata.takeDeliveryPersionName'></s:property>
+    </div>
+    
+    
+    <div class="dataSourceContentData">
+         <s:property value='#lidata.postalCode'></s:property>
+    </div>
+    </div>
+    
+  
+ </s:iterator>
+    </div>
     </div>
 	</div>
 	<!--数据源结束-->

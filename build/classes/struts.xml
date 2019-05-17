@@ -276,5 +276,12 @@
 		<result name="OK" type="redirect">/AccountManager/PersionAccount.jsp</result>
 		</action>
 		<!-- 支付帐户信息查看-->
+		<!-- lucene数据创建 -->
+		<action name="luceneDataInit" class="com.musibing.util.lucene.PorductInterface" method="creatDataFromLocation">
+		<result name="OK" type="redirect">/OrderSettlement/OderSuccess.jsp</result>
+		<result name="error">/error/error.jsp</result>
+		
+		</action>
+		<!-- lucene数据创建 -->
 	</package>
 </struts>

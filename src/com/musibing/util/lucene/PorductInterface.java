@@ -37,7 +37,9 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
 
 import com.musibing.server.AccountServer;
 import com.musibing.server.FreshProductSerivce;
@@ -49,20 +51,19 @@ import com.musibing.vo.FreshProduct;
 import com.musibing.vo.Product;
 import com.musibing.vo.ProductOder;
 import com.musibing.vo.ProductOderList;
-
-
-
-
-public class PorductInterface {
+import com.opensymphony.xwork2.ActionSupport;
+@Controller
+@Scope("prototype")
+public class PorductInterface  extends ActionSupport{
 	@Resource
-	 Product pt;
+	Product pt;
 	AccountVO accountvo;
 	FreshProduct fp;
 	ProductOder po;
 	AccountServer as;
 	FreshProductSerivce fps;
 	ProductOderList prl;
- ProductServer ps;
+	ProductServer ps;
 	ProductOderListService pols;
 	ProductOderServer productOderServer;
 	
@@ -71,14 +72,11 @@ public class PorductInterface {
 	public  void intiControl(){
 		ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
 		ps=(ProductServer)act.getBean("productServerBean");
-	/*	fps=(FreshProductSerivce)act.getBean("FreshProductSerivceBean");
-		pols=(ProductOderListService)act.getBean("productOderListServiceBean");
-		as=(AccountServer)act.getBean("accountServerBa");
-		productOderServer=(ProductOderServer)act.getBean("productOderServerBean");*/
+	
 	
 	}
 	
-	public static final String INDEX_PATH="I:\\LunceneData\\ProductInfo";
+	public static final String INDEX_PATH="/usr/Tomcat7/webapps/PetManagerProject/LuceneDataBase/Prodouct";
 	public static final String SCAN_PATH="E:\\text";
 	public static void main(String[] args) {
 		
@@ -87,11 +85,14 @@ public class PorductInterface {
 			}
 	
 	
-	
-	public void creatDataFromLocation(){
-		intiControl();
-		IndexWriter indexWriter=null;
+	@Test
+	public String creatDataFromLocation(){
+		System.out.println("Test");
+		String result="error";
 		try {
+			intiControl();
+			IndexWriter indexWriter=null;
+			System.out.println("Test");
 			Directory directory=FSDirectory.open(FileSystems.getDefault().getPath(INDEX_PATH));
 			Analyzer analyzer=new CJKAnalyzer();
 			IndexWriterConfig indexWriterConfig=new IndexWriterConfig(analyzer);
@@ -123,14 +124,15 @@ public class PorductInterface {
 	           
 	            
 	           
-	           
+	            result="OK";
 	       
 	       
 	      
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			  result="error";
 			e.printStackTrace();
 		}
+		return result;
 	}public  Map searchIndex(String searchTextValue){
 		Map<Integer, String> searchValueMap = new HashMap<Integer, String>();
 		try {

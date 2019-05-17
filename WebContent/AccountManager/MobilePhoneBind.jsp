@@ -18,7 +18,7 @@
 		<div class="datacontentLine">
         <s:form action="../obtainMobliePhoneNumberByAccount">
         <s:textfield name="obtainAddress" id="obtainAddress"></s:textfield>
-        <input type="button" id="sendObtainCode"/>
+        <input type="button" id="sendObtainCode" value="发送验证码"/>
 		  <s:textfield name="obtainCode"  class="obtainCode"></s:textfield>
         <s:submit value="提交"></s:submit>
         </s:form>
@@ -29,4 +29,30 @@
 	</div>
 	<!--数据源结束-->
 </body>
+<script src="../jquery/jquery-1.7.2.js"></script>
+<script>
+	$(function(){
+		
+		$("#sendObtainCode").click(function(){
+			var obtainAddress=$("#obtainAddress").val();
+			$.ajax({
+				url : "..//sendObtainCode.action",
+				data : {
+					"obtainAddress":obtainAddress,
+					"requestPage":"MobilePhoneBind.jsp",
+					},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,
+				success : function(str) {
+					
+				
+			}
+
+			})
+		})
+		
+	})
+</script>
 </html>

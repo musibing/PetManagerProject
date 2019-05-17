@@ -90,7 +90,7 @@
 手机<span class="telphoneresult"></span>
 </span>
 <span class="safetyLeveText">
-您绑定的手机:<span id="telphoneNumber"><s:property value='#session.AccountInfo.telphoneNumber'></s:property></span>;若手机不可用,请立即更换,避免帐户被盗带来的损失,<a href="EmailBind.jsp" target="righttager">请务必完成此验证</a>
+您绑定的手机:<span id="telphoneNumber"><s:property value='#session.AccountInfo.telphoneNumber'></s:property></span>;若手机不可用,请立即更换,避免帐户被盗带来的损失,<a href="MobilePhoneBind.jsp" target="righttager">请务必完成此验证</a>
 </span>
 </div>
 <div class="datacontentLine">

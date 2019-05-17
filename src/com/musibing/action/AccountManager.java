@@ -36,7 +36,7 @@ import com.musibing.util.MobileScode;
 import com.musibing.util.NumberSupport;
 import com.musibing.util.email.Sendmail;
 import com.musibing.util.network.publicIpAddress;
-import com.musibing.util.sms.smsManager;
+import com.musibing.util.sms.aliSmsManagerProject;
 import com.musibing.vo.AccountCollect;
 import com.musibing.vo.AccountRecords;
 import com.musibing.vo.AccountVO;
@@ -221,12 +221,12 @@ public class AccountManager extends ActionSupport {
 		try {
 			accuntTelphoneNumber = HSR.getParameter("accuntTelphoneNumber");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 
-		smsManager sm = new smsManager();
-		/* sm.sendSmsValidateCode(SMSValidateCode, accuntTelphoneNumber); */
+		aliSmsManagerProject sm = new aliSmsManagerProject();
+		 sm.sendRegisterSms(SMSValidateCode, accuntTelphoneNumber);
 		System.out.println("短信发送完成");
 
 	}
@@ -414,17 +414,22 @@ public class AccountManager extends ActionSupport {
 		String requestPage=HSR.getParameter("requestPage");
 		int validateCode=new  NumberSupport().Random(1000000);
 		Sendmail sendmail=new Sendmail() ;
-		smsManager sms=new  smsManager();
+		aliSmsManagerProject sms=new  aliSmsManagerProject();
 		if("MobilePhoneBind.jsp".equals(requestPage)){
-			/*sms.sendSmsValidateCode(890191, obtainAddress);*/
+			sms.sendRegisterSms(validateCode, obtainAddress);
+			HSR.getSession().setAttribute("validateCode", validateCode);
+			HSR.getSession().setAttribute("requestPage", requestPage);
+			HSR.getSession().setAttribute("obtainAddress", obtainAddress);
 			}else{
 				sendmail.sendEmail(validateCode,obtainAddress);
 				System.out.println("邮件发送成功,"+"验证码:"+validateCode);
 				HSR.getSession().setAttribute("validateCode", validateCode);
+				HSR.getSession().setAttribute("requestPage", requestPage);
 				HSR.getSession().setAttribute("obtainAddress", obtainAddress);
 			}
 	}public String obtainMobliePhoneNumberByAccount(){
 		ActionInit();
+		System.out.println("test");
 		String accountvalidateCode=HSR.getParameter("obtainCode");
 		Object validateCode=HSR.getSession().getAttribute("validateCode");
 		System.out.println(validateCode.toString());
@@ -433,7 +438,13 @@ public class AccountManager extends ActionSupport {
 			validate="OK";
 			AccountVO account=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
 			String obtainAddress=(String)HSR.getSession().getAttribute("obtainAddress");
-			account.setEmail(obtainAddress);
+			String requestPage=(String)HSR.getSession().getAttribute("requestPage");
+			if("MobilePhoneBind.jsp".equals(requestPage)){
+				account.setTelphoneNumber(obtainAddress);
+			}else{
+				account.setEmail(obtainAddress);
+			}
+			
 			accountservice.update(account);
 		}
 		return validate;

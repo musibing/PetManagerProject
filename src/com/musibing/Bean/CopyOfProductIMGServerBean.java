@@ -1,4 +1,4 @@
-package com.musibing.Bean;
+/*package com.musibing.Bean;
 
 import java.util.HashSet;
 import java.util.List;
@@ -51,3 +51,4 @@ public List<CopyOfProductIMG> SelecProductImgDatForID(CopyOfProduct Pd) {
 		factory.getCurrentSession().update(Pimg);
 	}
 }
+*/

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musibing.vo.AddressList;
+import com.musibing.vo.ClassificationType;
 import com.musibing.vo.NotificationInterface;
 import com.musibing.vo.PayAccount;
 
@@ -21,7 +22,7 @@ public class VOInit {
 	@Test
 	public void main() {
 		NotificationInterface notificationInterface=new NotificationInterface();
-		servicInit(notificationInterface);
+		servicInit(new ClassificationType());
 		
 	}public void servicInit(Object bean){
 		String simpleClassName =bean.getClass().getSimpleName();

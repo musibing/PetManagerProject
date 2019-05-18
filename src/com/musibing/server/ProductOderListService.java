@@ -19,4 +19,6 @@ public interface ProductOderListService {
 	public List<ProductOderList> viewProductOderListByAccountID(List<ProductOder> productOderID);
 	/*public List<ProductOder>  SelectAllProductOderForAccoun(AccountVO accountVO);
 	public ProductOder SelectAllProductOderListForAccounSimple(AccountVO accountVO);*/
+	public void updateProductOderList(ProductOderList productOderList);
+	public List<Object[]> viewTempData();
 }

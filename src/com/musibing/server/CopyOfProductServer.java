@@ -1,4 +1,4 @@
-package com.musibing.server;
+/*package com.musibing.server;
 
 import java.util.List;
 
@@ -13,3 +13,4 @@ public List<CopyOfProduct> viewAllProductInfo();
 public List<CopyOfProduct> viewAllProductForBranName(String brandName);
 public void updateProductData(CopyOfProduct pd);
 }
+*/

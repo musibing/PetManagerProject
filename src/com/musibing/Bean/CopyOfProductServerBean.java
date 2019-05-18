@@ -1,4 +1,4 @@
-package com.musibing.Bean;
+/*package com.musibing.Bean;
 
 import java.util.List;
 
@@ -72,3 +72,4 @@ public class CopyOfProductServerBean implements CopyOfProductServer{
 	
 
 }
+*/

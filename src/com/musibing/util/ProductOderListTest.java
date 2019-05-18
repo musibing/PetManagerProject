@@ -18,6 +18,7 @@ import com.musibing.server.ProductOderServer;
 import com.musibing.server.ProductServer;
 import com.musibing.vo.AccountVO;
 import com.musibing.vo.FreshProduct;
+import com.musibing.vo.Product;
 import com.musibing.vo.ProductOder;
 import com.musibing.vo.ProductOderList;
 
@@ -43,7 +44,7 @@ public class ProductOderListTest {
 		productOderServer=(ProductOderServer)act.getBean("productOderServerBean");
 	
 	}
-	@Test
+	
 	public void getAllProductOderInfo(){
 		intiControl();
 		List<com.musibing.vo.ProductOderList> AllProductOder=new ArrayList<com.musibing.vo.ProductOderList>();
@@ -62,8 +63,94 @@ public class ProductOderListTest {
 		
 		System.out.println(roductOdersimple.getOderTips());*/
 	}
-	
 	@Test
+	public void chagenProdouctOderListTotalPrice(){
+		/*每个订单:11条
+		 * 商品总数：168次*/
+		intiControl();
+	try {
+	/*	List<Product> list=ps.viewAllProductInfo();
+		int id=0;
+			for (int i = (list.size()-11); i <list.size(); i++) {
+				System.out.println(list.get(i).toString());
+					double buyPrice=list.get(i).getRetailPrice();
+						
+				for(int x= 0; x < 14; x++){
+					System.out.println("ID:"+id);
+					
+					
+					int buyNumber=	NumberSupport.Random(100);
+					int productOder=NumberSupport.Random(49);
+					a:
+					if(buyNumber==0){
+						buyNumber=NumberSupport.Random(100);
+						
+						if(buyNumber==0){
+							break a;
+						}
+						
+					}
+					b:
+						
+					if(productOder==0){
+						productOder=NumberSupport.Random(49);
+						
+						if(productOder==0){
+							break b;
+						}
+						
+					}
+					System.out.println("productOderID:"+productOder);
+					int  productOderListID=905000001+id;
+					
+					int productOderID=900000000+productOder;
+				ProductOder	productOderVO=productOderServer.SelectProductOderForProductOderID(productOderID);
+					System.out.println(productOderVO.toString());
+				
+				ProductOderList productoderlist=new ProductOderList(productOderListID,buyNumber,buyPrice,(buyNumber*buyPrice),"创建",list.get(i),productOderVO);
+					
+					pols.SaveProductOderList(productoderlist);
+					id++;
+					System.out.println("IDnew:"+id);
+				}	
+					*/
+		List<Object[]> productoderlist=new ArrayList<Object[]>();
+		productoderlist=	pols.viewTempData();
+		for(int x=3294;x< productoderlist.size();x++){
+			System.out.println("列表ID"+productoderlist.get(x)[0]);
+			System.out.println("数量"+productoderlist.get(x)[1]);
+			System.out.println("价格"+productoderlist.get(x)[2]);
+			System.out.println("状态"+productoderlist.get(x)[3]);
+			System.out.println("产品ID"+productoderlist.get(x)[4]);
+			System.out.println("产品订单ID"+productoderlist.get(x)[4]);
+		Product	product =ps.slectProductOfID(Integer.parseInt(productoderlist.get(x)[4].toString()));
+		double RetailPrice=product.getRetailPrice();
+		int buyNumber=Integer.parseInt(productoderlist.get(x)[1].toString());
+		buyNumber=NumberSupport.Random(100);
+		if(buyNumber==0){
+			buyNumber=1;
+		}
+		int productOderID=0;
+		productOderID=NumberSupport.Random(43);
+		if(productOderID==0){
+			productOderID=1;
+		}
+		ProductOder	productOderVO=productOderServer.SelectProductOderForProductOderID(900000000+productOderID);
+		ProductOderList productoderlistdata=new ProductOderList(Integer.parseInt(productoderlist.get(x)[0].toString()),buyNumber,RetailPrice,(buyNumber*RetailPrice),"创建",product,productOderVO);
+		
+		pols.updateProductOderList(productoderlistdata);
+		}
+		
+			
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+		
+	}
+	
+	
 	public void generateProductOderList(){/*生成订单列表数据*/
 		try {
 			intiControl();

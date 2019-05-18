@@ -117,35 +117,72 @@ public class BuyManager extends ActionSupport{
 			String ProductIDStr=HSR.getParameter("ProductID");/*从请求中得到商品的ID*/
 			int ProductID=Integer.parseInt(ProductIDStr.trim());/*解析产品ID*/
 			Product product=PS.slectProductOfID(ProductID);/*查询产品信息*/
-			
-			
+			String buyProductNumberStr=HSR.getParameter("BuyProductNumber");
+			int buyProductNumber=0;
+			if(buyProductNumberStr!=null){
+				buyProductNumber=Integer.parseInt(buyProductNumberStr.trim());
+				
+			}
+			 System.out.println("购买数量："+buyProductNumberStr);
+			 System.out.println("购买数量："+buyProductNumber);
 			AccountVO avo=(AccountVO)HSR.getSession().getAttribute("AccountInfo");/*从会话中读取账户信息*/
 			String PriceString="";
-			PriceString=new String(HSR.getParameter("Price").getBytes("iso-8859-1"),"utf-8");
-			PriceString=PriceString.substring(1);
-			double dealPrice=Double.parseDouble(PriceString);
-			String BuyProductNumberString=HSR.getParameter("BuyProductNumber");
-			int BuyProductNumber=Integer.parseInt(BuyProductNumberString.trim());
+	
+			
+		
 			
 			
 			bC=BCS.SelectBuyCarForAccountID(avo.getAccountId());
-			System.out.println("得到的购物车ID"+bC);
-			int  buyCarListID=BCLS.SelectMaxBuyCarListID();
-			buyCarListID+=1;
-			System.out.println("BuyCarListIDValues:"+buyCarListID);
-			BCL.setBuyCarID(bC);
-			BCL.setBuyCarListID(buyCarListID);
-			BCL.setProduct(product);
-			BCL.setDealPrice(dealPrice);
-			BCL.setBuyNumber(BuyProductNumber);
-			/*BCL.setTotalPrice(dealPrice*BuyProductNumber);*/
-	
-			BCL.setTotalPrice(BuyProductNumber*dealPrice);
-			BCLS.SaveBuyCarList(BCL);
+			
+					
+			
+			
+			
+			PO.setOderAddress(avo.getAddress());
+			PO.setAccountId(avo);
+			PO.setSubmitTime(new Date());
+			PO.setProductOderSataus("未付款");
+			System.out.println("ID:"+PO.getProductOderID());
+			POS.SaveProductOder(PO);
+			
+			
+			
+			
+			int MAXProductOderListID=0;
+			
+			List<ProductOderList> list=new ArrayList<ProductOderList>();
+			double TotalPrice=0;
+			for (int i = 0; i <1; i++) {
+				TotalPrice=(buyProductNumber*product.getRetailPrice());
+				
+				MAXProductOderListID =POLS.SelectMAXProductOderListID();
+			
+				POL.setProductOderListID(++MAXProductOderListID);
+				POL.setDealPrice(product.getRetailPrice());
+				POL.setNumber(buyProductNumber);
+				POL.setProductID(product);
+				POL.setTotalPrice(buyProductNumber*product.getRetailPrice());
+				POL.setProductoderID(PO);
+				POL.setProductOderStatus("订单已经创建");
+				list.add(POL);
+				POLS.SaveProductOderList(POL);
+				System.out.println("订单数据"+POL.toString());
+				
+				TotalPrice+=(buyProductNumber*product.getRetailPrice());
+				
+				
+			}		
+			
+			
+			PO.setOderPrice(TotalPrice);
+			POS.UpdateProductOder(PO);
+			
 			System.out.println("得到的产品ID5是："+ProductID);
 			HSR.getSession().setAttribute("Product", product);
-			HSR.getSession().setAttribute("BuyCarList", BCL);
+			HSR.getSession().setAttribute("ListData", list);
 			HSR.getSession().setAttribute("AccountInfo", avo);
+			HSR.getSession().setAttribute("OderData", PO);
+		
 			System.out.println("测试线1："+product);
 			System.out.println("测试线2："+BCL);
 		
@@ -211,7 +248,7 @@ public class BuyManager extends ActionSupport{
 		Init();
 		
 		
-		bC=BCS.SelectBuyCarForAccountID(avo.getAccountId());/*相询帐户相关的*/
+		bC=BCS.SelectBuyCarForAccountID(avo.getAccountId());/*相询帐户相关的购物车ID*/
 		System.out.println("得到的购物车ID"+bC);
 			String[] ProductOderList=getProductPoolData();/*查找选中商品列表数据*/
 			System.out.println(ProductOderList.length);				 

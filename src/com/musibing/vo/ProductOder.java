@@ -185,7 +185,7 @@ public class ProductOder implements Serializable{
 	
 	public String toString() {
 		return "ProductOder [productOderID=" + productOderID + ", accountId="
-				+ accountId + ", productID=" + productID + ", oderPrice="
+				 + ", productID=" + productID + ", oderPrice="
 				+ oderPrice + ", oderTips=" + oderTips + ", submitTime="
 				+ submitTime + ", mailCode=" + mailCode + ", oderAddress="
 				+ oderAddress + ", personName=" + personName + ", personTel="

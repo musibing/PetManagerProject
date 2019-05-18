@@ -7,12 +7,12 @@ import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.struts2.ServletActionContext;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -28,7 +28,6 @@ import com.musibing.server.BuyCarServer;
 import com.musibing.server.OrderSunburnImgService;
 import com.musibing.server.PayAccountService;
 import com.musibing.server.ProductIMGServer;
-import com.musibing.server.ProductJudgedService;
 import com.musibing.server.ProductOderListService;
 import com.musibing.server.ProductOderServer;
 import com.musibing.server.ProductServer;
@@ -50,9 +49,11 @@ import com.musibing.vo.ProductOder;
 import com.musibing.vo.ProductOderList;
 import com.opensymphony.xwork2.ActionSupport;
 
+
+
 @Controller
 @Scope("prototype")
-public class AccountManager extends ActionSupport {
+public class AccountManager extends ActionSupport{
 	@Resource
 	AccountCollect acccountCollect;
 	AccountCollectService acccountCollectService;
@@ -271,40 +272,37 @@ public class AccountManager extends ActionSupport {
 	}
 	public void UserLoginStatusCheck(){
 		System.out.println("系统调用！");
-		AccountVO accountvo=null;
-		List<BuyCarList> li=new ArrayList<BuyCarList>();
-		int BuyCarNumber=li.size();
 		try {
-		ActionInit();
-		 accountvo=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
-		System.out.println("accountvo状态:"+(accountvo==null));
-		BuyCar bc=BCS.SelectBuyCarForAccountID(accountvo.getAccountId());
-		if(bc!=null){
-			li=BCLS.SelectBuyCarListForBuyCarID(bc.getBuyCarID());
-			 BuyCarNumber=li.size();
-		}
-		
-		} catch (Exception e1) {
+			AccountVO accountvo=null;
+			List<BuyCarList> li=new ArrayList<BuyCarList>();
+			int BuyCarNumber=li.size();
+			
+			ActionInit();
+			 accountvo=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			 String result="null";	
+			if(accountvo!=null){
+				System.out.println("accountvo状态:"+(accountvo==null));
+				BuyCar bc=BCS.SelectBuyCarForAccountID(accountvo.getAccountId());
+				li=BCLS.SelectBuyCarListForBuyCarID(bc.getBuyCarID());
+				result="<a href=\"../viewAccountByAccountID.action?accountID="+accountvo.getAccountId()+"\">欢迎,"+accountvo.getAccountName()+"</a>";
+				 BuyCarNumber=li.size();
+				 HSP.getWriter().print(result);
+					System.out.println("<MMMM"+accountvo.getAccountName()+accountvo.getAccountId());
+					HSR.getSession().setAttribute("BuyCarNumber", BuyCarNumber);
+					HSR.getSession().setAttribute("AccountInfo", accountvo);
+			}else{
+				System.out.println("会话为空!");
+				
+			}
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			e.printStackTrace();
 		}
 		
-	String result="null";	
+	
+	
 		
-	if(accountvo!=null){
-		result="<a href=\"../viewAccountByAccountID.action?accountID="+accountvo.getAccountId()+"\">欢迎,"+accountvo.getAccountName()+"</a>";
-	}else{
-		System.out.println("会话为空!");
-	}
-	try {
-		 HSP.getWriter().print(result);
-		System.out.println("<MMMM"+accountvo.getAccountName()+accountvo.getAccountId());
-		HSR.getSession().setAttribute("BuyCarNumber", BuyCarNumber);
-		HSR.getSession().setAttribute("AccountInfo", accountvo);
-	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
 		
 	}public String viewAccountByAccountID(){
 		String accountIDStr=HSR.getParameter("accountID");
@@ -316,42 +314,52 @@ public class AccountManager extends ActionSupport {
 		
 		return "OK";
 	}public String  viewProductOderByAccounID(){
-		AccountVO accountVO=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
-		List<ProductOder> productList=new ArrayList<ProductOder>();
-		if(accountVO!=null){
-			productList=POS.viewProductOderByAccountID(accountVO.getAccountId());
-			for (int i = 0; i < productList.size(); i++) {
-				System.out.println(productList.get(i).toString());
+		try {
+			AccountVO accountVO=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			List<ProductOder> productList=new ArrayList<ProductOder>();
+			if(accountVO!=null){
+				productList=POS.viewProductOderByAccountID(accountVO.getAccountId());
+				for (int i = 0; i < productList.size(); i++) {
+					System.out.println(productList.get(i).toString());
+				}
+				
 			}
-			
+			HSR.getSession().setAttribute("ProductOderlistByAccountID", productList);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		HSR.getSession().setAttribute("ProductOderlistByAccountID", productList);
 		return "OK";
 	}
 	
 	public String viewProductCollectListInfoByAccountID(){
 	System.out.println("帐户收藏检测");
-	ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
-	acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
-	AccountVO accountID=(AccountVO)ServletActionContext.getRequest().getSession().getAttribute("AccountInfo");
-	
-	if(accountID!=null){
+	try {
+		ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
+		acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
+		AccountVO accountID=(AccountVO)ServletActionContext.getRequest().getSession().getAttribute("AccountInfo");
 		
-		System.out.println("帐户信息是否为空："+"帐户属性为："+accountID);
+		if(accountID!=null){
+			
+			System.out.println("帐户信息是否为空："+"帐户属性为："+accountID);
+			
+		String HQL="from AccountCollect where product.productID IS NOT NULL and accountVO.accountId="+accountID.getAccountId();
+		System.out.println("HQL属性为："+HQL);
+		List<AccountCollect> accountcollect=acccountCollectService.ViewAccountCollectListForParameterID(HQL);
+			for(int j=0;j<accountcollect.size();j++){
+				System.out.println(accountcollect.get(j).toString());
+			}
 		
-	String HQL="from AccountCollect where product.productID IS NOT NULL and accountVO.accountId="+accountID.getAccountId();
-	System.out.println("HQL属性为："+HQL);
-	List<AccountCollect> accountcollect=acccountCollectService.ViewAccountCollectListForParameterID(HQL);
-		for(int j=0;j<accountcollect.size();j++){
-			System.out.println(accountcollect.get(j).toString());
+		if(accountcollect!=null){
+			HSR.getSession().setAttribute("AccountCollectStatus", accountcollect);
+		}else{
+			HSR.getSession().setAttribute("AccountCollectStatus", null);
 		}
-	
-	if(accountcollect!=null){
-		HSR.getSession().setAttribute("AccountCollectStatus", accountcollect);
-	}else{
-		HSR.getSession().setAttribute("AccountCollectStatus", null);
-	}
-	
+		
+		}
+	} catch (BeansException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
 	return "OK";	
 	
@@ -388,24 +396,29 @@ public class AccountManager extends ActionSupport {
 	}
 	public String viewAddressListByAccountID(){
 		ActionInit();
-		AccountVO account =(AccountVO)HSR.getSession().getAttribute("AccountInfo");
-		List<AddressList> addressListData=new ArrayList<AddressList>();
-		if(account!=null){
-		addressListData=addressListService.viewAddressListByAccountID(account.getAccountId());
-		 
-		
-		for(int j=0;j<addressListData.size();j++){
+		try {
+			AccountVO account =(AccountVO)HSR.getSession().getAttribute("AccountInfo");
+			List<AddressList> addressListData=new ArrayList<AddressList>();
+			if(account!=null){
+			addressListData=addressListService.viewAddressListByAccountID(account.getAccountId());
+			 
 			
-			if("defaultValueOn".equals(addressListData.get(j).getDefaultValue())){
-				System.out.println(addressListData.get(j));
-				addressList=addressListData.get(j);
+			for(int j=0;j<addressListData.size();j++){
+				
+				if("defaultValueOn".equals(addressListData.get(j).getDefaultValue())){
+					System.out.println(addressListData.get(j));
+					addressList=addressListData.get(j);
+				}
+				
 			}
-			
+			}
+
+			HSR.getSession().setAttribute("addressListdefaultValue",addressList);
+			HSR.getSession().setAttribute("addressList", addressListData);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		}
-	
-		HSR.getSession().setAttribute("addressListdefaultValue",addressList);
-		HSR.getSession().setAttribute("addressList", addressListData);
 		return "OK";
 	}
 	

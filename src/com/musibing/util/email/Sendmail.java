@@ -43,7 +43,7 @@ import javax.mail.internet.MimeMessage;
          //指明邮件的发件人
          message.setFrom(new InternetAddress("musibing@126.com"));
          //指明邮件的收件人，现在发件人和收件人是一样的，那就是自己给自己发
-         message.setRecipient(Message.RecipientType.TO, new InternetAddress("musibing@foxmail.com"));
+         message.setRecipient(Message.RecipientType.TO, new InternetAddress(obtainAddress));
          //邮件的标题
          message.setSubject("宠物之家用户邮箱验证");
         //邮件的文本内容

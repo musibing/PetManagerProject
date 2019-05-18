@@ -30,6 +30,7 @@ import com.musibing.vo.AccountVO;
 import com.musibing.vo.Article;
 import com.musibing.vo.PetDataVOClass;
 import com.opensymphony.xwork2.ActionSupport;
+
 @Controller
 @Scope("prototype")
 public class ArticleManager extends ActionSupport{

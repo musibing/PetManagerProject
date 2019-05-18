@@ -1,5 +1,7 @@
 package com.musibing.util.lucene;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -76,7 +78,7 @@ public class PorductInterface  extends ActionSupport{
 	
 	}
 	
-	public static final String INDEX_PATH="/usr/Tomcat7/webapps/PetManagerProject/LuceneDataBase/Prodouct";
+	public static final String INDEX_PATH="L:/Java_Resoure/PetManagerProject/LuceneDataBase/Prodouct";
 	public static final String SCAN_PATH="E:\\text";
 	public static void main(String[] args) {
 		
@@ -87,9 +89,21 @@ public class PorductInterface  extends ActionSupport{
 	
 	@Test
 	public String creatDataFromLocation(){
+File file =new File(INDEX_PATH);
+		if(!file.exists()){
+			try {
+			boolean b=file.createNewFile();
+				System.out.println("文件是否正确创建："+b);
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		System.out.println("Test");
 		String result="error";
 		try {
+			
 			intiControl();
 			IndexWriter indexWriter=null;
 			System.out.println("Test");
@@ -133,6 +147,7 @@ public class PorductInterface  extends ActionSupport{
 			e.printStackTrace();
 		}
 		return result;
+		
 	}public  Map searchIndex(String searchTextValue){
 		Map<Integer, String> searchValueMap = new HashMap<Integer, String>();
 		try {

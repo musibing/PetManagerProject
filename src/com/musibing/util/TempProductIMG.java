@@ -17,26 +17,23 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.musibing.server.CopyOfProductIMGServer;
-import com.musibing.server.CopyOfProductServer;
 import com.musibing.server.ProductIMGServer;
 import com.musibing.server.ProductServer;
 import com.musibing.util.file.GetIMGInfo;
-import com.musibing.vo.CopyOfProduct;
-import com.musibing.vo.CopyOfProductIMG;
+
 import com.musibing.vo.Product;
 import com.musibing.vo.ProductIMG;
 
 public class TempProductIMG {
 	@Resource
 	Product productvo;
-	CopyOfProduct productvocp;
+	
 	ProductIMG productdimg;
-	CopyOfProductIMG productdimgcp;
+	
 	ProductServer productserver;
-	CopyOfProductServer productservercp;
+
 	ProductIMGServer productIMGserver;/* 注解自动注入失败 */
-	CopyOfProductIMGServer productIMGservercp;
+
 
 	public Product getProductvo() {
 		return productvo;
@@ -54,31 +51,14 @@ public class TempProductIMG {
 		this.productdimg = productdimg;
 	}
 
-	public CopyOfProduct getProductvocp() {
-		return productvocp;
-	}
 
-	public void setProductvocp(CopyOfProduct productvocp) {
-		this.productvocp = productvocp;
-	}
-
-	public CopyOfProductIMG getProductdimgcp() {
-		return productdimgcp;
-	}
-
-	public void setProductdimgcp(CopyOfProductIMG productdimgcp) {
-		this.productdimgcp = productdimgcp;
-	}
 
 	public void ActionInit() {
 		ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
 		productIMGserver = (ProductIMGServer) act
 				.getBean("productimgServerBean");
 		productserver = (ProductServer) act.getBean("productServerBean");
-		productIMGservercp = (CopyOfProductIMGServer) act
-				.getBean("CopyOfProductIMGServerBean");
-		productservercp = (CopyOfProductServer) act
-				.getBean("CopyOfProductServerBean");
+		
 
 	}
 	
@@ -203,7 +183,7 @@ public class TempProductIMG {
 		try {
 			List<Product> list = productserver.viewAllProductInfo();
 			int ProductID = 0;
-			CopyOfProduct cpt = new CopyOfProduct();
+			
 
 			for (int i = 122; i <=list.size(); i++) {
 				if (list.get(i).getProductID() <= 800000143) {
@@ -216,7 +196,7 @@ public class TempProductIMG {
 				System.out.println("ID" + ProductID);
 				/* productserver.updateProductData(list.get(i)); */
 
-				cpt.setProductID(ProductID);
+				/*cpt.setProductID(ProductID);
 				cpt.setProductName(list.get(i).getProductName());
 				cpt.setRetailPrice(list.get(i).getRetailPrice());
 				cpt.setManufacturerGuidancePrice(list.get(i).getManufacturerGuidancePrice());
@@ -228,7 +208,7 @@ public class TempProductIMG {
 				cpt.setApplicableObject(list.get(i).getApplicableObject());
 				cpt.setProductDescribe(list.get(i).getProductDescribe());
 				cpt.setExhibitionIMGPath(list.get(i).getExhibitionIMGPath());
-				 productservercp.saveProductData(cpt);
+				 productservercp.saveProductData(cpt);*/
 				/*list.get(i).setExhibitionIMGPath("../img/ShopMall/ProductIMG/Small/"+ (ProductID-20) + "Small0.jpg");*/
 			/*	productserver.updateProductData(list.get(i)); */
 			}
@@ -238,7 +218,7 @@ public class TempProductIMG {
 		}
 	}
 	
-	public void changeProductIMGID() {
+	/*public void changeProductIMGID() {
 		ActionInit();
 		
 		try {
@@ -247,7 +227,7 @@ public class TempProductIMG {
 			for(int i=104;i<=143;i++){
 			productvo=new Product();
 			productvo.setProductID(ProductID+i);
-			/*List<ProductIMG> list = productIMGserver.SelectAllProductIMGData();*/
+			List<ProductIMG> list = productIMGserver.SelectAllProductIMGData();
 			List<ProductIMG> listforid=productIMGserver.SelecProductImgDatForID(productvo);
 			MaxContentForProductID=productIMGserver.selectMaxContenetNumber();
 			MaxContentForProductID=MaxContentForProductID+1;
@@ -293,7 +273,7 @@ public class TempProductIMG {
 			e.printStackTrace();
 		}
 	}
-
+*/
 	
 	public void dlelectProductIMG() {
 

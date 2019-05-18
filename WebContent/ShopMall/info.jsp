@@ -11,239 +11,7 @@
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Navigation.css">
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Top.css">
 <script src="../jquery/jquery-1.7.2.js"></script>
-<script>
-/* 	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(hm, s);
-	})(); */
-	$(function() {
-		$("#searchText").change(function(){
-			
-		
-			var searchTextValue=$("#searchText").val();
-			
-			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
-		})
-		
-		
-		})
-	
-</script>
-<script>
-function load(){
-	/*用户收藏开始*/
-	var AccountcollectStatus=$("#AccountCollect").text();
-	
-	if(AccountcollectStatus.trim()=="OK"){
-		$("#AccountCollect").css("background-position" ,"-163px -62px");
-		
-	}else{
-			$("#AccountCollect").css("background-position" ,"-163px -12px");
-			}
-	$("#AccountCollect").text("");
-	/*用户收藏结束*/	
 
-$AllMarkScore=$(".Data_List").find(".MarkScore");
-
-var MarkScoreData="";
-	var lev1=0;
-	var lev2=0;
-	var lev3=0;
-for(var j=0;j<$AllMarkScore.length;j++){
-	var $Fraction_All=$(".Data_List").eq(j).find(".Fraction_Content_Control").find("span");
-	MarkScoreData=$AllMarkScore.eq(j).text();
-
-	if(MarkScoreData=="1分"){
-			
-				$Fraction_All.eq(0).attr("class","Fraction_All");
-			lev1++;
-			
-	}else if(MarkScoreData=="1.5分"){
-		lev1++;
-		
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_Half");
-	
-	}
-	else if(MarkScoreData=="2分"){
-		lev1++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-	
-	}
-else if(MarkScoreData=="2.5分"){
-		lev2++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_Half");
-	
-	}else if(MarkScoreData=="3分"){
-		lev2++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_All");
-	}else if(MarkScoreData=="3.5分"){
-		lev2++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_All");
-		$Fraction_All.eq(3).attr("class","Fraction_Half");
-	
-	}else if(MarkScoreData=="4分"){
-		lev3++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_All");
-		$Fraction_All.eq(3).attr("class","Fraction_All");
-	}else if(MarkScoreData=="4.5分"){
-		lev3++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_All");
-		$Fraction_All.eq(3).attr("class","Fraction_All");
-		$Fraction_All.eq(4).attr("class","Fraction_Half");
-	}
-	else if(MarkScoreData=="5分"){
-		lev3++;
-		$Fraction_All.eq(0).attr("class","Fraction_All");
-		$Fraction_All.eq(1).attr("class","Fraction_All");
-		$Fraction_All.eq(2).attr("class","Fraction_All");
-		$Fraction_All.eq(3).attr("class","Fraction_All");
-		$Fraction_All.eq(4).attr("class","Fraction_All");
-	}
-		
-	}
-	
-	
-	var judgedMarkTotal=$("#judgedMarkTotal").text();
-	
-	
-		
-		
-	
-	
-	}
-$("window").ready(function(e) {
-	
-/*	var ContentHeight=${sessionScope.ContentIMGHeight};*/
-/* 	var ProductID=${sessionScope.ProductInfo.productID}; */
-	var SmallIMGSrc=$(".SmallImgData").eq(0).find("img").attr("src");
-	
-	$("#SmallIMGShow").attr("src",SmallIMGSrc);
-	var Height=parseInt(ContentHeight);
-/* 	$("#Content_Data").height(Height+1220); */
-	/* $("#Content").height(Height+6067); */
-	function trim(x){
-		
-		 return x.replace(/^\s+|\s+$/gm,'');
-	}
-
-		
-		
-		$("#BuyCar").click(function(){
-		
-			var $AllBrandDl=$("#CommodityInfo").find("dl");
-				
-			for(var x=0;x<$AllBrandDl.length;x++){
-					if(x==1){
-					productID=$AllBrandDl.eq(x).find("dd").text();
-					
-					
-					
-					
-					}
-				}
-				
-		var Price=$("#Price").text();
-			
-			
-			
-			
-			roductID=trim(productID);
-			
-			Price=trim(Price);
-			var BuyProductNumber=$("#BuyProductNumber").val();
-			
-			BuyProductNumber=trim(BuyProductNumber);
-			 var ActionPath="..//BuyProductForNow.action?BuyProductNumber="+BuyProductNumber+"&ProductID="+productID+"&Price="+Price;
-			
-			$("#ActionPath").attr("href",ActionPath); 
-			
-				alert(BuyProductNumber);
-			/* $.ajax({
-				url : "..//BuyProductForNow.action",
-				data : {
-					"ProductID":productID,
-					"Price":Price,
-					"BuyProductNumber" :BuyProductNumber,},
-					scriptCharset : 'utf-8',
-					contentType : "application/x-www-form-urlencoded; charset=utf-8",
-				type : "post",
-				traditional : true,  传数组进后台需要设置该属性 
-				success : function(str) {
-					return;
-					
-			}
-
-			}) */  
-
-			})
-			
-		$("#AddBuyCar").click(function () {
-			var $AllBrandDl=$("#CommodityInfo").find("dl");
-				var productID="";
-			for(var x=0;x<$AllBrandDl.length;x++){
-					if(x==1){
-					productID=$AllBrandDl.eq(x).find("dd").text();
-					
-					
-					
-					
-					}
-				}
-				
-		var Price=$("#Price").text();
-			
-			
-			
-			
-			roductID=trim(productID);
-			
-			Price=trim(Price);
-			
-			
-			var BuyProductNumber=$("#BuyProductNumber").val();/*获取购买数量*/
-			 $.ajax({
-					url : "..//AddProductToBuyCar.action",
-					data : {
-						"ProductID":productID,
-						"Price":Price,
-						"BuyProductNumber" :BuyProductNumber,},
-						scriptCharset : 'utf-8',
-						contentType : "application/x-www-form-urlencoded; charset=utf-8",
-					type : "post",
-					traditional : true, 
-					success : function(str) {
-						return;
-						
-				}
-
-				})
-			})
-	
-})
-window.onload = function() {
-/* aler(12);
-var SmallIMGSrc=(".ImgData").eq(0).attr("src");
-alert(SmallIMGSrc);
-("#SmallIMGShow").attr("src",SmallIMGSrc);
-alert("成功"); */
-}; 
-
-</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <title>宠物情报系统</title>
@@ -432,7 +200,7 @@ alert("成功"); */
    </div>
    <div class="Buy">
    <div class="BuyOrder">
-   <a href="#" id="ActionPath"><input type="button" value="立即购买" id="BuyCar"></a>
+   <a href="../BuyProductForNow?ProductID=<s:property value='#session.ProductInfo.productID'></s:property>&Price=<s:property value='#session.ProductInfo.retailPrice'></s:property>&BuyProductNumber=" id="ActionPath"><input type="button" value="立即购买" id="BuyCar"></a>
    </div>
    <div class="AddShopCar">
     <input type="button" value=""  id="AddBuyCar">
@@ -1359,4 +1127,237 @@ alert("成功"); */
 
 
 </body>
+<script>
+/* 	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?b8c358b26d18dee09914931b71cac447";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})(); */
+	$(function() {
+		$("#searchText").change(function(){
+			
+		
+			var searchTextValue=$("#searchText").val();
+			
+			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
+		})
+		
+		
+		})
+	
+</script>
+<script>
+function load(){
+	/*用户收藏开始*/
+	var AccountcollectStatus=$("#AccountCollect").text();
+	
+	if(AccountcollectStatus.trim()=="OK"){
+		$("#AccountCollect").css("background-position" ,"-163px -62px");
+		
+	}else{
+			$("#AccountCollect").css("background-position" ,"-163px -12px");
+			}
+	$("#AccountCollect").text("");
+	/*用户收藏结束*/	
+
+$AllMarkScore=$(".Data_List").find(".MarkScore");
+
+var MarkScoreData="";
+	var lev1=0;
+	var lev2=0;
+	var lev3=0;
+for(var j=0;j<$AllMarkScore.length;j++){
+	var $Fraction_All=$(".Data_List").eq(j).find(".Fraction_Content_Control").find("span");
+	MarkScoreData=$AllMarkScore.eq(j).text();
+
+	if(MarkScoreData=="1分"){
+			
+				$Fraction_All.eq(0).attr("class","Fraction_All");
+			lev1++;
+			
+	}else if(MarkScoreData=="1.5分"){
+		lev1++;
+		
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_Half");
+	
+	}
+	else if(MarkScoreData=="2分"){
+		lev1++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+	
+	}
+else if(MarkScoreData=="2.5分"){
+		lev2++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_Half");
+	
+	}else if(MarkScoreData=="3分"){
+		lev2++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_All");
+	}else if(MarkScoreData=="3.5分"){
+		lev2++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_All");
+		$Fraction_All.eq(3).attr("class","Fraction_Half");
+	
+	}else if(MarkScoreData=="4分"){
+		lev3++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_All");
+		$Fraction_All.eq(3).attr("class","Fraction_All");
+	}else if(MarkScoreData=="4.5分"){
+		lev3++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_All");
+		$Fraction_All.eq(3).attr("class","Fraction_All");
+		$Fraction_All.eq(4).attr("class","Fraction_Half");
+	}
+	else if(MarkScoreData=="5分"){
+		lev3++;
+		$Fraction_All.eq(0).attr("class","Fraction_All");
+		$Fraction_All.eq(1).attr("class","Fraction_All");
+		$Fraction_All.eq(2).attr("class","Fraction_All");
+		$Fraction_All.eq(3).attr("class","Fraction_All");
+		$Fraction_All.eq(4).attr("class","Fraction_All");
+	}
+		
+	}
+	
+	
+	var judgedMarkTotal=$("#judgedMarkTotal").text();
+	
+	
+		
+		
+	
+	
+	}
+$("window").ready(function(e) {
+/*	var ContentHeight=${sessionScope.ContentIMGHeight};*/
+/* 	var ProductID=${sessionScope.ProductInfo.productID}; */
+	var SmallIMGSrc=$(".SmallImgData").eq(0).find("img").attr("src");
+	$("#SmallIMGShow").attr("src",SmallIMGSrc);
+	
+	/* var Height=parseInt(ContentHeight); */
+/* 	$("#Content_Data").height(Height+1220); */
+	/* $("#Content").height(Height+6067); */
+	
+	function trim(x){
+		
+		 return x.replace(/^\s+|\s+$/gm,'');
+	}
+
+/* 		
+		$("#BuyCar").click(function(){
+		
+			var $AllBrandDl=$("#CommodityInfo").find("dl");
+				
+			for(var x=0;x<$AllBrandDl.length;x++){
+					if(x==1){
+					productID=$AllBrandDl.eq(x).find("dd").text();
+					}
+				}
+				
+		var Price=$("#Price").text();
+			roductID=trim(productID);
+			
+			Price=trim(Price);
+			var BuyProductNumber=$("#BuyProductNumber").val();
+			
+			BuyProductNumber=trim(BuyProductNumber);
+			 var ActionPath="..//BuyProductForNow.action?BuyProductNumber="+BuyProductNumber+"&ProductID="+productID+"&Price="+Price;
+			
+			$("#ActionPath").attr("href",ActionPath); 
+			
+				alert(BuyProductNumber);
+			/* $.ajax({
+				url : "..//BuyProductForNow.action",
+				data : {
+					"ProductID":productID,
+					"Price":Price,
+					"BuyProductNumber" :BuyProductNumber,},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,  传数组进后台需要设置该属性 
+				success : function(str) {
+					return;
+					
+			}
+
+			})
+		})*/  
+/* 
+			
+			
+		$("#AddBuyCar").click(function () {
+			var $AllBrandDl=$("#CommodityInfo").find("dl");
+				var productID="";
+			for(var x=0;x<$AllBrandDl.length;x++){
+					if(x==1){
+					productID=$AllBrandDl.eq(x).find("dd").text();
+					
+					
+					
+					
+					}
+				}
+				
+		var Price=$("#Price").text();
+			
+			
+			
+			
+			roductID=trim(productID);
+			
+			Price=trim(Price);
+			
+			
+			var BuyProductNumber=$("#BuyProductNumber").val();
+			 $.ajax({
+					url : "..//AddProductToBuyCar.action",
+					data : {
+						"ProductID":productID,
+						"Price":Price,
+						"BuyProductNumber" :BuyProductNumber,},
+						scriptCharset : 'utf-8',
+						contentType : "application/x-www-form-urlencoded; charset=utf-8",
+					type : "post",
+					traditional : true, 
+					success : function(str) {
+						return;
+						
+				}
+
+				})
+			}) */
+			$("#BuyProductNumber").change(function(){
+				
+				var buyProductNumber=$("#BuyProductNumber").val();
+				var actionPathSrc=$("#ActionPath").attr("href");
+				
+				$("#ActionPath").attr("href",actionPathSrc+buyProductNumber);
+				
+				
+				})	
+})
+window.onload = function() {
+/* aler(12);
+var SmallIMGSrc=(".ImgData").eq(0).attr("src");
+alert(SmallIMGSrc);
+("#SmallIMGShow").attr("src",SmallIMGSrc);
+alert("成功"); */
+}; 
+
+</script>
 </html>

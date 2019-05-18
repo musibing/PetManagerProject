@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-5-18 2:19:26 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.musibing.vo.ClassificationType" table="CLASSIFICATIONTYPE">
+        <id name="classificationType" type="int">
+            <column name="CLASSIFICATIONTYPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="classificationLeve1" type="java.lang.String">
+            <column name="CLASSIFICATIONLEVE1" />
+        </property>
+        <property name="classificationLeve2" type="java.lang.String">
+            <column name="CLASSIFICATIONLEVE2" />
+        </property>
+        <property name="classificationLeve3" type="java.lang.String">
+            <column name="CLASSIFICATIONLEVE3" />
+        </property>
+        <property name="classificationLeve4" type="java.lang.String">
+            <column name="CLASSIFICATIONLEVE4" />
+        </property>
+        <property name="classificationLeveTop" type="java.lang.String">
+            <column name="CLASSIFICATIONLEVETOP" />
+        </property>
+        <many-to-one name="articleType" class="com.musibing.vo.Article" fetch="join" >
+            <column name="ARTICLETYPE" />
+        </many-to-one>
+        <many-to-one name="productType" class="com.musibing.vo.Product" fetch="join" >
+            <column name="PRODUCTTYPE" />
+        </many-to-one>
+        <property name="createDate" type="java.util.Date">
+            <column name="CREATEDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

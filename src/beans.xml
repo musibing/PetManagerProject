@@ -14,7 +14,7 @@
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass" value="org.gjt.mm.mysql.Driver"/>
-		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/petmanager?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/petmanagerdata?useUnicode=true&amp;characterEncoding=UTF-8" />
 		<property name="user" value="root" />
 		<property name="password" value=""/>
 		<property name="initialPoolSize" value="1" />
@@ -54,11 +54,10 @@
 				<value>com/musibing/vo/FreshProduct.hbm.xml</value>
 				<value>com/musibing/vo/ProductOderList.hbm.xml</value>
 				<value>com/musibing/vo/ProductJudged.hbm.xml</value>
-				<value>com/musibing/vo/Car.hbm.xml</value>
-				<value>com/musibing/vo/Owner.hbm.xml</value>
+				
 				<value>com/musibing/vo/AddressList.hbm.xml</value>
 				<value>com/musibing/vo/PayAccount.hbm.xml</value>
-				
+				<value>com/musibing/vo/ClassificationType.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

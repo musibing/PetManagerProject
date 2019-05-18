@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
+import org.hibernate.SQLQuery;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -82,6 +83,24 @@ public class ProductOderListServiceBean implements ProductOderListService{
 			int productOderListID) {
 		
 		return (ProductOderList) factory.getCurrentSession().createQuery("from ProductOderList where productOderListID=?").setInteger(0, productOderListID).list();
+	}
+
+
+	
+	public void updateProductOderList(ProductOderList productOderList) {
+		factory.getCurrentSession().update(productOderList);
+		
+	}
+
+
+	@Override
+	public List<Object[]> viewTempData() {
+		
+		SQLQuery sq=(SQLQuery) factory.getCurrentSession().createSQLQuery("select productoderlist.PRODUCTODERLISTID,productoderlist.NUMBER,productoderlist.DEALPRICE,productoderlist.PRODUCTODERSTATUS,productoderlist.PRODUCTID,productoderlist.PRODUCTODERID  from productoderlist");
+		 List<Object[]> list=new ArrayList<Object[]>();
+		 list= sq.list();
+	
+		return list;
 	}
 
 

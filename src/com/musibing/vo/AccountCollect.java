@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class AccountCollect implements Serializable{
 
-	private static final long serialVersionUID = -7909123852668085210L;
+	/*private static final long serialVersionUID = -7909123852668085210L;*/
 	private int accountCollectID;/*帐户收藏ID*/
 	private Article articleID;
 	private PetDataVOClass petDataVOClass;

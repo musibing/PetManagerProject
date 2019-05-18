@@ -1,4 +1,4 @@
-package com.musibing.server;
+/*package com.musibing.server;
 
 import java.util.List;
 import java.util.Set;
@@ -14,3 +14,4 @@ public void saveProductImgData(CopyOfProductIMG Pimg);
 public List<CopyOfProductIMG> SelecProductImgDatForID(CopyOfProduct Pd);
 public void updateProductImgData(CopyOfProductIMG Pimg);
 }
+*/

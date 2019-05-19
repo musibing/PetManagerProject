@@ -135,6 +135,7 @@ public class ProudctManager extends ActionSupport {
 		productjudgedservice=(ProductJudgedService)act.getBean("ProductJudgedServiceBean");
 		productOderListService =(ProductOderListService)act.getBean("productOderListServiceBean");
 		pimgsb=(ProductIMGServer)act.getBean("productimgServerBean");
+		acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
 		
 		BCS=(BuyCarServer)act.getBean("buyCarServerBean");
 	
@@ -153,28 +154,36 @@ public class ProudctManager extends ActionSupport {
 		HSP.setContentType("text/html;charset=UTF-8");
 	}
 public String ViewProductForID(){
-	System.out.println("test");
+	System.out.println("test1");
 	try {
+		System.out.println("test2");
 		ActionInit();
+		System.out.println("test3");
 		/*帐户收藏开始*/
 		System.out.println("帐户收藏检测");
-		ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
-		acccountCollectService = (AccountCollectService) act.getBean("accountCollectServicBean");
+		System.out.println("test4");
+		
+		System.out.println("test5");
+		
+		System.out.println("test6");
 		AccountVO accountID=(AccountVO)ServletActionContext.getRequest().getSession().getAttribute("AccountInfo");
+		System.out.println("test7");
 		String ProductIDStr=HSR.getParameter("PorductID");
+		System.out.println("test5");
 		int ProductID=0;
+		System.out.println("test6");
 		if(ProductIDStr!=null){
 			ProductID=Integer.parseInt(ProductIDStr);
-			
+			System.out.println("test7");
 		}
-		
+		System.out.println("test8");
 		if(accountID!=null){
-			
+			System.out.println("test9");
 			System.out.println("帐户信息是否为空："+"帐户属性为："+accountID);
 			
 		
 			
-		
+			System.out.println("test10");
 		System.out.println("商品ID属性为："+ProductID);
 		String HQL="from AccountCollect where product.productID="+ProductID+" and accountVO.accountId="+accountID.getAccountId();
 		System.out.println("HQL属性为："+HQL);
@@ -961,6 +970,43 @@ System.out.println(data.length);
 		}
 		
 		
+		return "OK";
+	}
+	public String selectProductByAttrbuteArrayList(){
+		System.out.println("test");
+		ActionInit();
+		
+		String[] branName=HSR.getParameterValues("BranName");
+		String[] applicableObject=HSR.getParameterValues("applicableObject");
+		String[] packageType=HSR.getParameterValues("packageType");
+		String branNameData="";
+		if(branName!=null){
+		for(int x=0;x<branName.length;x++){
+			 branNameData=branName[x];
+			System.out.println(branName[x].toString());
+			
+		}
+		}
+		String applicableObjectData="";
+		if(applicableObject!=null){
+		for(int y=0;y<applicableObject.length;y++){
+			applicableObjectData	=applicableObject[y];
+			System.out.println(applicableObject[y].toString());
+			
+		}
+		}
+		String packageTypeData="";
+		if(packageType!=null){
+			for(int j=0;j<packageType.length;j++){
+			 packageTypeData=packageType[j];
+			System.out.println(packageType[j].toString());;
+			
+		}
+		}
+		String hql="from Product where brandName='"+branNameData+"' and applicableObject like '%"+applicableObjectData+"%'";
+		System.out.println(hql);
+		List<Product> searchResultList=ps.selectProductByAttrbuteArrayList(hql);
+		HSR.getSession().setAttribute("SearchResultList", searchResultList);
 		return "OK";
 	}
 

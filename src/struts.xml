@@ -226,6 +226,13 @@
 		<action name="viewAccountByAccountID" class="com.musibing.action.AccountManager" method="viewAccountByAccountID">
 		<result name="OK" type="redirect">/AccountManager/PersonCenter.jsp</result>
 		</action>
+		<!-- 商品开始  -->
+		<action name="selectProductByAttrbuteArrayList" class="com.musibing.action.ProudctManager" method="selectProductByAttrbuteArrayList">
+		
+			<result name="OK" type="redirect">/ShopMall/ProductSearch.jsp</result>
+		</action>
+	
+		<!-- 商品结束  -->
 		<!-- 商品订单开始  -->
 		<action name="viewProductOderByAccounID" class="com.musibing.action.AccountManager" method="viewProductOderByAccounID">
 		<result name="OK" type="redirect">/AccountManager/ShopOderManager.jsp</result>
@@ -282,6 +289,7 @@
 		<result name="error">/error/error.jsp</result>
 		
 		</action>
+		
 		<!-- lucene数据创建 -->
 	</package>
 </struts>

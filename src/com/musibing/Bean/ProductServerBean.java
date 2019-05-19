@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musibing.server.ProductServer;
-
 import com.musibing.vo.Product;
 import com.musibing.vo.ProductIMG;
 @Service("productServerBean")
@@ -100,6 +99,11 @@ public List<Product> ViewHotProcutForClassificationPage(int startPage,int endPag
 public List<Product> SelectClassificationProductForTags(String HQL) {
 	
 	return (List<Product>)factory.getCurrentSession().createQuery(HQL).setFirstResult(0).setMaxResults(24).list();
+}
+
+public List<Product> selectProductByAttrbuteArrayList(String HQL) {
+	
+	return (List<Product>)factory.getCurrentSession().createQuery(HQL).list();
 }
 
 

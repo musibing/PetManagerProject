@@ -51,7 +51,8 @@
 }
 
 #searchButton {
-	height: 30px;
+	float:left;
+	height: 20px;
 	width: 100px;
 	background-color: #4490F7;
 	border-width: 0px;

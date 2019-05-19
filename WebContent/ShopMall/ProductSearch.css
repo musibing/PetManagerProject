@@ -4,6 +4,7 @@
 a {  text-decoration:none ;out-line: none;color: #343434;}
 a:hover, a:visited, a:link, a:active{  text-decoration:none ;out-line: none;color: #343434;};
 /*Content Start*/
+
 #center{
 	float:left;
 	height:2800px;
@@ -114,13 +115,7 @@ white-space:nowrap;
 	float:left;
 	
 	}
-	.BaiKeControl {
-	float:right;
-	height: 1200px;
-	width: 990px;
-	margin-top: 10px;
-	margin-left:5px;
-}
+	
 #OrderBy .select{
 	border:1px solid #999;
 	float:left;
@@ -131,7 +126,7 @@ white-space:nowrap;
 	
 	}
 #OrderBy #NumberTotal{
-	margin-left:250px;
+	margin-left:180px;
 	} 	
 #OrderBy span{
 	margin-left:5px;
@@ -140,8 +135,9 @@ white-space:nowrap;
 	font-size:12px;
 	display:block;}	
 #OrderBy{
+	float:left;
 	height:30px;
-	width:970px;
+	width:960px;
 	padding:10px 10px;
 	background-color:#F3F3F3;
 	border:1px solid #DDD;}
@@ -164,10 +160,7 @@ white-space:nowrap;
 	border:1px solid #ccc;
 	background-color:#FFF;
 	}	
-.BaikeControlBody {
-	height:1050px;
-	width: 990px;
-}
+
 #ResultDataViewControl{
 	margin-top:10px;
 	height:2148px;
@@ -182,42 +175,11 @@ white-space:nowrap;
 	
 	}
 	#ContentManagerControl{
+		float:left;
 		height:2680px;
 		width:1350px;
 		background:#F8F8F8;}
 
-
-#BaiKeNavigation {
-	float:left;
-	height: 30px;
-	width: 990px;
-	line-height: 30px;
-	vertical-align: middle;
-	text-align: left;
-	font-family: "微软雅黑";
-	font-size: 14px;
-	color: #999;
-}
-#ScreenControl {
-	
-	height: 250px;
-	width: 990px;
-	border-top: 1px solid #9c3;
-	border: 1px solid #ddd;
-}
-
-.ScreenClass {
-	font-family:"微软雅黑";
-	font-size:12px;
-	
-	float:left;
-	height: 30px;
-	width: 990px;
-	line-height: 30px;
-	vertical-align: middle;
-	text-align: left;
-	border-bottom: 1px dotted #ddd;
-}
 
 /*Content End*/	
 /*location Start*/

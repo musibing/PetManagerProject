@@ -275,7 +275,7 @@ public class AccountManager extends ActionSupport{
 		try {
 			AccountVO accountvo=null;
 			List<BuyCarList> li=new ArrayList<BuyCarList>();
-			int BuyCarNumber=li.size();
+			long BuyCarNumber=0;
 			
 			ActionInit();
 			 accountvo=(AccountVO)HSR.getSession().getAttribute("AccountInfo");
@@ -283,13 +283,17 @@ public class AccountManager extends ActionSupport{
 			if(accountvo!=null){
 				System.out.println("accountvo状态:"+(accountvo==null));
 				BuyCar bc=BCS.SelectBuyCarForAccountID(accountvo.getAccountId());
-				li=BCLS.SelectBuyCarListForBuyCarID(bc.getBuyCarID());
+				System.out.println(">>>>>>1");
+				BuyCarNumber=BCLS.viewBuyCarListProductNumberByByCarID(bc.getBuyCarID());
+				System.out.println(">>>>>>2");
 				result="<a href=\"../viewAccountByAccountID.action?accountID="+accountvo.getAccountId()+"\">欢迎,"+accountvo.getAccountName()+"</a>";
-				 BuyCarNumber=li.size();
+				System.out.println(">>>>>>3");
 				 HSP.getWriter().print(result);
 					System.out.println("<MMMM"+accountvo.getAccountName()+accountvo.getAccountId());
 					HSR.getSession().setAttribute("BuyCarNumber", BuyCarNumber);
+					System.out.println(">>>>>>4");
 					HSR.getSession().setAttribute("AccountInfo", accountvo);
+					System.out.println("成功:"+accountvo.toString()+"BuyCarNumber:"+BuyCarNumber);
 			}else{
 				System.out.println("会话为空!");
 				

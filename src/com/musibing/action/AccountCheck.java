@@ -57,12 +57,13 @@ public class AccountCheck extends ActionSupport {
 
 			uvo = Us.AccountLoginCheck(CheckAccountID);
 			
-			System.out.println(uvo.toString());
+			
 			if (uvo == null) {
 				return "Error";
 			} else if (!CheckPassword.equals(uvo.getPassWord())) {
 				return "Error";
 			} else {
+				System.out.println(uvo.toString());
 				ApplicationContext act = new ClassPathXmlApplicationContext(
 						"beans.xml");
 			/*	arss = (AccountRecordsService) act.getBean("accountRecordsService");
@@ -84,8 +85,7 @@ public class AccountCheck extends ActionSupport {
 
 				}
 				System.out.println("登录成功：用户的参数是"+uvo.toString());
-				ServletActionContext.getRequest().getSession()
-						.setAttribute("AccountInfo", uvo);
+				HSR.getSession().setAttribute("AccountInfo", uvo);
 				uvo=null;
 				arss=null;
 				ars=null;

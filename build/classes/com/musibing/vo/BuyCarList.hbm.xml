@@ -21,7 +21,7 @@
             <column name="TOTALPRICE" />
         </property>
         
-        <many-to-one name="buyCarID" class="com.musibing.vo.BuyCar"  lazy="false">
+        <many-to-one name="buyCarID" class="com.musibing.vo.BuyCar"  cascade="save-update"   lazy="false">
             <column name="BUYCARID" />
         </many-to-one>
     </class>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musibing.server.BuyCarListServer;
+import com.musibing.vo.AccountVO;
 import com.musibing.vo.BuyCarList;
 @Service("buyCarListServerBean")
 @Transactional 
@@ -39,6 +40,13 @@ public class BuyCarListServerBean implements BuyCarListServer{
 	public int SelectMaxBuyCarListID(){
 		
 		return (int)factory.getCurrentSession().createQuery("select max(buyCarListID) from BuyCarList").uniqueResult();
+	}
+
+
+	
+	public long viewBuyCarListProductNumberByByCarID(int buyCarID) {
+		
+		return (long)factory.getCurrentSession().createQuery("select count(buyCarListID) from BuyCarList where buyCarID.buyCarID=?").setInteger(0, buyCarID).uniqueResult();
 	}
 	
 	

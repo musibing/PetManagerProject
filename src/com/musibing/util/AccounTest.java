@@ -12,19 +12,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.musibing.action.JSONTest;
 import com.musibing.server.AccountCollectService;
 import com.musibing.server.AccountServer;
+import com.musibing.server.BuyCarListServer;
 import com.musibing.server.BuyCarServer;
-
 import com.musibing.vo.AccountCollect;
 import com.musibing.vo.AccountVO;
 import com.musibing.vo.BuyCar;
+import com.musibing.vo.BuyCarList;
 
 public class AccounTest {
 	@Resource
 	AccountServer accountservice;	
 	BuyCar bc;
 	BuyCarServer bcs;
+	BuyCarListServer buyCarListSerive;
+	BuyCarList buyCarList;
 	AccountVO accountvo;
-@Test
+
 public void testIMG(){
 	String basePath="I:/Java_Resoure/PetManagerProject/WebContent/img/Account/";
 File baseflie=new File(basePath);
@@ -39,13 +42,26 @@ if(!files.isDirectory()){
 }
 }
 }
-@Test
+
 public void intiControl(){
 	ApplicationContext act = new ClassPathXmlApplicationContext("beans.xml");
 	
 	bcs=(BuyCarServer)act.getBean("buyCarServerBean");
+	buyCarListSerive=(BuyCarListServer)act.getBean("buyCarListServerBean");
 }
 @Test
+public void index(){
+	intiControl();
+	try {
+		long x=buyCarListSerive.viewBuyCarListProductNumberByByCarID(50000001);
+		System.out.println(x);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+
+
 public void moidFo(){
 	intiControl();
 	List<AccountVO> accoutVO=accountservice.ViewAllUser();
@@ -58,13 +74,13 @@ public void moidFo(){
 	
 	
 }
-@Test
+
 public void sencode(){
 	
 /*	smsManager sms=new  smsManager();
 	sms.sendSmsValidateCode(890191, "15528296986");*/
 }
-@Test
+
 public void stringToClass(){
 	
 	

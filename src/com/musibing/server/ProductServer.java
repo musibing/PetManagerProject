@@ -21,6 +21,7 @@ public List<Product> ViewHotProcutForClassificationPage(int startPage,int endPag
 public List<Product> ViewClassificationProductForTagVel1(String productTagVelName);
 public List<Product> SelectClassificationProductForTags(String HQL);
 public List<Product> ViewRecommendProductForArrayList(String productTagVelTOP);
+public List<Product> selectProductByAttrbuteArrayList(String HQL);
 
 
 }

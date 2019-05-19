@@ -364,20 +364,21 @@
 			<div id="BaiKeNavigation">首页|宠物大全|狗狗分类搜索</div>
 			
 			<div class="BaikeControlBody">
+            <form action="../selectProductByAttrbuteArrayList" method="post" id="actionForm">
 				<div id="ScreenControl">
 					<div class="ScreenClass">
 
-						<div class="ScreenTitle">品牌:</div>
+						<div class="ScreenTitle" name="BranName">品牌:</div>
 
-						<div class="ScreenSonClass"><a href="../ViewProductForBranName?BranName=冠能">冠能</a></div>
-						<div class="ScreenSonClass"><a href="../ViewProductForBranName?BranName=法国皇家">皇家</a></div>
-						<div class="ScreenSonClass"><a href="../ViewProductForBranName?BranName=宝路">宝路</a></div>
-						<div class="ScreenSonClass"><a href="../ViewProductForBranName?BranName=伯纳天纯">伯纳天纯</a> </div>
-
+						<div class="ScreenSonClass"><input  type="checkbox" name="BranName" value="冠能">冠能</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="BranName" value="法国皇家">皇家</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="BranName" value="宝路">宝路</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="BranName" value="伯纳天纯">伯纳天纯</input> </div>
+					
 
 					</div>
 
-					<div class="ScreenClass">
+					<!-- <div class="ScreenClass">
 						<div class="ScreenTitle">犬种:</div>
 
 						<div class="ScreenSonClass"> 贵宾</div>
@@ -396,37 +397,31 @@
 						<div class="ScreenSonClass">美国</div>
 						<div class="ScreenSonClass">加拿大</div>
 						<div class="ScreenSonClass">长毛犬</div>
-					</div>
+					</div> -->
 					<div class="ScreenClass">
-						<div class="ScreenTitle">犬型：</div>
-						<div class="ScreenSonClass">大型犬</div>
-						<div class="ScreenSonClass">小型犬</div>
-						<div class="ScreenSonClass">中型犬</div>
-						<div class="ScreenSonClass"></div>
+                    <div class="ScreenTitle" >犬种</div>
+							<div class="ScreenSonClass" ><input  type="checkbox" name="applicableObject" value="小型犬">小型犬</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="applicableObject" value="中型犬">中型犬</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="applicableObject" value="大型犬">大型犬</input></div>
+						<div class="ScreenSonClass"><input  type="checkbox" name="applicableObject" value="幼犬">幼犬</input> </div>
 					</div>
-					<div class="ScreenClass">
-						<div class="ScreenTitle">年龄:</div>
-						<div class="ScreenSonClass">成犬</div>
-						<div class="ScreenSonClass">幼犬</div>
-						<div class="ScreenSonClass">老年犬</div>
-						<div class="ScreenSonClass"></div>
-					</div>
-					<div class="ScreenClass">
-						<div class="ScreenTitle">品味:</div>
+					<!-- <div class="ScreenClass">
+					  <div class="ScreenTitle">口味:</div>
 						<div class="ScreenSonClass">鸡肉</div>
 						<div class="ScreenSonClass">鱼肉</div>
 						<div class="ScreenSonClass">期他</div>
 						<div class="ScreenSonClass">牛肉</div>
-					</div>
+					</div> -->
                     <div class="ScreenClass">
 						<div class="ScreenTitle">规格:</div>
-						<div class="ScreenSonClass">小包(1.5-5kg)</div>
-						<div class="ScreenSonClass">中包(5.1-10kg)</div>
-						<div class="ScreenSonClass">大包(10.1以上)</div>
-						<div class="ScreenSonClass">超小包(1.5kg以下)</div>
+                        <div class="ScreenSonClass"><input  type="checkbox" name=" packageType" value="1.5/5">小包(1.5-5kg)</input></div>
+                        <div class="ScreenSonClass"><input  type="checkbox" name="packageType" value="5.1/10">中包(5.1-10kg)</input></div>
+                        <div class="ScreenSonClass"><input  type="checkbox" name="packageType" value="/10">大包(10.1以上)</input></div>
+                        <div class="ScreenSonClass"><input  type="checkbox" name="packageType" value="1.5/">超小包(1.5kg以下)</input></div>
+                        
+						
 					</div>
-				</div>
-			  <div id="OrderBy">
+                    <div id="OrderBy">
               <p> 排序：</p><a href="#">综合排序</a>
                		<a href="#">销量</a>
                     <a href="#">人气</a>
@@ -438,9 +433,15 @@
                     <div class="select"></div>
                     <span>全球购</span>
                     <span id="NumberTotal">共278件商品</span>
-                    <span class="Up"></span>
-                    <span class="Down"></span>
+                   <div id="bottonUIControl">
+						<input type="submit" id="searchButton" value="检索"></input>
+					</div>
                 </div>
+				</div>
+			</form>
+              
+              
+              
 				<div id="ResultDataViewControl">
 
 												

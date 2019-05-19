@@ -14,75 +14,7 @@
 <link type="text/css" rel="stylesheet" href="../CssLibraries/Public/Version1/Top.css">
 <link type="text/css" rel="stylesheet" href="index.css">
 <title>宠物之家官方网站</title>
-<script src="../jquery/jquery-1.7.2.js"></script>
-<script>
-function load(){
-	  $.ajax({
-				url : "..//UserLoginStatusCheck.action",
-				data : {
-					},
-					scriptCharset : 'utf-8',
-					contentType : "application/x-www-form-urlencoded; charset=utf-8",
-				type : "post",
-				traditional : true,
-				success : function(str) {
-					
-					if(str!="null"){
-						$("#Remvoe").remove();
-					$("#accontid").html(str);
-					$("#ChengWidth").css("width",120);
-					
-						}
-					
-			}
 
-			})
-	
-	}
-	
-	$(function() {
-			
-		$("#searchText").change(function(){
-			
-		
-			var searchTextValue=$("#searchText").val();
-			
-			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
-			
-			
-		/* 	$.ajax({
-										url : "..//searchProductBuyList.action",
-										data : {
-											
-											"searchTextValue" : searchTextValue,
-									
-										},
-										scriptCharset : 'utf-8',
-										contentType : "application/x-www-form-urlencoded; charset=utf-8",
-										type : "post",
-								
-										traditional : true,
-										success : function(str) {
-											
-											
-											}
-				
-				
-				}) */
-			
-			
-				
-			
-			
-			
-			
-			
-			
-			})
-		
-	})
-	
-</script>
 <%
 	String[] AnimalClassification = { "Dog", "Cat", "Aquarium",
 			"Crawler" };
@@ -460,5 +392,74 @@ function load(){
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })(); */
+</script>
+<script src="../jquery/jquery-1.7.2.js"></script>
+<script>
+function load(){
+	  $.ajax({
+				url : "..//UserLoginStatusCheck.action",
+				data : {
+					},
+					scriptCharset : 'utf-8',
+					contentType : "application/x-www-form-urlencoded; charset=utf-8",
+				type : "post",
+				traditional : true,
+				success : function(str) {
+					
+					if(str!="null"){
+						$("#Remvoe").remove();
+					$("#accontid").html(str);
+					$("#ChengWidth").css("width",120);
+					
+						}
+					
+			}
+
+			})
+	
+	}
+	
+	$(function() {
+			
+		$("#searchText").change(function(){
+			
+		
+			var searchTextValue=$("#searchText").val();
+			
+			$("#searchTager").attr("href","../searchProductBuyList.action?searchTextValue="+searchTextValue)
+			
+			
+		/* 	$.ajax({
+										url : "..//searchProductBuyList.action",
+										data : {
+											
+											"searchTextValue" : searchTextValue,
+									
+										},
+										scriptCharset : 'utf-8',
+										contentType : "application/x-www-form-urlencoded; charset=utf-8",
+										type : "post",
+								
+										traditional : true,
+										success : function(str) {
+											
+											
+											}
+				
+				
+				}) */
+			
+			
+				
+			
+			
+			
+			
+			
+			
+			})
+		
+	})
+	
 </script>
 </html>

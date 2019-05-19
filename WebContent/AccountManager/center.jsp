@@ -20,7 +20,7 @@
 <title>宠物之家后台管理系统</title>
 <script src="../jquery/jquery-1.7.2.js"></script>
 <script>
-$(function() {
+/* $(function() {
 $.ajax({
 				url : "..//UserLoginStatusCheck.action",
 				data : {
@@ -40,7 +40,7 @@ $.ajax({
 					
 			}
 
-			})	
+			})	 */
 /* $(".AxajGetDataSource").click(function(){
 	var RequestPage="ShopOderManager.jsp";
 	var TempData=".jsp";

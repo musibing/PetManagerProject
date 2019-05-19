@@ -86,23 +86,19 @@ public class AccountServerBa implements AccountServer{
 
 	
 	public AccountVO AccountLoginCheck(int accountID) {
-		System.out.println("工厂对象为空："+(factory==null));
+		
 		String Hql="from AccountVO where accountId=?";
-	/**/
-/*AccountVO Uvo=(AccountVO)factory.getCurrentSession().get(AccountVO.class,accountName);*/;
-
-try {
-	Query qu=factory.getCurrentSession().createQuery(Hql);
-	qu.setInteger(0, accountID);
-	System.out.println("工厂对象为空1："+(qu==null));
-	Uvo=(AccountVO) qu.list().get(0);
+		/*AccountVO Uvo=(AccountVO)factory.getCurrentSession().get(AccountVO.class,accountName);*/;
+		AccountVO accountvo=null;
+		try {
+			accountvo=(AccountVO)factory.getCurrentSession().get(AccountVO.class, accountID);
 	
-} catch (HibernateException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
+		} catch (HibernateException e) {
+			
+			e.printStackTrace();
+		}
 
-return Uvo;
+		return accountvo;
 	}
 
 

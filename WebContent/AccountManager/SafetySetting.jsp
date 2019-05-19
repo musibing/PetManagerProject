@@ -21,7 +21,7 @@
 </div>
 <div id="userinfoControl">
    <div id="userImg">
-     <img src="../img/Account/310026.jpg" width="120" height="120">
+     <img src="<s:property value='#session.AccountInfo.accountIMGPath'></s:property>" width="120" height="120">
      </div>
    <div id="userinfoData">
    <div class="userinfoDataContent">

@@ -1,6 +1,9 @@
 * {
 	margin: 0px;
 }
+#actionForm{
+	display:block;
+	float:left;}
 
 
 #Man {
@@ -533,7 +536,7 @@
 
 #BaiKeNavigation {
 	height: 30px;
-	width: 1200px;
+	width: 980px;
 	line-height: 30px;
 	vertical-align: middle;
 	text-align: left;
@@ -613,19 +616,29 @@
 
 #ResultTextClassT{
 	}			
+#bottonUIControl{
+	float: left;
+
+	margin-left: 20px;
+	height: 20px;
+	width: 120px;
 	
+	}	
 
 .BaiKeControl {
+	float:right;
 	height: 1200px;
-	width: 1200px;
-	margin-top: 20px;
-	margin-left:60px;
+	width: 980px;
+	margin-top: 10px;
+	
+
 }
 
 #ScreenControl {
+	float:left;
 	
 	height: 250px;
-	width: 1198px;
+	width: 980px;
 	border-top: 1px solid #9c3;
 	border: 1px solid #ddd;
 }
@@ -636,7 +649,7 @@
 	
 	float:left;
 	height: 30px;
-	width: 1199px;
+	width: 980px;
 	line-height: 30px;
 	vertical-align: middle;
 	text-align: left;
@@ -654,10 +667,11 @@
 
 .ScreenSonClass {
 	height: 30px;
-	width: 100px;
+	width: 120px;
 	float: left;
 	font-family: "微软雅黑";
 	color: #666;
+	font-size:12px;
 	
 	border-radius: 6px;
 }
@@ -750,7 +764,7 @@
 
 .BaikeControlBody {
 	height:1050px;
-	width: 1200px;
+	width: 980px;
 }
 
 .BaikeControlIMG {

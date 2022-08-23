@@ -20,7 +20,7 @@ public class aliSmsManagerProject {
 	*/
 	  public void sendRegisterSms(int code,String PhoneNumbers){
 	    	
-	    	DefaultProfile profile = DefaultProfile.getProfile("default", "LTAIKlZOlSD5yrV6", "");
+	    	DefaultProfile profile = DefaultProfile.getProfile("default", "", "");
 	        IAcsClient client = new DefaultAcsClient(profile);
 
 	        CommonRequest request = new CommonRequest();
